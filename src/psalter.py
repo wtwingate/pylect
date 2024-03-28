@@ -10,7 +10,8 @@ def psalter_from_pdf(pdf_file):
         text_list.append(text)
     full_text = "\n".join(text_list)
     clean_text = clean_up_text(full_text)
-    write_to_file(clean_text)
+    psalm_list = split_psalms(clean_text)
+    write_to_files(psalm_list)
 
 
 def clean_up_text(text):
@@ -56,10 +57,18 @@ def remove_non_ascii(line):
     return "".join(c if ord(c) < 128 else " " for c in line)
 
 
-def write_to_file(text):
-    f = open("src/psalter/psalter.txt", "w")
-    f.write(text)
-    f.close()
+def split_psalms(text):
+    ps_number = re.compile(r"\n\d+\n")
+    psalms = re.split(ps_number, text)
+    del psalms[23]  # delete duplicate version of Psalm 23
+    return psalms
+
+
+def write_to_files(psalm_list):
+    for index, psalm in enumerate(psalm_list):
+        f = open(f"src/psalter/psalm_{index + 1}.txt", "w")
+        f.write(psalm)
+        f.close()
 
 
 if __name__ == "__main__":
