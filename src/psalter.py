@@ -11,7 +11,12 @@ def psalter_from_pdf(pdf_file):
     full_text = "\n".join(text_list)
     clean_text = clean_up_text(full_text)
     psalm_list = split_psalms(clean_text)
-    write_to_files(psalm_list)
+    verses = split_verses(psalm_list[0])
+    clean_verses = clean_up_verses(verses)
+    for verse in clean_verses:
+        half_verses = split_half_verse(verse)
+        print(half_verses)
+    # write_to_files(psalm_list)
 
 
 def clean_up_text(text):
@@ -62,6 +67,29 @@ def split_psalms(text):
     psalms = re.split(ps_number, text)
     del psalms[23]  # delete duplicate version of Psalm 23
     return psalms
+
+
+def split_verses(text):
+    vs_number = re.compile(r"\d+")
+    verses = re.split(vs_number, text)
+    return verses
+
+
+def clean_up_verses(verse_list):
+    clean_verses = []
+    for verse in verse_list:
+        clean_verse = verse.strip()
+        clean_verse = re.sub("\n", " ", clean_verse)
+        clean_verses.append(clean_verse)
+    while "" in clean_verses:
+        clean_verses.remove("")
+    return clean_verses
+
+
+def split_half_verse(verse):
+    asterisk = re.compile(r"\s*\*\s*")
+    half_verses = re.split(asterisk, verse)
+    return half_verses
 
 
 def write_to_files(psalm_list):
