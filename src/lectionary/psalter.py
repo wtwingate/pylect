@@ -16,6 +16,7 @@ class Psalter:
         self.__text_to_psalms()
 
     def get_psalm_text(self, chapter: str, verses: list | None = None) -> str:
+        """Get formatted psalm text by chapter and verse reference"""
         text_list = []
         psalm = self.__psalms.get(chapter)
         if psalm is None:
@@ -78,6 +79,7 @@ class Psalter:
             self.__psalms[ps_chapter] = Psalm(ps_chapter, ps_verses)
 
     def __split_psalms(self) -> list:
+        """Split psalms into separate chapters"""
         ps_number = re.compile(r"\n*\d+\n")
         psalms = re.split(ps_number, self.__text)
         while "" in psalms:
@@ -86,6 +88,7 @@ class Psalter:
         return psalms
 
     def __get_psalm_verses(self, psalm: str) -> dict:
+        """Split psalms into separate verses and half-verses"""
         vs_number = re.compile(r"\d+")
         asterisk = re.compile(r"\s*\*\s*")
         verses = re.split(vs_number, psalm)
@@ -102,12 +105,14 @@ class Psalter:
         return split_verses
     
     def __remove_psalm_119_titles(self, psalm: str):
+        """Remove Hebrew and Latin titles throughout Psalm 119"""
         psalm_no_title = psalm
         for title in HEBREW_TITLES:
             psalm_no_title = re.sub(title, "", psalm_no_title)
         return psalm_no_title
 
     def __clean_up_verses(self, verses: list) -> str:
+        """Remove extraneous formatting within individual verses"""
         clean_verses = []
         for verse in verses:
             clean_verse = verse.strip()
