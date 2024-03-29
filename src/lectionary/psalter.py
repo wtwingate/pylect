@@ -12,6 +12,24 @@ class Psalter:
     def __init__(self, text: str) -> None:
         self.__text = self.__clean_up_text(text)
         self.__psalms = {}
+        self.__text_to_psalms()
+
+    def get_psalm_text(self, chapter: str, verses: list | None = None) -> str:
+        text_list = []
+        psalm = self.__psalms.get(chapter)
+        if psalm is None:
+            raise ValueError("Error: invalid chapter reference")
+        text_list.append(psalm.chapter)
+        text_list.append(psalm.title)
+        if verses is None:
+            verses = psalm.verses.keys()
+        for verse in verses:
+            psalm_verse = psalm.verses.get(verse)
+            if psalm_verse is not None:
+                text_list.append(f"{verse} {psalm_verse["head"]} *")
+                text_list.append(psalm_verse["tail"])
+        psalm_text = "\n".join(text_list)
+        return psalm_text
 
     def __clean_up_text(self, text: str) -> str:
         """Remove extraneous formatting from the extracted Psalter text"""
@@ -26,11 +44,11 @@ class Psalter:
         clean_text = "\n".join(clean_lines)
         return clean_text
 
-    def __remove_non_ascii(line: str) -> str:
+    def __remove_non_ascii(self, line: str) -> str:
         """Remove all non-ASCII characters from a string"""
         return "".join(c if ord(c) < 128 else " " for c in line)
 
-    def __remove_header_footer(line: str) -> str:
+    def __remove_header_footer(self, line: str) -> str:
         """Remove headers, footers, and page numbers from Psalter text"""
         mp_header = re.compile(
             r".*(m\s*o\s*r\s*n\s*i\s*n\s*g\s+p\s*r\s*a\s*y\s*e\s*r).*"
@@ -55,59 +73,50 @@ class Psalter:
         """Process cleaned-up Psalter text into a dictionary of Psalm objects"""
         psalms = self.__split_psalms()
         for index, psalm in enumerate(psalms):
-            ps_number = self.__get_psalm_number(psalm)
+            ps_chapter = str(index + 1)
             ps_title = self.__get_psalm_title(psalm)
             ps_verses = self.__get_psalm_verses(psalm)
-            self.__psalms[str(index + 1)] = Psalm(ps_number, ps_title, ps_verses)
+            self.__psalms[ps_chapter] = Psalm(ps_chapter, ps_title, ps_verses)
 
     def __split_psalms(self) -> list:
-        ps_number = re.compile(r"\n\d+\n")
+        ps_number = re.compile(r"\n*\d+\n")
         psalms = re.split(ps_number, self.__text)
+        while "" in psalms:
+            psalms.remove("")
         del psalms[23]  # delete duplicate version of Psalm 23
         return psalms
 
-    def __get_psalm_number(self, psalm: str) -> str:
-        pass
-
     def __get_psalm_title(self, psalm: str) -> str:
-        pass
+        return psalm.split("\n", 1)[0]
 
     def __get_psalm_verses(self, psalm: str) -> dict:
-        pass
+        vs_number = re.compile(r"\d+")
+        asterisk = re.compile(r"\s*\*\s*")
+        verses = re.split(vs_number, psalm)
+        del verses[0]  # remove title
+        clean_verses = self.__clean_up_verses(verses)
+        split_verses = {}
+        for index, verse in enumerate(clean_verses):
+            split_verse = re.split(asterisk, verse)
+            split_verses[str(index + 1)] = {
+                "head": split_verse[0],
+                "tail": split_verse[1],
+            }
+        return split_verses
+
+    def __clean_up_verses(self, verses: str) -> str:
+        clean_verses = []
+        for verse in verses:
+            clean_verse = verse.strip()
+            clean_verse = re.sub("\n", " ", clean_verse)
+            clean_verses.append(clean_verse)
+        while "" in clean_verses:
+            clean_verses.remove("")
+        return clean_verses
 
 
 class Psalm:
-    def __init__(self, number: int, title: str, verses: dict) -> None:
-        self.__number = number
-        self.__title = title
-        self.__verses = verses
-
-
-def split_verses(text):
-    vs_number = re.compile(r"\d+")
-    verses = re.split(vs_number, text)
-    return verses
-
-
-def clean_up_verses(verse_list):
-    clean_verses = []
-    for verse in verse_list:
-        clean_verse = verse.strip()
-        clean_verse = re.sub("\n", " ", clean_verse)
-        clean_verses.append(clean_verse)
-    while "" in clean_verses:
-        clean_verses.remove("")
-    return clean_verses
-
-
-def split_half_verse(verse):
-    asterisk = re.compile(r"\s*\*\s*")
-    half_verses = re.split(asterisk, verse)
-    return half_verses
-
-
-def write_to_files(psalm_list):
-    for index, psalm in enumerate(psalm_list):
-        f = open(f"src/psalter/psalm_{index + 1}.txt", "w")
-        f.write(psalm)
-        f.close()
+    def __init__(self, chapter: int, title: str, verses: dict) -> None:
+        self.chapter = chapter
+        self.title = title
+        self.verses = verses
