@@ -1,4 +1,4 @@
-from constants import HEBREW_TITLES
+from lectionary.constants import HEBREW_TITLES
 import re
 
 

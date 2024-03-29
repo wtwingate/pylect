@@ -1,0 +1,14 @@
+[project]
+name = "lectionary"
+version = "0.1.0"
+dependencies = [
+    "PyMuPDF",
+    "pytest"
+]
+
+[project.scripts]
+lectionary = "lectionary.main:main"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"

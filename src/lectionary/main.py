@@ -1,5 +1,5 @@
-from psalter import Psalter
-from utils import get_text_from_pdf
+from lectionary.psalter import Psalter
+from lectionary.utils import get_text_from_pdf
 
 
 def main():
@@ -9,4 +9,5 @@ def main():
     print(psalter.get_psalm_text("119", ["1", "2", "3", "4"]))
 
 
-main()
+if __name__ == "__main__":
+    main()
