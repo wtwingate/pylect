@@ -4,10 +4,10 @@ import re
 
 class Psalter:
     """The Psalter class is responsible for taking in the raw text of the
-    Psalter that has been extracted from a PDF copy of the Book of Common Prayer
-    2019, cleaning up the text (by removing unnecessary formatting), and then
-    creating a dictionary of Psalm objects. This dictionary can then be exported
-    to a JSON file for use in the rest of the program.
+    Psalter that has been extracted from a PDF copy of the Book of Common
+    Prayer, cleaning up the text (by removing unnecessary formatting), and then
+    creating a dictionary of individual psalms. This dictionary can then be
+    exported to a JSON file for use in the rest of the program.
     """
 
     def __init__(self, text: str) -> None:
@@ -21,11 +21,11 @@ class Psalter:
         psalm = self.__psalms.get(chapter)
         if psalm is None:
             raise ValueError("Error: invalid chapter reference")
-        text_list.append(psalm.chapter)
+        text_list.append(chapter)
         if verses is None:
-            verses = psalm.verses.keys()
+            verses = psalm.keys()
         for verse in verses:
-            psalm_verse = psalm.verses.get(verse)
+            psalm_verse = psalm.get(verse)
             if psalm_verse is not None:
                 text_list.append(f"{verse} {psalm_verse["head"]} *")
                 text_list.append(f"{psalm_verse["tail"]}")
@@ -76,7 +76,7 @@ class Psalter:
             if ps_chapter == "119":
                 psalm = self.__remove_psalm_119_titles(psalm)
             ps_verses = self.__get_psalm_verses(psalm)
-            self.__psalms[ps_chapter] = Psalm(ps_chapter, ps_verses)
+            self.__psalms[ps_chapter] = ps_verses
 
     def __split_psalms(self) -> list:
         """Split psalms into separate chapters"""
@@ -121,9 +121,3 @@ class Psalter:
         while "" in clean_verses:
             clean_verses.remove("")
         return clean_verses
-
-
-class Psalm:
-    def __init__(self, chapter: str, verses: dict) -> None:
-        self.chapter = chapter
-        self.verses = verses
