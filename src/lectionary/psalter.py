@@ -1,3 +1,4 @@
+from constants import HEBREW_TITLES
 import re
 
 
@@ -20,14 +21,13 @@ class Psalter:
         if psalm is None:
             raise ValueError("Error: invalid chapter reference")
         text_list.append(psalm.chapter)
-        text_list.append(psalm.title)
         if verses is None:
             verses = psalm.verses.keys()
         for verse in verses:
             psalm_verse = psalm.verses.get(verse)
             if psalm_verse is not None:
                 text_list.append(f"{verse} {psalm_verse["head"]} *")
-                text_list.append(psalm_verse["tail"])
+                text_list.append(f"{psalm_verse["tail"]}")
         psalm_text = "\n".join(text_list)
         return psalm_text
 
@@ -57,9 +57,7 @@ class Psalter:
             r".*(e\s*v\s*e\s*n\s*i\s*n\s*g\s+p\s*r\s*a\s*y\s*e\s*r).*"
         )
         pg_footer = re.compile(r".*(t\s*h\s*e\s+p\s*s\s*a\s*l\s*t\s*e\s*r).*")
-        pg_number = re.compile(
-            r".*(15[1-9]|16[1-9]|17[1-9]|18[1-9]|19[1-9]|[2-9]\d{2}).*"
-        )
+        pg_number = re.compile( r"[2-9]\d{2}")
         if (
             re.match(mp_header, line)
             or re.match(ep_header, line)
@@ -74,9 +72,10 @@ class Psalter:
         psalms = self.__split_psalms()
         for index, psalm in enumerate(psalms):
             ps_chapter = str(index + 1)
-            ps_title = self.__get_psalm_title(psalm)
+            if ps_chapter == "119":
+                psalm = self.__remove_psalm_119_titles(psalm)
             ps_verses = self.__get_psalm_verses(psalm)
-            self.__psalms[ps_chapter] = Psalm(ps_chapter, ps_title, ps_verses)
+            self.__psalms[ps_chapter] = Psalm(ps_chapter, ps_verses)
 
     def __split_psalms(self) -> list:
         ps_number = re.compile(r"\n*\d+\n")
@@ -86,14 +85,12 @@ class Psalter:
         del psalms[23]  # delete duplicate version of Psalm 23
         return psalms
 
-    def __get_psalm_title(self, psalm: str) -> str:
-        return psalm.split("\n", 1)[0]
-
     def __get_psalm_verses(self, psalm: str) -> dict:
         vs_number = re.compile(r"\d+")
         asterisk = re.compile(r"\s*\*\s*")
         verses = re.split(vs_number, psalm)
-        del verses[0]  # remove title
+        if "*" not in verses[0]:
+            del verses[0]  # remove title
         clean_verses = self.__clean_up_verses(verses)
         split_verses = {}
         for index, verse in enumerate(clean_verses):
@@ -103,8 +100,14 @@ class Psalter:
                 "tail": split_verse[1],
             }
         return split_verses
+    
+    def __remove_psalm_119_titles(self, psalm: str):
+        psalm_no_title = psalm
+        for title in HEBREW_TITLES:
+            psalm_no_title = re.sub(title, "", psalm_no_title)
+        return psalm_no_title
 
-    def __clean_up_verses(self, verses: str) -> str:
+    def __clean_up_verses(self, verses: list) -> str:
         clean_verses = []
         for verse in verses:
             clean_verse = verse.strip()
@@ -116,7 +119,6 @@ class Psalter:
 
 
 class Psalm:
-    def __init__(self, chapter: int, title: str, verses: dict) -> None:
+    def __init__(self, chapter: str, verses: dict) -> None:
         self.chapter = chapter
-        self.title = title
         self.verses = verses

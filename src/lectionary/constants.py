@@ -1,0 +1,26 @@
+import re
+
+HEBREW_TITLES = [
+    re.compile(r".*\nAleph\n"),
+    re.compile(r".*\nBeth\n"),
+    re.compile(r".*\nGimel\n"),
+    re.compile(r".*\nDaleth\n"),
+    re.compile(r".*\nHe\n"),
+    re.compile(r".*\nWaw\n"),
+    re.compile(r".*\nZayin\n"),
+    re.compile(r".*\nHeth\n"),
+    re.compile(r".*\nTeth\n"),
+    re.compile(r".*\nYodh\n"),
+    re.compile(r".*\nKaph\n"),
+    re.compile(r".*\nLamedh\n"),
+    re.compile(r".*\nMem\n"),
+    re.compile(r".*\nNun\n"),
+    re.compile(r".*\nSamekh\n"),
+    re.compile(r".*\nAyin\n"),
+    re.compile(r".*\nPe\n"),
+    re.compile(r".*\nSadhe\n"),
+    re.compile(r".*\nQoph\n"),
+    re.compile(r".*\nResh\n"),
+    re.compile(r".*\nShin\n"),
+    re.compile(r".*\nTaw\n"),
+]
