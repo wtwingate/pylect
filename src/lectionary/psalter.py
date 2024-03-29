@@ -104,12 +104,12 @@ class Psalter:
             }
         return split_verses
     
-    def __remove_psalm_119_titles(self, psalm: str):
+    def __remove_psalm_119_titles(self, psalm: str) -> str:
         """Remove Hebrew and Latin titles throughout Psalm 119"""
-        psalm_no_title = psalm
+        psalm_no_titles = psalm
         for title in HEBREW_TITLES:
-            psalm_no_title = re.sub(title, "", psalm_no_title)
-        return psalm_no_title
+            psalm_no_titles = re.sub(title, "", psalm_no_titles)
+        return psalm_no_titles
 
     def __clean_up_verses(self, verses: list) -> str:
         """Remove extraneous formatting within individual verses"""
