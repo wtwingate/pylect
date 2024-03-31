@@ -1,4 +1,4 @@
-from lectionary.constants import HEBREW_TITLES
+import fitz
 import re
 
 
@@ -10,14 +10,14 @@ class Psalter:
     exported to a JSON file for use in the rest of the program.
     """
 
-    def __init__(self, text: str) -> None:
-        self.__text = self.__clean_up_text(text)
+    def __init__(self) -> None:
         self.__psalms = {}
-        self.__text_to_psalms()
+        self.__populate_psalms()
 
-    def get_psalm_text(self, chapter: str, verses: list | None = None) -> str:
+    def get_psalm(self, reference: str) -> str:
         """Get formatted psalm text by chapter and verse reference"""
         text_list = []
+        chapter, verses = self.__parse_reference(reference)
         psalm = self.__psalms.get(chapter)
         if psalm is None:
             raise ValueError("Error: invalid chapter reference")
@@ -31,6 +31,43 @@ class Psalter:
                 text_list.append(f"{psalm_verse["tail"]}")
         psalm_text = "\n".join(text_list)
         return psalm_text
+
+    def __parse_reference(self, reference) -> tuple:
+        if "or" in reference:
+            psalm_reference = reference.split(" or ")[0] # use first option
+        else:
+            psalm_reference = reference
+        chapter_verse = psalm_reference.split(":")
+        chapter = chapter_verse[0]
+        if len(chapter_verse) == 1:
+            return chapter, None
+        verse_split = chapter_verse[1]
+        verse_refs = re.findall(r"\d+-?\d*", verse_split)
+        verses = []
+        for ref in verse_refs:
+            if "-" in ref:
+                start = ref.split("-")[0]
+                end = ref.split("-")[1]
+                verses.extend([str(v) for v in range(int(start), int(end) + 1)])
+            else:
+                verses.append(ref)
+        return chapter, verses
+
+    def __populate_psalms(self):
+        """Populate psalms dictionary with psalms"""
+        raw_text = self.__get_psalter_from_pdf()
+        clean_text = self.__clean_up_text(raw_text)
+        self.__text_to_psalms(clean_text)
+
+    def __get_psalter_from_pdf(self) -> str:
+        """Extract plain text Psalter from PDF copy of the BCP"""
+        doc = fitz.open("docs/bcp_2019.pdf")
+        text_list = []
+        for page in doc.pages(279, 478):
+            text = page.get_text()
+            text_list.append(text)
+        full_text = "\n".join(text_list)
+        return full_text
 
     def __clean_up_text(self, text: str) -> str:
         """Remove extraneous formatting from the extracted Psalter text"""
@@ -68,9 +105,9 @@ class Psalter:
             return ""
         return line
 
-    def __text_to_psalms(self) -> None:
+    def __text_to_psalms(self, text: str) -> None:
         """Process cleaned-up Psalter text into a dictionary of Psalm objects"""
-        psalms = self.__split_psalms()
+        psalms = self.__split_psalms(text)
         for index, psalm in enumerate(psalms):
             ps_chapter = str(index + 1)
             if ps_chapter == "119":
@@ -78,14 +115,45 @@ class Psalter:
             ps_verses = self.__get_psalm_verses(psalm)
             self.__psalms[ps_chapter] = ps_verses
 
-    def __split_psalms(self) -> list:
+    def __split_psalms(self, text: str) -> list:
         """Split psalms into separate chapters"""
         ps_number = re.compile(r"\n*\d+\n")
-        psalms = re.split(ps_number, self.__text)
+        psalms = re.split(ps_number, text)
         while "" in psalms:
             psalms.remove("")
         del psalms[23]  # delete duplicate version of Psalm 23
         return psalms
+    
+    def __remove_psalm_119_titles(self, psalm: str) -> str:
+        """Remove Hebrew and Latin titles throughout Psalm 119"""
+        psalm_no_titles = psalm
+        titles = [
+            re.compile(r".*\nAleph\n"),
+            re.compile(r".*\nBeth\n"),
+            re.compile(r".*\nGimel\n"),
+            re.compile(r".*\nDaleth\n"),
+            re.compile(r".*\nHe\n"),
+            re.compile(r".*\nWaw\n"),
+            re.compile(r".*\nZayin\n"),
+            re.compile(r".*\nHeth\n"),
+            re.compile(r".*\nTeth\n"),
+            re.compile(r".*\nYodh\n"),
+            re.compile(r".*\nKaph\n"),
+            re.compile(r".*\nLamedh\n"),
+            re.compile(r".*\nMem\n"),
+            re.compile(r".*\nNun\n"),
+            re.compile(r".*\nSamekh\n"),
+            re.compile(r".*\nAyin\n"),
+            re.compile(r".*\nPe\n"),
+            re.compile(r".*\nSadhe\n"),
+            re.compile(r".*\nQoph\n"),
+            re.compile(r".*\nResh\n"),
+            re.compile(r".*\nShin\n"),
+            re.compile(r".*\nTaw\n"),
+        ]
+        for title in titles:
+            psalm_no_titles = re.sub(title, "", psalm_no_titles)
+        return psalm_no_titles
 
     def __get_psalm_verses(self, psalm: str) -> dict:
         """Split psalms into separate verses and half-verses"""
@@ -103,13 +171,6 @@ class Psalter:
                 "tail": split_verse[1],
             }
         return split_verses
-    
-    def __remove_psalm_119_titles(self, psalm: str) -> str:
-        """Remove Hebrew and Latin titles throughout Psalm 119"""
-        psalm_no_titles = psalm
-        for title in HEBREW_TITLES:
-            psalm_no_titles = re.sub(title, "", psalm_no_titles)
-        return psalm_no_titles
 
     def __clean_up_verses(self, verses: list) -> str:
         """Remove extraneous formatting within individual verses"""
