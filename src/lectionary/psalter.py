@@ -20,21 +20,24 @@ class Psalter:
         """Get formatted psalm text by chapter and verse reference"""
         text_list = []
         chapter, verses = self.__parse_reference(reference)
-        psalm = self.__psalms.get(chapter)
-        if psalm is None:
+        psalm_chapter = self.__psalms.get(chapter)
+        if psalm_chapter is None:
             raise ValueError("Error: invalid chapter reference")
         text_list.append(chapter)
         if verses is None:
-            verses = psalm.keys()
+            verses = psalm_chapter.keys()
         for verse in verses:
-            psalm_verse = psalm.get(verse)
-            if psalm_verse is not None:
-                text_list.append(f"{verse} {psalm_verse["head"]} *")
-                text_list.append(f"{psalm_verse["tail"]}")
+            psalm_verse = psalm_chapter.get(verse)
+            if psalm_verse is None:
+                raise Exception("Error: invalid verse reference")
+            text_list.append(f"{verse} {psalm_verse["head"]} *")
+            text_list.append(f"{psalm_verse["tail"]}")
         psalm_text = "\n".join(text_list)
         return psalm_text
 
-    def __parse_reference(self, reference) -> tuple:
+    def __parse_reference(self, reference) -> tuple[str, list]:
+        """Make human-readable verse references computer-friendly"""
+        # TODO: allow user to choose between alternate readings
         if "or" in reference:
             psalm_reference = reference.split(" or ")[0] # use first option
         else:
@@ -55,7 +58,7 @@ class Psalter:
                 verses.append(ref)
         return chapter, verses
 
-    def __populate_psalms(self):
+    def __populate_psalms(self) -> None:
         """Populate psalms dictionary with psalms"""
         if os.path.isfile("src/lectionary/psalter.json"):
             self.__load_from_json()
@@ -65,11 +68,13 @@ class Psalter:
             self.__text_to_psalms(clean_text)
             self.__dump_to_json()
 
-    def __load_from_json(self):
+    def __load_from_json(self) -> None:
+        """Load saved psalm dictionary"""
         with open("src/lectionary/psalter.json", "r") as json_file:
             self.__psalms = json.load(json_file)
 
-    def __dump_to_json(self):
+    def __dump_to_json(self) -> None:
+        """Save psalm dictionary as a JSON file"""
         with open("src/lectionary/psalter.json", "w") as json_file:
             json.dump(self.__psalms, json_file)
 
