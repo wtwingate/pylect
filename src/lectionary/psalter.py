@@ -1,4 +1,6 @@
 import fitz
+import json
+import os
 import re
 
 
@@ -55,9 +57,21 @@ class Psalter:
 
     def __populate_psalms(self):
         """Populate psalms dictionary with psalms"""
-        raw_text = self.__get_psalter_from_pdf()
-        clean_text = self.__clean_up_text(raw_text)
-        self.__text_to_psalms(clean_text)
+        if os.path.isfile("src/lectionary/psalter.json"):
+            self.__load_from_json()
+        else:
+            raw_text = self.__get_psalter_from_pdf()
+            clean_text = self.__clean_up_text(raw_text)
+            self.__text_to_psalms(clean_text)
+            self.__dump_to_json()
+
+    def __load_from_json(self):
+        with open("src/lectionary/psalter.json", "r") as json_file:
+            self.__psalms = json.load(json_file)
+
+    def __dump_to_json(self):
+        with open("src/lectionary/psalter.json", "w") as json_file:
+            json.dump(self.__psalms, json_file)
 
     def __get_psalter_from_pdf(self) -> str:
         """Extract plain text Psalter from PDF copy of the BCP"""
