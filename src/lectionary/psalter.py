@@ -8,8 +8,8 @@ class Psalter:
     """The Psalter class is responsible for taking in the raw text of the
     Psalter that has been extracted from a PDF copy of the Book of Common
     Prayer, cleaning up the text (by removing unnecessary formatting), and then
-    creating a dictionary of individual psalms. This dictionary can then be
-    exported to a JSON file for use in the rest of the program.
+    creating a dictionary of individual psalms. The public method, get_psalm(),
+    provides an easy way to retrieve the desired text by its reference.
     """
 
     def __init__(self) -> None:
@@ -17,12 +17,26 @@ class Psalter:
         self.__populate_psalms()
 
     def get_psalm(self, reference: str) -> str:
-        """Get formatted psalm text by chapter and verse reference"""
+        """Get formatted psalm text by chapter and verse reference
+
+        Valid references must include the "chapter" number and may include a
+        a verse or range of verses. A colon ":" is used as the delimiter between
+        chapter and verse(s).
+
+        Examples of valid references:
+        "23" -> returns the entire text of Psalm 23
+        "23:1" -> returns the only the first verse
+        "23:1-3" -> returns the first three verses
+        "23:1-3, 5" -> returns verses 1, 2, 3, and 5
+
+        The lectionary designates some verses as optional by enclosing them in
+        parentheses. For now, these are always included in the returned text.
+        """
         text_list = []
         chapter, verses = self.__parse_reference(reference)
         psalm_chapter = self.__psalms.get(chapter)
         if psalm_chapter is None:
-            raise ValueError("Error: invalid chapter reference")
+            raise Exception("Error: invalid chapter reference")
         text_list.append(chapter)
         if verses is None:
             verses = psalm_chapter.keys()
