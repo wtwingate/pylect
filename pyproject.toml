@@ -3,11 +3,13 @@ name = "lectionary"
 version = "0.1.0"
 dependencies = [
     "PyMuPDF",
-    "pytest"
+    "pytest",
+    "python-dotenv",
+    "requests"
 ]
 
 [project.scripts]
-lectionary = "lectionary.main:main"
+lectionary = "lectionary.cli:main"
 
 [build-system]
 requires = ["setuptools"]
