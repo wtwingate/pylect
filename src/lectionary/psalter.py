@@ -14,7 +14,7 @@ class Psalter:
 
     def __init__(self) -> None:
         self.__psalms = {}
-        self.__populate_psalms()
+        self.__import_psalms()
 
     def get_psalm(self, reference: str) -> str:
         """Get formatted psalm text by chapter and verse reference
@@ -72,7 +72,7 @@ class Psalter:
                 verses.append(ref)
         return chapter, verses
 
-    def __populate_psalms(self) -> None:
+    def __import_psalms(self) -> None:
         """Populate psalms dictionary with psalms"""
         if os.path.isfile("src/lectionary/psalter.json"):
             self.__load_from_json()
