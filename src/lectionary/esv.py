@@ -17,11 +17,20 @@ def get_esv_text(query):
         "include-footnotes-body": False,
         "include-headings": False,
         "include-short-copyright": True,
+        "indent-paragraphs": 0,
+        "indent-poetry": False,
     }
     headers = {"Authorization": f"Token {API_KEY}"}
     response = requests.get(API_URL, params=params, headers=headers)
     passages = response.json()["passages"]
-    return passages[0].strip() if passages else "Error: passage not found"
+    if passages:
+        text = passages[0].strip()
+        text = text.replace("\n\n\n", "\n\n")
+        text = text.replace("[", "")
+        text = text.replace("]", "")
+        return text
+    else:
+        raise Exception("Error: passage not found")
 
 
 if __name__ == "__main__":

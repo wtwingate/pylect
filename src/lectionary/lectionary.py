@@ -6,24 +6,22 @@ class Lectionary:
         self.__lectionary = {}
         self.__import_lectionary()
 
-    def get_readings(self, day, year):
-        return self.__lectionary[day][year]
+    def get_lessons(self, date) -> str:
+        day, year = self.__get_liturgical_day(date)
+        lessons = self.__lectionary[day][year].split("; ")
+        return lessons
 
     def __import_lectionary(self):
-        self.__get_lectionary_from_csv()
-
-    def __get_lectionary_from_csv(self):
-        """Extract lectionary table from CSV file"""
+        """Import lectionary from CSV file"""
         with open("docs/sunday_lectionary.csv", newline="") as csvfile:
             reader = csv.DictReader(csvfile)
             for row in reader:
-                self.__lectionary[row["DAY"]] = {
-                    "YEAR A": row["YEAR A"],
-                    "YEAR B": row["YEAR B"],
-                    "YEAR C": row["YEAR C"],
-                }
+                self.__lectionary[row["DAY"]] = row
+
+    def __get_liturgical_day(self, date):
+        return ("PROPER 5", "YEAR A")
 
 
 if __name__ == "__main__":
     lectionary = Lectionary()
-    print(lectionary.get_readings("PROPER 5", "YEAR A"))
+    print(lectionary.get_lessons("today"))

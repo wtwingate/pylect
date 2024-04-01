@@ -37,7 +37,7 @@ class Psalter:
         psalm_chapter = self.__psalms.get(chapter)
         if psalm_chapter is None:
             raise Exception("Error: invalid chapter reference")
-        text_list.append(chapter)
+        text_list.append(f"Psalm {chapter}\n")
         if verses is None:
             verses = psalm_chapter.keys()
         for verse in verses:
@@ -49,13 +49,14 @@ class Psalter:
         psalm_text = "\n".join(text_list)
         return psalm_text
 
-    def __parse_reference(self, reference) -> tuple[str, list]:
+    def __parse_reference(self, reference: str) -> tuple[str, list]:
         """Make human-readable verse references computer-friendly"""
         # TODO: allow user to choose between alternate readings
-        if "or" in reference:
-            psalm_reference = reference.split(" or ")[0] # use first option
+        ref = reference.replace("Ps ", "")
+        if "or" in ref:
+            psalm_reference = ref.split(" or ")[0] # use first option
         else:
-            psalm_reference = reference
+            psalm_reference = ref
         chapter_verse = psalm_reference.split(":")
         chapter = chapter_verse[0]
         if len(chapter_verse) == 1:
