@@ -9,7 +9,6 @@ class Lectionary:
     def __init__(self) -> None:
         self.__lectionary = self.__import_lectionary()
         self.__anchors = self.__get_anchors()
-        self.__holy_days = []
 
     def get_holy_days(self, dates: list[dt.date]) -> list:
         """Return a list of HolyDay objects
@@ -18,7 +17,21 @@ class Lectionary:
         passes in a list of date objects and receives back a list of HolyDay
         objects, which contain the date, season, name, and lessons for any
         Sunday or Holy Day that falls on the given dates."""
-        pass
+        holy_days = []
+        for date in dates:
+            year = self.__get_years(date)
+            season = self.__get_seasons(date)
+            name = (
+                self.__get_principal_feasts(date)
+                or self.__get_holy_week(date)
+                or self.__get_ash_wednesday(date)
+                or self.__get_sundays(date, season)
+                or self.__get_red_letter_days(date)
+            )
+            lessons = self.__get_lessons(name, year)
+            if lessons is not None:
+                holy_days.append(HolyDay(date, year, season, name, lessons))
+        return holy_days
 
     def __import_lectionary(self) -> None:
         """Import lectionary from CSV file."""
@@ -72,13 +85,11 @@ class Lectionary:
     #     else:
     #         raise Exception(f"Error: no lessons found for {date}")
 
-    def __get_lessons(self) -> None:
-        for holy_day in self.__holy_days:
-            lessons = self.__lectionary[holy_day.name][holy_day.year].split("|")
-            if lessons is not None:
-                holy_day.lessons = lessons
+    def __get_lessons(self, name: str, year: str) -> list:
+        lessons = self.__lectionary[name][year].split("|")
+        return lessons
 
-    def __get_year(self, date: dt.date) -> str:
+    def __get_years(self, date: dt.date) -> str:
         """Calculate the liturgical year for any given date
 
         The lectionary follows a three year cycle of readings. The liturgical
@@ -100,7 +111,7 @@ class Lectionary:
         if remainder == 2:
             return "Year C"
 
-    def __get_season(self, date: dt.date) -> str:
+    def __get_seasons(self, date: dt.date) -> str:
         """Calculate the liturgical season for any given date"""
 
         if date < self.__anchors["Epiphany"]:
@@ -118,7 +129,7 @@ class Lectionary:
         else:
             return "Christmas"
 
-    def __get_sunday(self, date: dt.date, season: str) -> str:
+    def __get_sundays(self, date: dt.date, season: str) -> str:
         """Calculate the liturgical day for any given date"""
         christmas = self.__anchors["Christmas Day"]
         epiphany = self.__anchors["Epiphany"]
@@ -372,9 +383,11 @@ class Lectionary:
 
 
 class HolyDay:
-    def __init__(self, date: dt.date, season: str, name: str, year: str) -> None:
+    def __init__(
+        self, date: dt.date, year: str, season: str, name: str, lessons: list
+    ) -> None:
         self.date = date
+        self.year = year
         self.season = season
         self.name = name
-        self.year = year
-        self.lessons = None
+        self.lessons = lessons
