@@ -8,16 +8,20 @@ class Lectionary:
         self.__lectionary = self.__import_lectionary()
 
     def get_lessons(self, date: dt.date) -> tuple[str, list]:
-        major_days = self.__get_major_days(date)
-        year = self.__get_year(date, major_days["Advent Sunday"])
-        season = self.__get_season(date, major_days)
-        day = self.__get_day(date, major_days, season)
-
+        """Return the lessons appointed in the lectionary for any given date."""
+        anchor_days = self.__get_anchor_days(date)
+        year = self.__get_year(date, anchor_days["Advent Sunday"])
+        season = self.__get_season(date, anchor_days)
+        day = self.__get_day(date, anchor_days, season)
         lessons = self.__lectionary[day][year].split("|")
-        return day, lessons
+
+        if day and lessons:
+            return day, lessons
+        else:
+            raise Exception(f"Error: no lessons found for {date}")
 
     def __import_lectionary(self) -> None:
-        """Import lectionary from CSV file"""
+        """Import lectionary from CSV file."""
         lectionary = {}
         with open("docs/lectionary.csv", newline="") as csvfile:
             reader = csv.DictReader(csvfile)
@@ -25,9 +29,19 @@ class Lectionary:
                 lectionary[row["Day"]] = row
         return lectionary
 
-    def __get_major_days(self, date: dt.date) -> dict:
+    def __get_anchor_days(self, date: dt.date) -> dict:
+        """Generate a dictionary of important days in the liturgical year.
+
+        These are not necessarily the most important days theologically (with
+        the obvious exceptions of Christmas and Easter), but they are the most
+        important for calculating the absolute dates for all other days in the
+        Christian year. Each of these days marks a transition between the six
+        major seasons of the church calendar: Advent, Christmas, Epiphany, Lent,
+        Easter, and Pentecost.
+        """
         easter_day = dateutil.easter.easter(date.year)
 
+        # Advent Sunday always falls on the Sunday closest to Nov 30th
         nov_30th = dt.date(date.year, 11, 30)
         if nov_30th.weekday() == 6:
             advent_sunday = nov_30th
@@ -46,6 +60,13 @@ class Lectionary:
         }
 
     def __get_year(self, date: dt.date, advent_sunday: dt.date) -> str:
+        """Calculate the liturgical year for any given date
+
+        The lectionary follows a three year cycle of readings. The liturgical
+        year begins on the First Sunday of Advent, which is the Sunday closest
+        to November 30th. Year A starts in years that are evenly divisible by
+        3 (e.g. 2019), followed by Year B and Year C.
+        """
         if date < advent_sunday:
             remainder = (date.year - 1) % 3
         else:
@@ -59,6 +80,7 @@ class Lectionary:
             return "Year C"
 
     def __get_season(self, date: dt.date, days: dict) -> str:
+        """Calculate the liturgical season for any given date"""
         if date < days["Epiphany"]:
             return "Christmas"
         elif date < days["Ash Wednesday"]:
@@ -75,6 +97,7 @@ class Lectionary:
             return "Christmas"
 
     def __get_day(self, date: dt.date, days: dict, season: str) -> str:
+        """Calculate the liturgical day for any given date"""
         christmas = days["Christmas Day"]
         epiphany = days["Epiphany"]
         ash_wednesday = days["Ash Wednesday"]
@@ -85,10 +108,12 @@ class Lectionary:
         if season == "Christmas":
             if date == christmas:
                 return "Christmas Day I"
+            # There can be either one or two Sundays after Christmas
             if date - christmas <= dt.timedelta(days=7):
                 return "The First Sunday of Christmas"
             if date - christmas >= dt.timedelta(days=8):
                 return "The Second Sunday of Christmas"
+            return None
 
         if season == "Epiphany":
             first_sunday_of_epiphany = epiphany + dt.timedelta(
@@ -119,6 +144,7 @@ class Lectionary:
                 return "The Seventh Sunday of Epiphany"
             if date == first_sunday_of_epiphany + dt.timedelta(days=49):
                 return "The Eighth Sunday of Epiphany"
+            return None
 
         if season == "Lent":
             if date == ash_wednesday:
@@ -147,6 +173,7 @@ class Lectionary:
                 return "Good Friday"
             if date == easter_day - dt.timedelta(days=1):
                 return "Holy Saturday"
+            return None
 
         if season == "Easter":
             if date == easter_day:
@@ -177,12 +204,16 @@ class Lectionary:
                 return "Ascension Day"
             if date == easter_day + dt.timedelta(days=42):
                 return "The Sunday after Ascension Day"
+            return None
 
         if season == "Pentecost":
             if date == pentecost:
                 return "Pentecost"
             if date == pentecost + dt.timedelta(days=7):
                 return "Trinity Sunday"
+            # Like Epiphany, the number of days in the season after Pentecost
+            # varies from year to year. Thankfully, we can account for this by
+            # simply calculating the proper day from the end of the season.
             if date == advent_sunday - dt.timedelta(days=203):
                 return "Proper 1"
             if date == advent_sunday - dt.timedelta(days=196):
@@ -241,6 +272,7 @@ class Lectionary:
                 return "Proper 28"
             if date == advent_sunday - dt.timedelta(days=7):
                 return "Proper 29: Christ the King"
+            return None
 
         if season == "Advent":
             if date == advent_sunday:
@@ -251,3 +283,4 @@ class Lectionary:
                 return "The Third Sunday in Advent"
             if date == advent_sunday + dt.timedelta(days=21):
                 return "The Fourth Sunday in Advent"
+            return None

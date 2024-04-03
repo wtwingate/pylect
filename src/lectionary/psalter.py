@@ -5,13 +5,6 @@ import re
 
 
 class Psalter:
-    """The Psalter class is responsible for taking in the raw text of the
-    Psalter that has been extracted from a PDF copy of the Book of Common
-    Prayer, cleaning up the text (by removing unnecessary formatting), and then
-    creating a dictionary of individual psalms. The public method, get_psalm(),
-    provides an easy way to retrieve the desired text by its reference.
-    """
-
     def __init__(self) -> None:
         self.__psalms = {}
         self.__import_psalms()
@@ -74,7 +67,7 @@ class Psalter:
         return chapter, verses
 
     def __import_psalms(self) -> None:
-        """Populate psalms dictionary with psalms"""
+        """Populate Psalter.__psalms dictionary with psalms"""
         if os.path.isfile("src/lectionary/psalter.json"):
             self.__load_from_json()
         else:

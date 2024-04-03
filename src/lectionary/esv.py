@@ -4,11 +4,13 @@ import requests
 from dotenv import load_dotenv
 
 load_dotenv()
+"""Load API Key from environment variables"""
 API_KEY = os.environ["ESV_API_KEY"]
 API_URL = "https://api.esv.org/v3/passage/text/"
 
 
 def get_esv_text(query):
+    """Call the ESV API to get Scripture texts"""
     params = {
         "q": query,
         "include-passage-references": True,
