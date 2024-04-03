@@ -46,6 +46,7 @@ class Psalter:
         """Make human-readable verse references computer-friendly"""
         # TODO: allow user to choose between alternate readings
         ref = reference.replace("Ps ", "")
+        ref = ref.replace("v", "")
         if "or" in ref:
             psalm_reference = ref.split(" or ")[0] # use first option
         else:
@@ -111,7 +112,8 @@ class Psalter:
 
     def __remove_non_ascii(self, line: str) -> str:
         """Remove all non-ASCII characters from a string"""
-        return "".join(c if ord(c) < 128 else " " for c in line)
+        ascii_str = line.replace("’", "'")
+        return "".join(c if ord(c) < 128 else " " for c in ascii_str)
 
     def __remove_header_footer(self, line: str) -> str:
         """Remove headers, footers, and page numbers from Psalter text"""
