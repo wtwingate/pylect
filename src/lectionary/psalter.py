@@ -113,6 +113,7 @@ class Psalter:
     def __remove_non_ascii(self, line: str) -> str:
         """Remove all non-ASCII characters from a string"""
         ascii_str = line.replace("’", "'")
+        ascii_str = ascii_str.replace("‘", "'")
         return "".join(c if ord(c) < 128 else " " for c in ascii_str)
 
     def __remove_header_footer(self, line: str) -> str:
