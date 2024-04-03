@@ -90,7 +90,7 @@ class Psalter:
 
     def __get_psalter_from_pdf(self) -> str:
         """Extract plain text Psalter from PDF copy of the BCP"""
-        doc = fitz.open("docs/bcp_2019.pdf")
+        doc = fitz.open("bcp_2019.pdf")
         text_list = []
         for page in doc.pages(279, 478):
             text = page.get_text()
