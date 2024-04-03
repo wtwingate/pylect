@@ -1,7 +1,8 @@
-import fitz
 import json
 import os
 import re
+
+import fitz
 
 
 class Psalter:

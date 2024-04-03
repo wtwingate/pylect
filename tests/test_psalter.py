@@ -1,5 +1,6 @@
-from lectionary.psalter import Psalter
 import pytest
+
+from lectionary.psalter import Psalter
 
 
 class TestGetPsalm:
