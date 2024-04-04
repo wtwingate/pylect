@@ -1,5 +1,5 @@
 [project]
-name = "lectionary"
+name = "pylect"
 version = "0.3.0"
 dependencies = [
     "PyMuPDF",
@@ -11,7 +11,7 @@ dependencies = [
 ]
 
 [project.scripts]
-lectionary = "lectionary.cli:main"
+pylect = "pylect.cli:main"
 
 [build-system]
 requires = ["setuptools"]

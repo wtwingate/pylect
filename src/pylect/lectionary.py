@@ -38,7 +38,7 @@ class Lectionary:
     def __import_lectionary(self) -> None:
         """Import lectionary from CSV file."""
         lectionary = {}
-        with open("src/lectionary/lectionary.csv", newline="") as csvfile:
+        with open("src/pylect/lectionary.csv", newline="") as csvfile:
             reader = csv.DictReader(csvfile)
             for row in reader:
                 lectionary[row["Day"]] = row

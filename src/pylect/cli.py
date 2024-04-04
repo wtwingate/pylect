@@ -1,9 +1,9 @@
 import datetime as dt
 import pyperclip
 
-from lectionary.esv import get_esv_text
-from lectionary.lectionary import Lectionary
-from lectionary.psalter import Psalter
+from pylect.esv import get_esv_text
+from pylect.lectionary import Lectionary
+from pylect.psalter import Psalter
 
 
 class CLI:

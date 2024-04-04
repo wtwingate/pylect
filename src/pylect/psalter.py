@@ -70,7 +70,7 @@ class Psalter:
 
     def __import_psalms(self) -> None:
         """Populate Psalter.__psalms dictionary with psalms"""
-        if os.path.isfile("src/lectionary/psalter.json"):
+        if os.path.isfile("src/pylect/psalter.json"):
             self.__load_from_json()
         else:
             raw_text = self.__get_psalter_from_pdf()
@@ -80,12 +80,12 @@ class Psalter:
 
     def __load_from_json(self) -> None:
         """Load saved psalm dictionary"""
-        with open("src/lectionary/psalter.json", "r") as json_file:
+        with open("src/pylect/psalter.json", "r") as json_file:
             self.__psalms = json.load(json_file)
 
     def __dump_to_json(self) -> None:
         """Save psalm dictionary as a JSON file"""
-        with open("src/lectionary/psalter.json", "w") as json_file:
+        with open("src/pylect/psalter.json", "w") as json_file:
             json.dump(self.__psalms, json_file)
 
     def __get_psalter_from_pdf(self) -> str:
