@@ -12,14 +12,14 @@ import fitz
 
 
 class Psalter:
-    """The Psalter class imports the Psalms and provides methods for retrieving them."""
+    """Import the text of the Psalms as a dictionary and provide methods for retrieving them."""
 
     def __init__(self) -> None:
         self.__psalms = {}
         self.__import_psalms()
 
     def get_psalms(self) -> dict:
-        """Return the entire Psalter as a dictionary"""
+        """Return the entire Psalter as a dictionary."""
         return self.__psalms
 
     def get_psalm(self, reference: str) -> str:
