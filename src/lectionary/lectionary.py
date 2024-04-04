@@ -1,6 +1,7 @@
+from __future__ import annotations
+
 import csv
 import datetime as dt
-from __future__ import annotations
 
 import dateutil
 
@@ -23,13 +24,14 @@ class Lectionary:
             season = self.__get_seasons(date)
             name = (
                 self.__get_principal_feasts(date)
-                or self.__get_holy_week(date)
                 or self.__get_ash_wednesday(date)
+                or self.__get_holy_week(date)
+                or self.__get_easter_week(date)
                 or self.__get_sundays(date, season)
                 or self.__get_red_letter_days(date)
             )
-            lessons = self.__get_lessons(name, year)
-            if lessons is not None:
+            if name is not None:
+                lessons = self.__get_lessons(name, year)
                 holy_days.append(HolyDay(date, year, season, name, lessons))
         return holy_days
 
@@ -73,22 +75,6 @@ class Lectionary:
             "Christmas Day": dt.date(today.year, 12, 25),
         }
 
-    # def get_lessons(self, date: dt.date) -> tuple[str, list]:
-    #     """Return the lessons appointed in the lectionary for any given date."""
-    #     year = self.__get_year(date, self.__anchors["Advent Sunday"])
-    #     season = self.__get_season(date, self.__anchors)
-    #     day = self.__get_day(date, self.__anchors, season)
-    #     lessons = self.__lectionary[day][year].split("|")
-
-    #     if day and lessons:
-    #         return day, lessons
-    #     else:
-    #         raise Exception(f"Error: no lessons found for {date}")
-
-    def __get_lessons(self, name: str, year: str) -> list:
-        lessons = self.__lectionary[name][year].split("|")
-        return lessons
-
     def __get_years(self, date: dt.date) -> str:
         """Calculate the liturgical year for any given date
 
@@ -129,6 +115,68 @@ class Lectionary:
         else:
             return "Christmas"
 
+    def __get_principal_feasts(self, date: dt.date) -> str:
+        easter_day = self.__anchors["Easter Day"]
+
+        if date == easter_day:
+            return "Easter Day"
+        if date == easter_day + dt.timedelta(days=39):
+            return "Ascension Day"
+        if date == easter_day + dt.timedelta(days=49):
+            return "The Day of Pentecost"
+        if date == easter_day + dt.timedelta(days=56):
+            return "Trinity Sunday"
+        if date == dt.date(date.year, 11, 1):
+            return "All Saints' Day"
+        if date == dt.date(date.year, 12, 25):
+            return "The Nativity of Our Lord Jesus Christ: Christmas Day I"
+        if date == dt.date(date.year, 1, 6):
+            return "The Epiphany of Our Lord Jesus Christ"
+        return None
+
+    def __get_ash_wednesday(self, date: dt.date) -> str:
+        if date == self.__anchors["Ash Wednesday"]:
+            return "Ash Wednesday"
+        return None
+
+    def __get_holy_week(self, date: dt.date) -> str:
+        easter_day = self.__anchors["Easter Day"]
+
+        if date == easter_day - dt.timedelta(days=7):
+            return "Palm Sunday"
+        if date == easter_day - dt.timedelta(days=6):
+            return "Monday of Holy Week"
+        if date == easter_day - dt.timedelta(days=5):
+            return "Tuesday of Holy Week"
+        if date == easter_day - dt.timedelta(days=4):
+            return "Wednesday of Holy Week"
+        if date == easter_day - dt.timedelta(days=3):
+            return "Maundy Thursday"
+        if date == easter_day - dt.timedelta(days=2):
+            return "Good Friday"
+        if date == easter_day - dt.timedelta(days=1):
+            return "Holy Saturday"
+        return None
+
+    def __get_easter_week(self, date: dt.date) -> str:
+        easter_day = self.__anchors["Easter Day"]
+
+        if date == easter_day:
+            return "Easter Day: Principal Service"
+        if date == easter_day + dt.timedelta(days=1):
+            return "Monday of Easter Week"
+        if date == easter_day + dt.timedelta(days=2):
+            return "Tuesday of Easter Week"
+        if date == easter_day + dt.timedelta(days=3):
+            return "Wednesday of Easter Week"
+        if date == easter_day + dt.timedelta(days=4):
+            return "Thursday of Easter Week"
+        if date == easter_day + dt.timedelta(days=5):
+            return "Friday of Easter Week"
+        if date == easter_day + dt.timedelta(days=6):
+            return "Saturday of Easter Week"
+        return None
+
     def __get_sundays(self, date: dt.date, season: str) -> str:
         """Calculate the liturgical day for any given date"""
         christmas = self.__anchors["Christmas Day"]
@@ -136,11 +184,21 @@ class Lectionary:
         easter_day = self.__anchors["Easter Day"]
         advent_sunday = self.__anchors["Advent Sunday"]
 
+        if season == "Advent":
+            if date == advent_sunday:
+                return "The First Sunday in Advent"
+            if date == advent_sunday + dt.timedelta(days=7):
+                return "The Second Sunday in Advent"
+            if date == advent_sunday + dt.timedelta(days=14):
+                return "The Third Sunday in Advent"
+            if date == advent_sunday + dt.timedelta(days=21):
+                return "The Fourth Sunday in Advent"
+
         if season == "Christmas":
             # There can be either one or two Sundays after Christmas
-            if date - christmas <= dt.timedelta(days=7):
+            if date.weekday() == 6 and date - christmas <= dt.timedelta(days=7):
                 return "The First Sunday of Christmas"
-            if date - christmas >= dt.timedelta(days=8):
+            if date.weekday() == 6 and date - christmas >= dt.timedelta(days=8):
                 return "The Second Sunday of Christmas"
 
         if season == "Epiphany":
@@ -259,60 +317,6 @@ class Lectionary:
                 return "Proper 28"
             if date == advent_sunday - dt.timedelta(days=7):
                 return "Proper 29: Christ the King"
-
-        if season == "Advent":
-            if date == advent_sunday:
-                return "The First Sunday in Advent"
-            if date == advent_sunday + dt.timedelta(days=7):
-                return "The Second Sunday in Advent"
-            if date == advent_sunday + dt.timedelta(days=14):
-                return "The Third Sunday in Advent"
-            if date == advent_sunday + dt.timedelta(days=21):
-                return "The Fourth Sunday in Advent"
-
-        return None
-
-    def __get_holy_week(self, date: dt.date) -> str:
-        easter_day = self.__anchors["Easter Day"]
-
-        if date == easter_day - dt.timedelta(days=7):
-            return "Palm Sunday"
-        if date == easter_day - dt.timedelta(days=6):
-            return "Monday of Holy Week"
-        if date == easter_day - dt.timedelta(days=5):
-            return "Tuesday of Holy Week"
-        if date == easter_day - dt.timedelta(days=4):
-            return "Wednesday of Holy Week"
-        if date == easter_day - dt.timedelta(days=3):
-            return "Maundy Thursday"
-        if date == easter_day - dt.timedelta(days=2):
-            return "Good Friday"
-        if date == easter_day - dt.timedelta(days=1):
-            return "Holy Saturday"
-        return None
-
-    def __get_ash_wednesday(self, date: dt.date) -> str:
-        if date == self.__anchors["Ash Wednesday"]:
-            return "Ash Wednesday"
-        return None
-
-    def __get_principal_feasts(self, date: dt.date) -> str:
-        easter_day = self.__anchors["Easter Day"]
-
-        if date == easter_day:
-            return "Easter Day"
-        if date == easter_day + dt.timedelta(days=39):
-            return "Ascension Day"
-        if date == easter_day + dt.timedelta(days=49):
-            return "The Day of Pentecost"
-        if date == easter_day + dt.timedelta(days=56):
-            return "Trinity Sunday"
-        if date == dt.date(date.year, 11, 1):
-            return "All Saints' Day"
-        if date == dt.date(date.year, 12, 25):
-            return "Christmas Day"
-        if date == dt.date(date.year, 1, 6):
-            return "The Epiphany of Our Lord Jesus Christ"
         return None
 
     def __get_red_letter_days(self, date: dt.date) -> str:
@@ -380,6 +384,11 @@ class Lectionary:
             return "John, Apostle and Evangelist"
         if date == dt.date(date.year, 12, 28):
             return "The Holy Innocents"
+        return None
+
+    def __get_lessons(self, name: str, year: str) -> list:
+        lessons = self.__lectionary[name][year].split("|")
+        return lessons
 
 
 class HolyDay:
