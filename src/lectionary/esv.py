@@ -19,7 +19,7 @@ def get_esv_text(query):
         "include-footnotes": False,
         "include-footnotes-body": False,
         "include-headings": False,
-        "include-short-copyright": True,
+        "include-short-copyright": False,
         "indent-paragraphs": 0,
         "indent-poetry": False,
     }
@@ -27,7 +27,7 @@ def get_esv_text(query):
     response = requests.get(API_URL, params=params, headers=headers)
     passages = response.json()["passages"]
     if passages:
-        text = passages[0].strip()
+        text = "\n\n".join([passage.strip() for passage in passages])
         text = text.replace("\n\n\n", "\n\n")
         text = text.replace("[", "")
         text = text.replace("]", "")
