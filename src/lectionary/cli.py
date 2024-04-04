@@ -42,7 +42,7 @@ class CLI:
                 print(f"   * {lesson}")
             print()
         print(
-            """Enter a number to copy the lessons of the selected Sunday or Holy Day
+            """Enter a number to copy the lessons for the selected Sunday or Holy Day
 into your clipboard, or enter "q" to quit the program."""
         )
         while True:
