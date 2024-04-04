@@ -49,3 +49,42 @@ class TestGetHolyDays:
             "1 Thess 3:6-13",
             "Luke 21:25-33",
         ]
+
+    def test_one_sunday_after_christmas(self):
+        pass
+
+    def test_two_sundays_after_christmas(self):
+        pass
+
+    def test_short_epiphany(self):
+        pass
+
+    def test_long_epiphany(self):
+        pass
+
+    def test_short_after_pentecost(self):
+        pass
+
+    def test_long_after_pentecost(self):
+        pass
+
+    def test_ash_wednesday(self):
+        pass
+
+    def test_holy_week(self):
+        pass
+
+    def test_easter_week(self):
+        pass
+
+    def test_all_saints_day_midweek(self):
+        pass
+
+    def test_all_saints_day_sunday(self):
+        pass
+
+    def test_red_letter_day_weekday(self):
+        pass
+
+    def test_red_letter_day_sunday(self):
+        pass
