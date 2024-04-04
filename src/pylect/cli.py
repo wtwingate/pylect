@@ -1,6 +1,5 @@
 import datetime as dt
 import pyperclip
-
 from pylect.esv import get_esv_text
 from pylect.lectionary import Lectionary
 from pylect.psalter import Psalter

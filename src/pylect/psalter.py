@@ -1,7 +1,6 @@
 import json
 import os
 import re
-
 import fitz
 
 
@@ -38,18 +37,17 @@ class Psalter:
             psalm_verse = psalm_chapter.get(verse)
             if psalm_verse is None:
                 raise Exception("Error: invalid verse reference")
-            text_list.append(f"{verse} {psalm_verse["head"]} *")
-            text_list.append(f"{psalm_verse["tail"]}")
+            text_list.append(f"{verse} {psalm_verse['head']} *")
+            text_list.append(f"{psalm_verse['tail']}")
         psalm_text = "\n".join(text_list)
         return psalm_text
 
     def __parse_reference(self, reference: str) -> tuple[str, list]:
         """Make human-readable verse references computer-friendly"""
-        # TODO: allow user to choose between alternate readings
         ref = reference.replace("Ps ", "")
         ref = ref.replace("v", "")
         if "or" in ref:
-            psalm_reference = ref.split(" or ")[0] # use first option
+            psalm_reference = ref.split(" or ")[0]  # use first option
         else:
             psalm_reference = ref
         chapter_verse = psalm_reference.split(":")
@@ -126,7 +124,7 @@ class Psalter:
             r".*(e\s*v\s*e\s*n\s*i\s*n\s*g\s+p\s*r\s*a\s*y\s*e\s*r).*"
         )
         pg_footer = re.compile(r".*(t\s*h\s*e\s+p\s*s\s*a\s*l\s*t\s*e\s*r).*")
-        pg_number = re.compile( r"[2-9]\d{2}")
+        pg_number = re.compile(r"[2-9]\d{2}")
         if (
             re.match(mp_header, line)
             or re.match(ep_header, line)
@@ -154,7 +152,7 @@ class Psalter:
             psalms.remove("")
         del psalms[23]  # delete duplicate version of Psalm 23
         return psalms
-    
+
     def __remove_psalm_119_titles(self, psalm: str) -> str:
         """Remove Hebrew and Latin titles throughout Psalm 119"""
         psalm_no_titles = psalm

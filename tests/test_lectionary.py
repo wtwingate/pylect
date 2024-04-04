@@ -1,7 +1,4 @@
 import datetime as dt
-
-import pytest
-
 from pylect.lectionary import Lectionary
 
 

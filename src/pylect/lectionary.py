@@ -1,8 +1,6 @@
 from __future__ import annotations
-
 import csv
 import datetime as dt
-
 import dateutil
 
 
@@ -28,7 +26,7 @@ class Lectionary:
                 or self.__get_holy_week(date, anchors)
                 or self.__get_easter_week(date, anchors)
                 or self.__get_sundays(date, anchors, season)
-                or self.__get_red_letter_days(date, anchors)
+                or self.__get_red_letter_days(date)
             )
             if name is not None:
                 lessons = self.__get_lessons(name, year)

@@ -1,5 +1,4 @@
 import pytest
-
 from pylect.psalter import Psalter
 
 

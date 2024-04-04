@@ -2,6 +2,8 @@
 name = "pylect"
 version = "0.3.0"
 dependencies = [
+    "black",
+    "pylint",
     "PyMuPDF",
     "pyperclip",
     "pytest",
