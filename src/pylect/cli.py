@@ -1,3 +1,10 @@
+"""This is the primary user facing module of the program. The CLI class is
+initiated when the program is started and begin running a script that gather the
+appropriate readings for the lectionary for the given date range. It then
+prompts the user to select one or more of the readings so that it can fetch the
+texts and copy them to the system clipboard.
+"""
+
 import datetime as dt
 import pyperclip
 from pylect.esv import get_esv_text
@@ -6,6 +13,8 @@ from pylect.psalter import Psalter
 
 
 class CLI:
+    """The CLI class allows users to interact with the public methods of the other classes."""
+
     def __init__(
         self, start_date: dt.date | None = None, end_date: dt.date | None = None
     ) -> None:
@@ -16,9 +25,11 @@ class CLI:
         self.__holy_days = self.__get_holy_days()
 
     def __get_sunday(self) -> dt.date:
+        """Get the date for the upcoming Sunday if no end date is specified."""
         return self.__start_date + dt.timedelta(days=6 - self.__start_date.weekday())
 
     def __get_holy_days(self) -> list:
+        """Iterate through range of dates and search for matches in the lectionary."""
         dates = []
         current_day = self.__start_date
         day_delta = dt.timedelta(days=1)
@@ -29,15 +40,15 @@ class CLI:
         return holy_days
 
     def get_texts(self) -> None:
+        """Print holy days within date range and allow user to fetch and copy specified texts."""
         print()
         print(
             f"Sundays and Holy Days between {self.__start_date} and {self.__end_date}:"
         )
         print()
-        for i in range(len(self.__holy_days)):
-            day = self.__holy_days[i]
-            print(f"{i + 1}) {day.name}")
-            for lesson in day.lessons:
+        for index, holy_day in enumerate(self.__holy_days):
+            print(f"{index + 1}) {holy_day['name']}")
+            for lesson in holy_day["lessons"]:
                 print(f"   * {lesson}")
             print()
         print(
@@ -50,7 +61,11 @@ into your clipboard, or enter "q" to quit the program."""
                 break
             try:
                 holy_day = self.__holy_days[int(selection) - 1]
-                lessons = holy_day.lessons
+                lessons = holy_day["lessons"]
+            except IndexError:
+                print("Error: invalid selection")
+                continue
+            try:
                 texts = []
                 for lesson in lessons:
                     if lesson.startswith("Ps"):
@@ -62,12 +77,13 @@ into your clipboard, or enter "q" to quit the program."""
                             texts.append(get_esv_text(lesson))
                 text = "\n\n".join(texts)
                 pyperclip.copy(text)
-                print(f"Lessons for {holy_day.name} copied to clipboard!")
-            except:
-                print("Error: invalid selection")
+                print(f"Lessons for {holy_day['name']} copied to clipboard!")
+            except ValueError:
+                print("Error: could not fetch requested texts")
 
 
 def main():
+    """Entry point for the program."""
     cli = CLI()
     cli.get_texts()
 

@@ -1,3 +1,9 @@
+"""Defines the Lectionary class, which is responsible for importing the contents
+of the Sunday, Holy Day, and Commemorations Lectionary from the Book of Common
+Prayer 2019. The Lectionary class also provides methods for find the appropriate
+Sunday or Holy Day observance for any given date.
+"""
+
 from __future__ import annotations
 import csv
 import datetime as dt
@@ -128,7 +134,7 @@ class Lectionary:
         easter_day = anchors["Easter Day"]
 
         if date == easter_day:
-            day = "Easter Day"
+            day = "Easter Day: Principal Service"
         elif date == easter_day + dt.timedelta(days=39):
             day = "Ascension Day"
         elif date == easter_day + dt.timedelta(days=49):
@@ -200,7 +206,7 @@ class Lectionary:
         if season == "Advent":
             day = self.__get_advent_sundays(date, anchors)
         elif season == "Christmas":
-            day = self.__get_christmas_sundays(date, anchors)
+            day = self.__get_christmas_sundays(date)
         elif season == "Epiphany":
             day = self.__get_epiphany_sundays(date, anchors)
         elif season == "Lent":
@@ -224,13 +230,12 @@ class Lectionary:
             day = "The Fourth Sunday in Advent"
         return day
 
-    def __get_christmas_sundays(self, date: dt.date, anchors: dict) -> str | None:
+    def __get_christmas_sundays(self, date: dt.date) -> str | None:
         # There can be either one or two Sundays after Christmas
-        christmas = anchors["Christmas Day"]
 
-        if date.weekday() == 6 and date - christmas <= dt.timedelta(days=7):
+        if date.month == 12 or date.month == 1 and date.day == 1:
             day = "The First Sunday of Christmas"
-        elif date.weekday() == 6 and date - christmas >= dt.timedelta(days=8):
+        elif date.month == 1 and date.day >= 2:
             day = "The Second Sunday of Christmas"
         return day
 

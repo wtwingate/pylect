@@ -1,16 +1,22 @@
+"""This module provides a simple function for calling the ESV Bible API to get
+the text of any Scripture lessons that are specified in the lectionary.
+"""
+
 import os
-import sys
 import requests
 from dotenv import load_dotenv
 
+# The ESV API key is located in the .env file in the project's root directory.
+# This function from the dotenv module adds it as an environment variable that
+# we can reference below.
 load_dotenv()
-"""Load API Key from environment variables"""
+
 API_KEY = os.environ["ESV_API_KEY"]
 API_URL = "https://api.esv.org/v3/passage/text/"
 
 
 def get_esv_text(query):
-    """Call the ESV API to get Scripture texts"""
+    """Call the ESV API to get Scripture texts."""
     params = {
         "q": query,
         "include-passage-references": True,
@@ -23,7 +29,7 @@ def get_esv_text(query):
         "indent-poetry": False,
     }
     headers = {"Authorization": f"Token {API_KEY}"}
-    response = requests.get(API_URL, params=params, headers=headers)
+    response = requests.get(API_URL, params=params, headers=headers, timeout=10)
     passages = response.json()["passages"]
     if passages:
         text = "\n\n".join([passage.strip() for passage in passages])
@@ -31,11 +37,4 @@ def get_esv_text(query):
         text = text.replace("[", "")
         text = text.replace("]", "")
         return text
-    else:
-        raise Exception("Error: passage not found")
-
-
-if __name__ == "__main__":
-    query = " ".join(sys.argv[1:])
-    if query:
-        print(get_esv_text(query))
+    raise ValueError("Error: passage not found")

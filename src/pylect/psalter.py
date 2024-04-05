@@ -1,4 +1,4 @@
-"""Creates a Psalter object which imports the plain text of the Psalter from a
+"""Creates the Psalter class which imports the plain text of the Psalter from a
 PDF copy of the Book of Common Prayer 2019, cleans up the formatting, and then
 creates a nested dictionary of the Psalms by chapter, verse, and half-verse. It
 also provides convenient methods for retrieving the entire dictionary of Psalms
