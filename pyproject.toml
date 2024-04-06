@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pylect"
-version = "1.0.0"
+version = "1.1.0"
 dependencies = [
     "black",
     "pylint",
@@ -13,14 +13,12 @@ dependencies = [
     "pytest",
     "python-dateutil",
     "python-dotenv",
-    "requests"
+    "requests",
 ]
-authors = [
-    {name = "William Wingate", email = "wtwingate@gmail.com"}
-]
+authors = [{ name = "William Wingate", email = "wtwingate@gmail.com" }]
 description = "Find and copy Scripture lessons from the ACNA lectionary."
 readme = "README.md"
-license = {file = "LICENSE.txt"}
+license = { file = "LICENSE.txt" }
 
 [project.urls]
 Repository = "https://github.com/wtwingate/pylect"

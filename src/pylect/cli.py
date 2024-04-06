@@ -6,6 +6,7 @@ texts and copy them to the system clipboard.
 """
 
 import datetime as dt
+import sys
 import pyperclip
 from pylect.esv import get_esv_text
 from pylect.lectionary import Lectionary
@@ -21,12 +22,12 @@ class CLI:
         self.__lectionary = Lectionary()
         self.__psalter = Psalter()
         self.__start_date = start_date if start_date is not None else dt.date.today()
-        self.__end_date = end_date if end_date is not None else self.__get_sunday()
+        self.__end_date = end_date if end_date is not None else self.__get_next_week()
         self.__holy_days = self.__get_holy_days()
 
-    def __get_sunday(self) -> dt.date:
-        """Get the date for the upcoming Sunday if no end date is specified."""
-        return self.__start_date + dt.timedelta(days=6 - self.__start_date.weekday())
+    def __get_next_week(self) -> dt.date:
+        """Set the end date to 7 days from the start date if no end date is specified"""
+        return self.__start_date + dt.timedelta(days=7)
 
     def __get_holy_days(self) -> list:
         """Iterate through range of dates and search for matches in the lectionary."""
@@ -47,7 +48,7 @@ class CLI:
         )
         print()
         for index, holy_day in enumerate(self.__holy_days):
-            print(f"{index + 1}) {holy_day['name']}")
+            print(f"{index + 1}) {holy_day['name']} [{holy_day['date']}]")
             for lesson in holy_day["lessons"]:
                 print(f"   * {lesson}")
             print()
@@ -68,13 +69,13 @@ into your clipboard, or enter "q" to quit the program."""
             try:
                 texts = []
                 for lesson in lessons:
-                    if lesson.startswith("Ps"):
-                        texts.append(self.__psalter.get_psalm(lesson))
-                    else:
-                        if "or" in lesson:
-                            texts.append(get_esv_text(lesson.split(" or ")[0]))
+                    try:
+                        if lesson.startswith("Ps"):
+                            texts.append(self.__psalter.get_psalm(lesson))
                         else:
-                            texts.append(get_esv_text(lesson))
+                            texts.append(get_esv_text(lesson.split(" or ")[0]))
+                    except ValueError:
+                        print(f"Error: could not get text for {lesson}")
                 text = "\n\n".join(texts)
                 pyperclip.copy(text)
                 print(f"Lessons for {holy_day['name']} copied to clipboard!")
@@ -83,9 +84,32 @@ into your clipboard, or enter "q" to quit the program."""
 
 
 def main():
-    """Entry point for the program."""
-    cli = CLI()
-    cli.get_texts()
+    """Entry point for the pylect CLI"""
+    if len(sys.argv) == 2:
+        try:
+            start = [int(x) for x in sys.argv[1].split("-")]
+            start_date = dt.date(start[0], start[1], start[2])
+        except IndexError:
+            print("Error: Invalid date format in arguments")
+            sys.exit()
+        else:
+            cli = CLI(start_date)
+            cli.get_texts()
+    elif len(sys.argv) == 3:
+        try:
+            start = [int(x) for x in sys.argv[1].split("-")]
+            start_date = dt.date(start[0], start[1], start[2])
+            end = [int(x) for x in sys.argv[2].split("-")]
+            end_date = dt.date(end[0], end[1], end[2])
+        except IndexError:
+            print("Error: Invalid date format in arguments")
+            sys.exit()
+        else:
+            cli = CLI(start_date, end_date)
+            cli.get_texts()
+    else:
+        cli = CLI()
+        cli.get_texts()
 
 
 if __name__ == "__main__":
