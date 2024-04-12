@@ -4,7 +4,7 @@ pylect is a CLI program that searches the Sunday, Holy Day, and Commemoration Le
 
 ## Purpose
 
-This is my first personal project! So, the purpose is to try my hand at making something from start to finish with nothing but my own inspiration to guide me.  Practically speaking, the impetus for this project is the many hours I've spent creating bulletins and Scripture inserts for my local church. Calculating the correct day in the liturgical calendar, looking up the appropriate Scripture references in the lectionary, and then copying, pasting, and formatting the texts from different PDFs and websites has always been laborious and error-prone. This is my attempt to automate some of the boring stuff in my own life, and hopefully you find it useful too!
+This is my first personal project! So, the purpose is to try my hand at making something from start to finish with nothing but my own inspiration to guide me. Practically speaking, the impetus for this project is the many hours I've spent creating bulletins and Scripture inserts for my local church. Calculating the correct day in the liturgical calendar, looking up the appropriate Scripture references in the lectionary, and then copying, pasting, and formatting the texts from different PDFs and websites has always been laborious and error-prone. This is my attempt to automate some of the boring stuff in my own life, and hopefully you find it useful too!
 
 ## Installation
 
@@ -25,26 +25,31 @@ If you'd rather install pylect using a virtual environment, first run `python3 -
 ```
 #!/bin/sh
 
-cd ~/<path>/pylect source .venv/bin/activate pylect
+cd ~/<path>/pylect
+source .venv/bin/activate
+pylect
 ```
 
 ## Usage
 
-Run pylect from the command line with `python3 -m pylect <start_date> <end_date>` or (more simply) with `pylect <start_date> <end_date>`. The start and end dates are optional arguments and must be in the format `YYYY-MM-DD`. When not given any arguments, the program will take the current date as a starting point and return all the liturgical days in the coming week.  The results will be printed to your screen. You can select any of the days by entering their corresponding number and pylect will fetch the text of the lessons for you and copy them to your system clipboard. When you're finished, simply enter `q` to quit the program.
+Run pylect from the command line with `python3 -m pylect <start_date> <end_date>` or (more simply) with `pylect <start_date> <end_date>`. The start and end dates are optional arguments and must be in the format `YYYY-MM-DD`. When not given any arguments, the program will take the current date as a starting point and return all the liturgical days in the coming week. The results will be printed to your screen. You can select any of the days by entering their corresponding number and pylect will fetch the text of the lessons for you and copy them to your system clipboard. When you're finished, simply enter `q` to quit the program.
 
 ## Examples
 
 With no optional arguments, pylect will return all liturgical days ocurring over the next 7 days:
+
 ```
 pylect
 ```
 
 With the start date argument only, pylect will return all liturgical days between June 8th and June 15th, 2024:
+
 ```
 pylect 2024-06-08
 ```
 
 With both the start and end date arguments, pylect will return all liturgical days between June 8th and November 1st, 2024:
+
 ```
 pylect 2024-06-08 2024-11-1
 ```
