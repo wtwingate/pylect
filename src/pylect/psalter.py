@@ -13,8 +13,8 @@ class Psalter:
     """Import the text of the Psalms as a dictionary and provide methods for retrieving them."""
 
     def __init__(self) -> None:
-        self.__psalms = {}
-        self.__load_psalms_from_json()
+        self._psalms = {}
+        self._load_psalms_from_json()
 
     def get_psalm(self, reference: str) -> str:
         """Get formatted psalm text by chapter and verse reference.
@@ -28,50 +28,55 @@ class Psalter:
         "23:1" -> returns the only the first verse
         "23:1-3" -> returns the first three verses
         "23:1-3, 5" -> returns verses 1, 2, 3, and 5
+        "23:1-3(4-6)" -> returns verses 1-6
 
         The lectionary designates some verses as optional by enclosing them in
         parentheses. For now, these are always included in the returned text.
         """
         text_list = []
-        chapter, verses = self.__parse_reference(reference)
-        psalm_chapter = self.__psalms.get(chapter)
-        if psalm_chapter is None:
-            raise ValueError("Error: invalid chapter reference")
-        text_list.append(f"Psalm {chapter}\n")
-        if verses is None:
-            verses = psalm_chapter.keys()
+        chapter, verses = self._parse_reference(reference)
+        psalm = self._psalms[chapter - 1] # zero-indexing ftw
+        text_list.append(f"Psalm {psalm["number"]}\n")
+        if len(verses) == 0:
+            verses = psalm["verses"]
+        else:
+            verses = [psalm["verses"][v - 1] for v in verses]
         for verse in verses:
-            psalm_verse = psalm_chapter.get(verse)
-            if psalm_verse is None:
-                raise ValueError("Error: invalid verse reference")
-            text_list.append(f"{verse} {psalm_verse['head']} *")
-            text_list.append(f"{psalm_verse['tail']}")
+            text_list.append(f"{verse["number"]} {verse["first_half"]} *")
+            text_list.append(f"{verse["second_half"]}")
         psalm_text = "\n".join(text_list)
         return psalm_text
 
-    def __parse_reference(self, reference: str) -> tuple[int, list[int]]:
+    def _parse_reference(self, ref: str) -> tuple[int, list[int]]:
         """Make human-readable verse references computer-friendly."""
-        reference = reference.replace("Ps ", "").replace("v", "")
-        chapter_ref = reference.split(":")[0]
-        verse_ref = reference.split(":")[1]
-        chapter = int(chapter_ref)
-        verses = self.__parse_verse_reference(verse_ref)
+        ref = ref.replace("Ps ", "").replace("v", "")
+        chapter = int(ref.split(":")[0])
+        if ":" in ref:
+            verses = self._parse_verse_reference(ref.split(":")[1])
+        else:
+            verses = []
         return chapter, verses
 
-    def __parse_verse_reference(self, verse_ref: str) -> list[int]:
-
-        vv = re.findall(r"\d+-?\d*", verse_ref)
-        verses = []
-        for ref in verse_refs:
+    def _parse_verse_reference(self, verse_ref: str) -> list[int]:
+        verse_ref = re.split(r";|,|\(|\)| ", verse_ref)
+        verse_nums = []
+        for ref in verse_ref:
+            if len(ref) == 0:
+                continue
             if "-" in ref:
                 start = ref.split("-")[0]
                 end = ref.split("-")[1]
-                verses.extend([str(v) for v in range(int(start), int(end) + 1)])
+                verse_nums.extend([v for v in range(int(start), int(end) + 1)])
             else:
-                verses.append(ref)
-        return chapter, verses
+                verse_nums.append(int(ref))
+        return verse_nums
 
-    def __load_psalms_from_json(self) -> None:
+    def _load_psalms_from_json(self) -> None:
         """Load saved psalm dictionary"""
         with open("src/pylect/psalter.json", "r", encoding="utf-8") as json_file:
-            self.__psalms = json.load(json_file)
+            self._psalms = json.load(json_file)
+
+if __name__ == "__main__":
+    psalter = Psalter()
+    psalm = psalter.get_psalm("Ps 27")
+    print(psalm)
