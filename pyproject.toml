@@ -4,11 +4,10 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pylect"
-version = "1.1.0"
+version = "1.2.0"
 dependencies = [
     "black",
     "pylint",
-    "PyMuPDF",
     "pyperclip",
     "pytest",
     "python-dateutil",

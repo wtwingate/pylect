@@ -43,7 +43,7 @@ class Psalter:
         return psalm_text
 
     def _parse_reference(self, ref: str) -> tuple[int, list[int]]:
-        """Make human-readable verse references computer-friendly."""
+        """Make human-readable psalm references computer-friendly."""
         ref = ref.replace("Ps ", "").replace("v", "")
         chapter = int(ref.split(":")[0])
         if ":" in ref:
@@ -53,6 +53,7 @@ class Psalter:
         return chapter, verses
 
     def _parse_verse_reference(self, verse_ref: str) -> list[int]:
+        """Parse verse references into a list of verse numbers."""
         verse_ref = re.split(r";|,|\(|\)| ", verse_ref)
         verse_nums = []
         for ref in verse_ref:

@@ -69,11 +69,12 @@ into your clipboard, or enter "q" to quit the program."""
             try:
                 texts = []
                 for lesson in lessons:
+                    lesson = lesson.split(" or ")[0]
                     try:
                         if lesson.startswith("Ps"):
                             texts.append(self.__psalter.get_psalm(lesson))
                         else:
-                            texts.append(get_esv_text(lesson.split(" or ")[0]))
+                            texts.append(get_esv_text(lesson))
                     except ValueError:
                         print(f"Error: could not get text for {lesson}")
                 text = "\n\n".join(texts)
