@@ -53,3 +53,9 @@ With both the start and end date arguments, pylect will return all liturgical da
 ```
 pylect 2024-06-08 2024-11-1
 ```
+
+## Credits
+
+* The Book of Common Prayer 2019 was produced by the Anglican Church of North America and is freely available for download at the [official website](https://bcp2019.anglicanchurch.net/).
+
+* The JSON-ified text of the Psalms is pulled from the [Daily Office API](https://api.dailyoffice2019.com/api/) created by [Benjamin Locher](https://github.com/blocher). Much thanks to him for doing the hard work of wrangling the PDF text of the New Coverdale Psalter into a usable format!

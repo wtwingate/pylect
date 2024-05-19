@@ -1,9 +1,4 @@
-"""Creates the Psalter class which imports the plain text of the Psalter from a
-PDF copy of the Book of Common Prayer 2019, cleans up the formatting, and then
-creates a nested dictionary of the Psalms by chapter, verse, and half-verse. It
-also provides convenient methods for retrieving the entire dictionary of Psalms
-or for getting a nicely formatted string of any given Psalm reference.
-"""
+"""The Psalter class provides an easy way to fetch the text of the New Coverdale Psalter."""
 
 import json
 import re
@@ -75,8 +70,3 @@ class Psalter:
         """Load saved psalm dictionary"""
         with open("src/pylect/psalter.json", "r", encoding="utf-8") as json_file:
             self._psalms = json.load(json_file)
-
-if __name__ == "__main__":
-    psalter = Psalter()
-    psalm = psalter.get_psalm("Ps 27")
-    print(psalm)
