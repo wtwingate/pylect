@@ -30,7 +30,7 @@ class Psalter:
         """
         text_list = []
         chapter, verses = self._parse_reference(reference)
-        psalm = self._psalms[chapter - 1] # zero-indexing ftw
+        psalm = self._psalms[chapter - 1]  # zero-indexing ftw
         text_list.append(f"Psalm {psalm["number"]}\n")
         if len(verses) == 0:
             verses = psalm["verses"]
