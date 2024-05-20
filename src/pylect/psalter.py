@@ -38,7 +38,7 @@ class Psalter:
             verses = [psalm["verses"][v - 1] for v in verses]
         for verse in verses:
             text_list.append(f"{verse["number"]} {verse["first_half"]} *")
-            text_list.append(f"{verse["second_half"]}")
+            text_list.append(f"    {verse["second_half"]}")
         psalm_text = "\n".join(text_list)
         return psalm_text
 

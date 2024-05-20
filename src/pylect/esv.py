@@ -3,6 +3,7 @@ the text of any Scripture lessons that are specified in the lectionary.
 """
 
 import os
+import re
 import requests
 from dotenv import load_dotenv
 
@@ -26,15 +27,15 @@ def get_esv_text(query):
         "include-headings": False,
         "include-short-copyright": False,
         "indent-paragraphs": 0,
-        "indent-poetry": False,
+        "indent-poetry": True,
     }
     headers = {"Authorization": f"Token {API_KEY}"}
     response = requests.get(API_URL, params=params, headers=headers, timeout=10)
     passages = response.json()["passages"]
     if passages:
-        text = "\n\n".join([passage.strip() for passage in passages])
-        text = text.replace("\n\n\n", "\n\n")
-        text = text.replace("[", "")
-        text = text.replace("]", "")
+        text = "\n".join([passage.strip() for passage in passages])
+        text = text.replace("[", "").replace("]", "")
+        text = re.sub(r"\n    ", "\n", text)
         return text
-    raise ValueError("Error: passage not found")
+    else:
+        raise ValueError("Error: passage not found")
