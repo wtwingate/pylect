@@ -22,9 +22,15 @@ class Lectionary:
         self.holy_days = []
         self.__get_holy_days()
 
+    def get_lessons(self) -> list:
+        pass
+
+    def __get_easter_day(self) -> date:
+        return easter(self.date.year)
+
     def __get_moveable_dates(self) -> dict[str : date | int]:
         return {
-            "easter_day": self.__get_easter_day(),
+            "easter_day": self.easter_day,
             "sundays_after_epiphany": self.__get_sundays_after_epiphany(),
             "ash_wednesday": self.__get_ash_wednesday(),
             "ascension_day": self.__get_ascension_day(),
@@ -32,9 +38,6 @@ class Lectionary:
             "proper_after_trinity": self.__get_proper_after_trinity(),
             "advent_sunday": self.__get_advent_sunday(),
         }
-
-    def __get_easter_day(self) -> date:
-        return easter(self.date.year)
 
     def __get_sundays_after_epiphany(self) -> int:
         first_sunday = date(self.date.year, 1, 6) + relativedelta(
@@ -85,40 +88,14 @@ class Lectionary:
 
     def __get_holy_days(self) -> None:
         self.__check_major_days()
+        self.__check_holy_week()
+        self.__check_easter_week()
         self.__check_sundays()
         self.__check_red_letter_days()
 
     def __check_major_days(self) -> None:
-        if self.date == self.moveable_dates["ash_wednesday"]:
-            self.holy_days.append(HolyDay("Ash Wednesday", 3))
-        elif self.date == self.easter_day - timedelta(days=7):
-            self.holy_days.append(HolyDay("Palm Sunday", 3))
-        elif self.date == self.easter_day - timedelta(days=6):
-            self.holy_days.append(HolyDay("Monday in Holy Week", 3))
-        elif self.date == self.easter_day - timedelta(days=5):
-            self.holy_days.append(HolyDay("Tuesday in Holy Week", 3))
-        elif self.date == self.easter_day - timedelta(days=4):
-            self.holy_days.append(HolyDay("Wednesday in Holy Week", 3))
-        elif self.date == self.easter_day - timedelta(days=3):
-            self.holy_days.append(HolyDay("Maundy Thursday", 3))
-        elif self.date == self.easter_day - timedelta(days=2):
-            self.holy_days.append(HolyDay("Good Friday", 3))
-        elif self.date == self.easter_day - timedelta(days=1):
-            self.holy_days.append(HolyDay("Holy Saturday", 3))
-        elif self.date == self.easter_day:
+        if self.date == self.easter_day:
             self.holy_days.append(HolyDay("Easter Day", 3))
-        elif self.date == self.easter_day + timedelta(days=1):
-            self.holy_days.append(HolyDay("Monday of Easter Week", 3))
-        elif self.date == self.easter_day + timedelta(days=2):
-            self.holy_days.append(HolyDay("Tuesday of Easter Week", 3))
-        elif self.date == self.easter_day + timedelta(days=3):
-            self.holy_days.append(HolyDay("Wednesday of Easter Week", 3))
-        elif self.date == self.easter_day + timedelta(days=4):
-            self.holy_days.append(HolyDay("Thursday of Easter Week", 3))
-        elif self.date == self.easter_day + timedelta(days=5):
-            self.holy_days.append(HolyDay("Friday of Easter Week", 3))
-        elif self.date == self.easter_day + timedelta(days=6):
-            self.holy_days.append(HolyDay("Saturday of Easter Week", 3))
         elif self.date == self.moveable_dates["ascension_day"]:
             self.holy_days.append(HolyDay("Ascension Day", 3))
         elif self.date == self.moveable_dates["pentecost"]:
@@ -131,8 +108,44 @@ class Lectionary:
             self.holy_days.append(HolyDay("The Epiphany", 3))
         elif self.date == date(self.date.year, 11, 1):
             self.holy_days.append(HolyDay("All Saints' Day", 3))
+        elif self.date == self.moveable_dates["ash_wednesday"]:
+            self.holy_days.append(HolyDay("Ash Wednesday", 3))
 
-    def __check_sundays(self):
+    def __check_holy_week(self) -> None:
+        date_delta = self.easter_day - self.date
+
+        if date_delta.days == 7:
+            self.holy_days.append(HolyDay("Palm Sunday", 3))
+        elif date_delta.days == 6:
+            self.holy_days.append(HolyDay("Monday in Holy Week", 3))
+        elif date_delta.days == 5:
+            self.holy_days.append(HolyDay("Tuesday in Holy Week", 3))
+        elif date_delta.days == 4:
+            self.holy_days.append(HolyDay("Wednesday in Holy Week", 3))
+        elif date_delta.days == 3:
+            self.holy_days.append(HolyDay("Maundy Thursday", 3))
+        elif date_delta.days == 2:
+            self.holy_days.append(HolyDay("Good Friday", 3))
+        elif date_delta.days == 1:
+            self.holy_days.append(HolyDay("Holy Saturday", 3))
+
+    def __check_easter_week(self) -> None:
+        date_delta = self.date - self.easter_day
+
+        if date_delta.days == 1:
+            self.holy_days.append(HolyDay("Monday of Easter Week", 3))
+        elif date_delta.days == 2:
+            self.holy_days.append(HolyDay("Tuesday of Easter Week", 3))
+        elif date_delta.days == 3:
+            self.holy_days.append(HolyDay("Wednesday of Easter Week", 3))
+        elif date_delta.days == 4:
+            self.holy_days.append(HolyDay("Thursday of Easter Week", 3))
+        elif date_delta.days == 5:
+            self.holy_days.append(HolyDay("Friday of Easter Week", 3))
+        elif date_delta.days == 6:
+            self.holy_days.append(HolyDay("Saturday of Easter Week", 3))
+
+    def __check_sundays(self) -> None:
         if self.date.weekday() != 6:
             return
 
@@ -149,7 +162,7 @@ class Lectionary:
         elif self.liturgical_season == "Pentecost":
             self.__check_pentecost_sundays()
 
-    def __check_advent_sundays(self):
+    def __check_advent_sundays(self) -> None:
         date_delta = self.date - self.moveable_dates["advent_sunday"]
 
         if date_delta.days == 0:
@@ -161,28 +174,21 @@ class Lectionary:
         elif date_delta.days == 21:
             self.holy_days.append(HolyDay("The Fourth Sunday in Advent", 2))
 
-    def __check_christmas_sundays(self):
+    def __check_christmas_sundays(self) -> None:
         if date(self.date.year, 12, 25) < self.date <= date(self.date.year + 1, 1, 1):
             self.holy_days.append(HolyDay("The First Sunday of Christmas", 1))
         else:
             self.holy_days.append(HolyDay("The Second Sunday of Christmas", 1))
 
-    def __check_epiphany_sundays(self):
+    def __check_epiphany_sundays(self) -> None:
         first_sunday_of_epiphany = date(self.date.year, 1, 6) + relativedelta(
             days=+1, weekday=SU(+1)
         )
         date_delta = self.date - first_sunday_of_epiphany
 
-        if date_delta.days == 0:
-            self.holy_days.append(
-                HolyDay("The First Sunday of Epiphany: Baptism of Our Lord", 1)
-            )
-        elif date_delta.days == 7:
-            self.holy_days.append(HolyDay("The Second Sunday of Epiphany", 1))
-
         # The number of Sundays after Epiphany can range from 4 to 9.
-        # To account for this, check for the final two Sundays here.
-        elif self.date == self.easter_day - timedelta(days=56):
+        # To account for this, check for the final two Sundays first.
+        if self.date == self.easter_day - timedelta(days=56):
             self.holy_days.append(
                 HolyDay("The Second to Last Sunday of Epiphany: World Mission", 1)
             )
@@ -191,7 +197,13 @@ class Lectionary:
                 HolyDay("The Last Sunday of Epiphany: Transfiguration", 1)
             )
 
-        # Continue checking dates from the start of Epiphany
+        # Then begin checking Sundays from the start of Epiphany
+        elif date_delta.days == 0:
+            self.holy_days.append(
+                HolyDay("The First Sunday of Epiphany: Baptism of Our Lord", 1)
+            )
+        elif date_delta.days == 7:
+            self.holy_days.append(HolyDay("The Second Sunday of Epiphany", 1))
         elif date_delta.days == 14:
             self.holy_days.append(HolyDay("The Third Sunday of Epiphany", 1))
         elif date_delta.days == 21:
@@ -205,7 +217,7 @@ class Lectionary:
         elif date_delta.days == 49:
             self.holy_days.append(HolyDay("The Eighth Sunday of Epiphany", 1))
 
-    def __check_lent_sundays(self):
+    def __check_lent_sundays(self) -> None:
         date_delta = self.easter_day - self.date
 
         if date_delta.days == 42:
@@ -221,7 +233,7 @@ class Lectionary:
                 HolyDay("The Fifth Sunday in Lent: Passion Sunday", 2)
             )
 
-    def __check_easter_sundays(self):
+    def __check_easter_sundays(self) -> None:
         date_delta = self.date - self.easter_day
 
         if date_delta.days == 7:
@@ -241,7 +253,7 @@ class Lectionary:
         elif date_delta.days == 42:
             self.holy_days.append(HolyDay("The Sunday after Ascension Day", 2))
 
-    def __check_pentecost_sundays(self):
+    def __check_pentecost_sundays(self) -> None:
         date_delta = self.moveable_dates["advent_sunday"] - self.date
 
         if date_delta.days == 203:
@@ -303,7 +315,7 @@ class Lectionary:
         elif date_delta.days == 7:
             self.holy_days.append(HolyDay("Proper 29: Christ the King", 1))
 
-    def __check_red_letter_days(self):
+    def __check_red_letter_days(self) -> None:
         if self.date == date(self.date.year, 1, 1):
             self.holy_days.append(
                 HolyDay("The Circumcision and Holy Name of Our Lord Jesus Christ", 1)
