@@ -33,52 +33,52 @@ class TestGetPsalm:
         psalm = """Psalm 23
 
 1 The LORD is my shepherd; *
-therefore I can lack nothing.
+    therefore I can lack nothing.
 2 He shall feed me in green pastures *
-and lead me forth beside the waters of comfort.
+    and lead me forth beside the waters of comfort.
 3 He shall refresh my soul *
-and bring me forth in the paths of righteousness for his Name’s sake.
+    and bring me forth in the paths of righteousness for his Name’s sake.
 4 Even though I walk through the valley of the shadow of death, I will fear no evil, *
-for you are with me; your rod and your staff comfort me.
+    for you are with me; your rod and your staff comfort me.
 5 You shall prepare a table before me, in the presence of those who trouble me; *
-you have anointed my head with oil, and my cup shall be full.
+    you have anointed my head with oil, and my cup shall be full.
 6 Surely your goodness and mercy shall follow me all the days of my life, *
-and I will dwell in the house of the LORD for ever."""
+    and I will dwell in the house of the LORD for ever."""
         assert self.psalter.get_psalm("Ps 23") == psalm
 
     def test_single_verse(self):
         psalm = """Psalm 23
 
 4 Even though I walk through the valley of the shadow of death, I will fear no evil, *
-for you are with me; your rod and your staff comfort me."""
+    for you are with me; your rod and your staff comfort me."""
         assert self.psalter.get_psalm("Ps 23:4") == psalm
 
     def test_split_verses(self):
         psalm = """Psalm 23
 
 1 The LORD is my shepherd; *
-therefore I can lack nothing.
+    therefore I can lack nothing.
 3 He shall refresh my soul *
-and bring me forth in the paths of righteousness for his Name’s sake.
+    and bring me forth in the paths of righteousness for his Name’s sake.
 5 You shall prepare a table before me, in the presence of those who trouble me; *
-you have anointed my head with oil, and my cup shall be full."""
+    you have anointed my head with oil, and my cup shall be full."""
         assert self.psalter.get_psalm("Ps 23:1,3,5") == psalm
 
     def test_parenthetical_reference(self):
         psalm = """Psalm 23
 
 1 The LORD is my shepherd; *
-therefore I can lack nothing.
+    therefore I can lack nothing.
 2 He shall feed me in green pastures *
-and lead me forth beside the waters of comfort.
+    and lead me forth beside the waters of comfort.
 3 He shall refresh my soul *
-and bring me forth in the paths of righteousness for his Name’s sake.
+    and bring me forth in the paths of righteousness for his Name’s sake.
 4 Even though I walk through the valley of the shadow of death, I will fear no evil, *
-for you are with me; your rod and your staff comfort me.
+    for you are with me; your rod and your staff comfort me.
 5 You shall prepare a table before me, in the presence of those who trouble me; *
-you have anointed my head with oil, and my cup shall be full.
+    you have anointed my head with oil, and my cup shall be full.
 6 Surely your goodness and mercy shall follow me all the days of my life, *
-and I will dwell in the house of the LORD for ever."""
+    and I will dwell in the house of the LORD for ever."""
         assert self.psalter.get_psalm("Ps 23:1(2-5)6") == psalm
 
     def test_bad_reference_one(self):
