@@ -6,8 +6,6 @@ build-backend = "setuptools.build_meta"
 name = "pylect"
 version = "1.2.0"
 dependencies = [
-    "black",
-    "pylint",
     "pyperclip",
     "pytest",
     "python-dateutil",
