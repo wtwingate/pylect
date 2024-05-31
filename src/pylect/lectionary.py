@@ -1,16 +1,12 @@
-"""The lectionary class provides methods for calculating holy days according
-to the liturgical calendar of the Anglican Church.
-"""
-
 from datetime import date, timedelta
 from dateutil.relativedelta import relativedelta, SU
 from dateutil.easter import easter
+from pylect.holyday import HolyDay
 
 
 class Lectionary:
-    """The MoveableDates class calculates a handful of moveable dates for the
-    given calendar year. Using these moveable dates, we can convert any day in
-    the Gregorian calendar to its appropriate day in the liturgical calendar.
+    """The lectionary class provides methods for calculating holy days according
+    to the liturgical calendar of the Anglican Church.
     """
 
     def __init__(self, today: date) -> None:
@@ -21,9 +17,6 @@ class Lectionary:
         self.liturgical_season = self.__get_liturgical_season()
         self.holy_days = []
         self.__get_holy_days()
-
-    def get_lessons(self) -> list:
-        pass
 
     def __get_easter_day(self) -> date:
         return easter(self.date.year)
@@ -396,12 +389,6 @@ class Lectionary:
             self.holy_days.append(HolyDay("John, Apostle and Evangelist", 1))
         elif self.date == date(self.date.year, 12, 28):
             self.holy_days.append(HolyDay("The Holy Innocents", 1))
-
-
-class HolyDay:
-    def __init__(self, name: str, rank: int):
-        self.name = name
-        self.rank = rank
 
 
 if __name__ == "__main__":
