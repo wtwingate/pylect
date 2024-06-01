@@ -1,5 +1,8 @@
+from pylect.constants import *
+
+
 class HolyDay:
-    def __init__(self, name: str, year: int, season: str, rank: int):
+    def __init__(self, name: str, year: Year, season: str, rank: Rank):
         self.name = name
         self.year = year
         self.season = season
