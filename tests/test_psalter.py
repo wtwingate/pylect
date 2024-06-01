@@ -23,7 +23,10 @@ class TestParseReference:
 
     def test_complex_reference(self):
         ref = "Ps 80:(1-3)7-10,19v"
-        assert self.psalter._parse_reference(ref) == (80, [1, 2, 3, 7, 8, 9, 10, 19])
+        assert self.psalter._parse_reference(ref) == (
+            80,
+            [1, 2, 3, 7, 8, 9, 10, 19],
+        )
 
 
 class TestGetPsalm:

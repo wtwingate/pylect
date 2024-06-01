@@ -69,5 +69,7 @@ class Psalter:
 
     def _load_psalms_from_json(self) -> None:
         """Load saved psalm dictionary"""
-        with open("src/pylect/psalter.json", "r", encoding="utf-8") as json_file:
+        with open(
+            "src/pylect/psalter.json", "r", encoding="utf-8"
+        ) as json_file:
             self._psalms = json.load(json_file)

@@ -22,3 +22,6 @@ Repository = "https://github.com/wtwingate/pylect"
 
 [project.scripts]
 pylect = "pylect.cli:main"
+
+[tool.black]
+line-length = 79

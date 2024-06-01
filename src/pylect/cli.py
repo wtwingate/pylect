@@ -1,28 +1,37 @@
-"""This is the primary user facing module of the program. The CLI class is
-initiated when the program is started and begin running a script that gather the
-appropriate readings for the lectionary for the given date range. It then
-prompts the user to select one or more of the readings so that it can fetch the
-texts and copy them to the system clipboard.
+"""This is the primary user facing module of the program. The CLI class
+is initiated when the program is started and begin running a script
+that gather the appropriate readings for the lectionary for the given
+date range. It then prompts the user to select one or more of the
+readings so that it can fetch the texts and copy them to the system
+clipboard.
 """
 
 import datetime as dt
 import sys
 import pyperclip
 from pylect.esv import get_esv_text
-from pylect.lectionary import Lectionary
+from pylect.lessons import Lectionary
 from pylect.psalter import Psalter
 
 
 class CLI:
-    """The CLI class allows users to interact with the public methods of the other classes."""
+    """The CLI class allows users to interact with the public methods of
+    the other classes.
+    """
 
     def __init__(
-        self, start_date: dt.date | None = None, end_date: dt.date | None = None
+        self,
+        start_date: dt.date | None = None,
+        end_date: dt.date | None = None,
     ) -> None:
         self.__lectionary = Lectionary()
         self.__psalter = Psalter()
-        self.__start_date = start_date if start_date is not None else dt.date.today()
-        self.__end_date = end_date if end_date is not None else self.__get_next_week()
+        self.__start_date = (
+            start_date if start_date is not None else dt.date.today()
+        )
+        self.__end_date = (
+            end_date if end_date is not None else self.__get_next_week()
+        )
         self.__holy_days = self.__get_holy_days()
 
     def __get_next_week(self) -> dt.date:

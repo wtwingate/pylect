@@ -30,7 +30,9 @@ def get_esv_text(query):
         "indent-poetry": True,
     }
     headers = {"Authorization": f"Token {API_KEY}"}
-    response = requests.get(API_URL, params=params, headers=headers, timeout=10)
+    response = requests.get(
+        API_URL, params=params, headers=headers, timeout=10
+    )
     passages = response.json()["passages"]
     if passages:
         text = "\n".join([passage.strip() for passage in passages])
