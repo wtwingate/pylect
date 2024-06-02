@@ -6,14 +6,15 @@ build-backend = "setuptools.build_meta"
 name = "pylect"
 version = "1.2.0"
 dependencies = [
-    "pyperclip",
+    "black",
+    "pylint",
     "pytest",
     "python-dateutil",
     "python-dotenv",
     "requests",
 ]
 authors = [{ name = "William Wingate", email = "wtwingate@gmail.com" }]
-description = "Find and copy Scripture lessons from the ACNA lectionary."
+description = "Tools for working with lectionaries and liturgical calendars."
 readme = "README.md"
 license = { file = "LICENSE.txt" }
 
