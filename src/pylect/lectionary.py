@@ -1,7 +1,7 @@
 from datetime import date, timedelta
 from dateutil.relativedelta import relativedelta, SU
 from dateutil.easter import easter
-from pylect.constants import *
+from pylect.constants import Rank
 from pylect.holyday import HolyDay
 
 
@@ -10,8 +10,8 @@ class Lectionary:
     according to the liturgical calendar of the Anglican Church.
     """
 
-    def __init__(self, given_date: date) -> None:
-        self.date = given_date
+    def __init__(self, this_date: date) -> None:
+        self.date = this_date
         self.easter_day = self.__get_easter_day()
         self.moveable_dates = self.__get_moveable_dates()
         self.liturgical_year = self.__get_liturgical_year()

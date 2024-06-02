@@ -1,4 +1,4 @@
-from pylect.constants import *
+from pylect.constants import LECTIONARY, Rank
 
 
 class HolyDay:
@@ -7,15 +7,13 @@ class HolyDay:
         self.year = year
         self.season = season
         self.rank = rank
-        self.collect = self.__get_collect()
-        self.lessons = self.__get_lessons()
+        self.collect: str = self.__get_collect()
+        self.lessons: dict[list[str]] = self.__get_lessons()
 
     def __get_collect(self):
-        return None
+        return ""
 
     def __get_lessons(self):
-        # TODO: allow user to choose between the various Christmas and
-        #       Easter services.
         if self.name == "Christmas Day":
             return (LECTIONARY.get(self.name).get("I").get(self.year),)
         elif self.name == "Easter Day":

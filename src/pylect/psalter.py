@@ -8,8 +8,7 @@ class Psalter:
     """Import the text of the Psalms as a dictionary and provide methods for retrieving them."""
 
     def __init__(self) -> None:
-        self._psalms = {}
-        self._load_psalms_from_json()
+        self._psalms = self._load_psalms_from_json()
 
     def get_psalm(self, reference: str) -> str:
         """Get formatted psalm text by chapter and verse reference.
@@ -44,7 +43,7 @@ class Psalter:
 
     def _parse_reference(self, ref: str) -> tuple[int, list[int]]:
         """Make human-readable psalm references computer-friendly."""
-        ref = ref.replace("Ps ", "").replace("v", "")
+        ref = ref.replace("Psalm ", "")
         chapter = int(ref.split(":")[0])
         if ":" in ref:
             verses = self._parse_verse_reference(ref.split(":")[1])
@@ -72,4 +71,4 @@ class Psalter:
         with open(
             "src/pylect/psalter.json", "r", encoding="utf-8"
         ) as json_file:
-            self._psalms = json.load(json_file)
+            return json.load(json_file)
