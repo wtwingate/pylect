@@ -1,3009 +1,1325 @@
 {
   "The First Sunday in Advent": {
     "Year A": {
-      "First Lesson": [
-        "Isaiah 2:1-5"
-      ],
-      "Psalm": [
-        "Psalm 122"
-      ],
-      "Second Lesson": [
-        "Romans 13:8-14"
-      ],
-      "Gospel": [
-        "Matthew 24:29-44"
-      ]
+      "First Lesson": ["Isaiah 2:1-5"],
+      "Psalm": ["Psalm 122"],
+      "Second Lesson": ["Romans 13:8-14"],
+      "Gospel": ["Matthew 24:29-44"]
     },
     "Year B": {
-      "First Lesson": [
-        "Isaiah 64:1-9a"
-      ],
-      "Psalm": [
-        "Psalm 80",
-        "Psalm 80:1-7"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 1:1-9"
-      ],
-      "Gospel": [
-        "Mark 13:24-37"
-      ]
+      "First Lesson": ["Isaiah 64:1-9a"],
+      "Psalm": ["Psalm 80", "Psalm 80:1-7"],
+      "Second Lesson": ["1 Corinthians 1:1-9"],
+      "Gospel": ["Mark 13:24-37"]
     },
     "Year C": {
-      "First Lesson": [
-        "Zechariah 14:(1-2) 3-9"
-      ],
-      "Psalm": [
-        "Psalm 50",
-        "Psalm 50:1-6"
-      ],
-      "Second Lesson": [
-        "1 Thessalonians 3:6-13"
-      ],
-      "Gospel": [
-        "Luke 21:25-33"
-      ]
+      "First Lesson": ["Zechariah 14:(1-2), 3-9"],
+      "Psalm": ["Psalm 50", "Psalm 50:1-6"],
+      "Second Lesson": ["1 Thessalonians 3:6-13"],
+      "Gospel": ["Luke 21:25-33"]
     }
   },
   "The Second Sunday in Advent": {
     "Year A": {
-      "First Lesson": [
-        "Isaiah 11:1-10"
-      ],
-      "Psalm": [
-        "Psalm 72:1-15 (16-19)"
-      ],
-      "Second Lesson": [
-        "Romans 15:1-13"
-      ],
-      "Gospel": [
-        "Matthew 3:1-12"
-      ]
+      "First Lesson": ["Isaiah 11:1-10"],
+      "Psalm": ["Psalm 72:1-15, (16-19)"],
+      "Second Lesson": ["Romans 15:1-13"],
+      "Gospel": ["Matthew 3:1-12"]
     },
     "Year B": {
-      "First Lesson": [
-        "Isaiah 40:1-11"
-      ],
-      "Psalm": [
-        "Psalm 85"
-      ],
-      "Second Lesson": [
-        "2 Peter 3:8-18"
-      ],
-      "Gospel": [
-        "Mark 1:1-8"
-      ]
+      "First Lesson": ["Isaiah 40:1-11"],
+      "Psalm": ["Psalm 85"],
+      "Second Lesson": ["2 Peter 3:8-18"],
+      "Gospel": ["Mark 1:1-8"]
     },
     "Year C": {
-      "First Lesson": [
-        "Malachi 3:1-5"
-      ],
-      "Psalm": [
-        "Psalm 126"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 4:(1-7) 8-21"
-      ],
-      "Gospel": [
-        "Luke 3:1-6"
-      ]
+      "First Lesson": ["Malachi 3:1-5"],
+      "Psalm": ["Psalm 126"],
+      "Second Lesson": ["1 Corinthians 4:(1-7), 8-21"],
+      "Gospel": ["Luke 3:1-6"]
     }
   },
   "The Third Sunday in Advent": {
     "Year A": {
-      "First Lesson": [
-        "Isaiah 35:1-10"
-      ],
-      "Psalm": [
-        "Psalm 146"
-      ],
-      "Second Lesson": [
-        "James 5:7-20"
-      ],
-      "Gospel": [
-        "Matthew 11:2-19"
-      ]
+      "First Lesson": ["Isaiah 35:1-10"],
+      "Psalm": ["Psalm 146"],
+      "Second Lesson": ["James 5:7-20"],
+      "Gospel": ["Matthew 11:2-19"]
     },
     "Year B": {
-      "First Lesson": [
-        "Isaiah 65:17-25"
-      ],
-      "Psalm": [
-        "Psalm 126"
-      ],
-      "Second Lesson": [
-        "1 Thessalonians 5:12-28"
-      ],
-      "Gospel": [
-        "John 3:22-30",
-        "John 1:19-28"
-      ]
+      "First Lesson": ["Isaiah 65:17-25"],
+      "Psalm": ["Psalm 126"],
+      "Second Lesson": ["1 Thessalonians 5:12-28"],
+      "Gospel": ["John 3:22-30", "John 1:19-28"]
     },
     "Year C": {
-      "First Lesson": [
-        "Zephaniah 3:14-20"
-      ],
-      "Psalm": [
-        "Psalm 85"
-      ],
-      "Second Lesson": [
-        "Philippians 4:4-9"
-      ],
-      "Gospel": [
-        "Luke 3:7-20"
-      ]
+      "First Lesson": ["Zephaniah 3:14-20"],
+      "Psalm": ["Psalm 85"],
+      "Second Lesson": ["Philippians 4:4-9"],
+      "Gospel": ["Luke 3:7-20"]
     }
   },
   "The Fourth Sunday in Advent: Annunciation": {
     "Year A": {
-      "First Lesson": [
-        "Isaiah 7:10-17"
-      ],
-      "Psalm": [
-        "Psalm 24"
-      ],
-      "Second Lesson": [
-        "Romans 1:1-7"
-      ],
-      "Gospel": [
-        "Matthew 1:18-25"
-      ]
+      "First Lesson": ["Isaiah 7:10-17"],
+      "Psalm": ["Psalm 24"],
+      "Second Lesson": ["Romans 1:1-7"],
+      "Gospel": ["Matthew 1:18-25"]
     },
     "Year B": {
-      "First Lesson": [
-        "2 Sam 7:1-17"
-      ],
-      "Psalm": [
-        "Psalm 132:(1-7) 8-19"
-      ],
-      "Second Lesson": [
-        "Romans 16:25-27"
-      ],
-      "Gospel": [
-        "Luke 1:26-38"
-      ]
+      "First Lesson": ["2 Samuel 7:1-17"],
+      "Psalm": ["Psalm 132:(1-7), 8-19"],
+      "Second Lesson": ["Romans 16:25-27"],
+      "Gospel": ["Luke 1:26-38"]
     },
     "Year C": {
-      "First Lesson": [
-        "Micah 5:2-5a"
-      ],
-      "Psalm": [
-        "Psalm 80:1-7"
-      ],
-      "Second Lesson": [
-        "Hebrews 10:1-10"
-      ],
-      "Gospel": [
-        "Luke 1:39-56"
-      ]
+      "First Lesson": ["Micah 5:2-5a"],
+      "Psalm": ["Psalm 80:1-7"],
+      "Second Lesson": ["Hebrews 10:1-10"],
+      "Gospel": ["Luke 1:39-56"]
     }
   },
   "The First Sunday of Christmas": {
     "Year A": {
-      "First Lesson": [
-        "Isaiah 61:10-62:5"
-      ],
-      "Psalm": [
-        "Psalm 147:12-20"
-      ],
-      "Second Lesson": [
-        "Galatians 3:23-4:7"
-      ],
-      "Gospel": [
-        "John 1:1-18"
-      ]
+      "First Lesson": ["Isaiah 61:10-62:5"],
+      "Psalm": ["Psalm 147:12-20"],
+      "Second Lesson": ["Galatians 3:23-4:7"],
+      "Gospel": ["John 1:1-18"]
     },
     "Year B": {
-      "First Lesson": [
-        "Isaiah 61:10-62:5"
-      ],
-      "Psalm": [
-        "Psalm 147:12-20"
-      ],
-      "Second Lesson": [
-        "Galatians 3:23-4:7"
-      ],
-      "Gospel": [
-        "John 1:1-18"
-      ]
+      "First Lesson": ["Isaiah 61:10-62:5"],
+      "Psalm": ["Psalm 147:12-20"],
+      "Second Lesson": ["Galatians 3:23-4:7"],
+      "Gospel": ["John 1:1-18"]
     },
     "Year C": {
-      "First Lesson": [
-        "Isaiah 61:10-62:5"
-      ],
-      "Psalm": [
-        "Psalm 147:12-20"
-      ],
-      "Second Lesson": [
-        "Galatians 3:23-4:7"
-      ],
-      "Gospel": [
-        "John 1:1-18"
-      ]
+      "First Lesson": ["Isaiah 61:10-62:5"],
+      "Psalm": ["Psalm 147:12-20"],
+      "Second Lesson": ["Galatians 3:23-4:7"],
+      "Gospel": ["John 1:1-18"]
     }
   },
   "The Second Sunday of Christmas": {
     "Year A": {
-      "First Lesson": [
-        "Jeremiah 31:7-14"
-      ],
-      "Psalm": [
-        "Psalm 84"
-      ],
-      "Second Lesson": [
-        "Ephesians 1:3-14"
-      ],
-      "Gospel": [
-        "Luke 2:41-52",
-        "Matthew 2:1-12"
-      ]
+      "First Lesson": ["Jeremiah 31:7-14"],
+      "Psalm": ["Psalm 84"],
+      "Second Lesson": ["Ephesians 1:3-14"],
+      "Gospel": ["Luke 2:41-52", "Matthew 2:1-12"]
     },
     "Year B": {
-      "First Lesson": [
-        "Jeremiah 31:7-14"
-      ],
-      "Psalm": [
-        "Psalm 84"
-      ],
-      "Second Lesson": [
-        "Ephesians 1:3-14"
-      ],
-      "Gospel": [
-        "Matthew 2:13-23",
-        "Matthew 2:1-12"
-      ]
+      "First Lesson": ["Jeremiah 31:7-14"],
+      "Psalm": ["Psalm 84"],
+      "Second Lesson": ["Ephesians 1:3-14"],
+      "Gospel": ["Matthew 2:13-23", "Matthew 2:1-12"]
     },
     "Year C": {
-      "First Lesson": [
-        "Jeremiah 31:7-14"
-      ],
-      "Psalm": [
-        "Psalm 84"
-      ],
-      "Second Lesson": [
-        "Ephesians 1:3-14"
-      ],
-      "Gospel": [
-        "Luke 2:22-40",
-        "Matthew 2:1-12"
-      ]
+      "First Lesson": ["Jeremiah 31:7-14"],
+      "Psalm": ["Psalm 84"],
+      "Second Lesson": ["Ephesians 1:3-14"],
+      "Gospel": ["Luke 2:22-40", "Matthew 2:1-12"]
     }
   },
   "The First Sunday of Epiphany: Baptism of Our Lord": {
     "Year A": {
-      "First Lesson": [
-        "Isaiah 42:1-9"
-      ],
-      "Psalm": [
-        "Psalm 89:1-29",
-        "Psalm 89:20-29"
-      ],
-      "Second Lesson": [
-        "Acts 10:34-38"
-      ],
-      "Gospel": [
-        "Matthew 3:13-17"
-      ]
+      "First Lesson": ["Isaiah 42:1-9"],
+      "Psalm": ["Psalm 89:1-29", "Psalm 89:20-29"],
+      "Second Lesson": ["Acts 10:34-38"],
+      "Gospel": ["Matthew 3:13-17"]
     },
     "Year B": {
-      "First Lesson": [
-        "Isaiah 42:1-9"
-      ],
-      "Psalm": [
-        "Psalm 89:1-29",
-        "Psalm 89:20-29"
-      ],
-      "Second Lesson": [
-        "Acts 10:34-38"
-      ],
-      "Gospel": [
-        "Mark 1:7-11"
-      ]
+      "First Lesson": ["Isaiah 42:1-9"],
+      "Psalm": ["Psalm 89:1-29", "Psalm 89:20-29"],
+      "Second Lesson": ["Acts 10:34-38"],
+      "Gospel": ["Mark 1:7-11"]
     },
     "Year C": {
-      "First Lesson": [
-        "Isaiah 42:1-9"
-      ],
-      "Psalm": [
-        "Psalm 89:1-29",
-        "Psalm 89:20-29"
-      ],
-      "Second Lesson": [
-        "Acts 10:34-38"
-      ],
-      "Gospel": [
-        "Luke 3:15-22"
-      ]
+      "First Lesson": ["Isaiah 42:1-9"],
+      "Psalm": ["Psalm 89:1-29", "Psalm 89:20-29"],
+      "Second Lesson": ["Acts 10:34-38"],
+      "Gospel": ["Luke 3:15-22"]
     }
   },
   "The Second Sunday of Epiphany": {
     "Year A": {
-      "First Lesson": [
-        "Exodus 12:21-28"
-      ],
-      "Psalm": [
-        "Psalm 40:1-11"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 1:1-9"
-      ],
-      "Gospel": [
-        "John 1:29-42"
-      ]
+      "First Lesson": ["Exodus 12:21-28"],
+      "Psalm": ["Psalm 40:1-11"],
+      "Second Lesson": ["1 Corinthians 1:1-9"],
+      "Gospel": ["John 1:29-42"]
     },
     "Year B": {
-      "First Lesson": [
-        "1 Sam 3:1-20"
-      ],
-      "Psalm": [
-        "Psalm 63:1-9 (10-12)"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 6:9-20"
-      ],
-      "Gospel": [
-        "John 1:43-51"
-      ]
+      "First Lesson": ["1 Samuel 3:1-20"],
+      "Psalm": ["Psalm 63:1-9, (10-12)"],
+      "Second Lesson": ["1 Corinthians 6:9-20"],
+      "Gospel": ["John 1:43-51"]
     },
     "Year C": {
-      "First Lesson": [
-        "Isaiah 62:1-5"
-      ],
-      "Psalm": [
-        "Psalm 96"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 12:1-11"
-      ],
-      "Gospel": [
-        "John 2:1-11"
-      ]
+      "First Lesson": ["Isaiah 62:1-5"],
+      "Psalm": ["Psalm 96"],
+      "Second Lesson": ["1 Corinthians 12:1-11"],
+      "Gospel": ["John 2:1-11"]
     }
   },
   "The Third Sunday of Epiphany": {
     "Year A": {
-      "First Lesson": [
-        "Amos 3:1-11"
-      ],
-      "Psalm": [
-        "Psalm 139:1-18"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 1:10-17"
-      ],
-      "Gospel": [
-        "Matthew 4:12-22"
-      ]
+      "First Lesson": ["Amos 3:1-11"],
+      "Psalm": ["Psalm 139:1-18"],
+      "Second Lesson": ["1 Corinthians 1:10-17"],
+      "Gospel": ["Matthew 4:12-22"]
     },
     "Year B": {
-      "First Lesson": [
-        "Jeremiah 3:19-4:4"
-      ],
-      "Psalm": [
-        "Psalm 130"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 7:17-24"
-      ],
-      "Gospel": [
-        "Mark 1:14-20"
-      ]
+      "First Lesson": ["Jeremiah 3:19-4:4"],
+      "Psalm": ["Psalm 130"],
+      "Second Lesson": ["1 Corinthians 7:17-24"],
+      "Gospel": ["Mark 1:14-20"]
     },
     "Year C": {
-      "First Lesson": [
-        "Neh 8:1-12"
-      ],
-      "Psalm": [
-        "Psalm 113"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 12:12-27"
-      ],
-      "Gospel": [
-        "Luke 4:14-21"
-      ]
+      "First Lesson": ["Neh 8:1-12"],
+      "Psalm": ["Psalm 113"],
+      "Second Lesson": ["1 Corinthians 12:12-27"],
+      "Gospel": ["Luke 4:14-21"]
     }
   },
   "The Fourth Sunday of Epiphany": {
     "Year A": {
-      "First Lesson": [
-        "Micah 6:1-8"
-      ],
-      "Psalm": [
-        "Psalm 37:1-11"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 1:18-31"
-      ],
-      "Gospel": [
-        "Matthew 5:1-12"
-      ]
+      "First Lesson": ["Micah 6:1-8"],
+      "Psalm": ["Psalm 37:1-11"],
+      "Second Lesson": ["1 Corinthians 1:18-31"],
+      "Gospel": ["Matthew 5:1-12"]
     },
     "Year B": {
-      "First Lesson": [
-        "Deuteronomy 18:15-22"
-      ],
-      "Psalm": [
-        "Psalm 111"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 8:1-13"
-      ],
-      "Gospel": [
-        "Mark 1:21-28"
-      ]
+      "First Lesson": ["Deuteronomy 18:15-22"],
+      "Psalm": ["Psalm 111"],
+      "Second Lesson": ["1 Corinthians 8:1-13"],
+      "Gospel": ["Mark 1:21-28"]
     },
     "Year C": {
-      "First Lesson": [
-        "Jeremiah 1:4-10"
-      ],
-      "Psalm": [
-        "Psalm 71:11-20"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 14:12-25"
-      ],
-      "Gospel": [
-        "Luke 4:21-32"
-      ]
+      "First Lesson": ["Jeremiah 1:4-10"],
+      "Psalm": ["Psalm 71:11-20"],
+      "Second Lesson": ["1 Corinthians 14:12-25"],
+      "Gospel": ["Luke 4:21-32"]
     }
   },
   "The Fifth Sunday of Epiphany": {
     "Year A": {
-      "First Lesson": [
-        "2 Kings 22:8-20"
-      ],
-      "Psalm": [
-        "Psalm 27"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 2:1-16"
-      ],
-      "Gospel": [
-        "Matthew 5:13-20"
-      ]
+      "First Lesson": ["2 Kings 22:8-20"],
+      "Psalm": ["Psalm 27"],
+      "Second Lesson": ["1 Corinthians 2:1-16"],
+      "Gospel": ["Matthew 5:13-20"]
     },
     "Year B": {
-      "First Lesson": [
-        "2 Kings 4:8-21, (22-31), 32-37"
-      ],
-      "Psalm": [
-        "Psalm 142"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 9:16-23"
-      ],
-      "Gospel": [
-        "Mark 1:29-39"
-      ]
+      "First Lesson": ["2 Kings 4:8-21, (22-31), 32-37"],
+      "Psalm": ["Psalm 142"],
+      "Second Lesson": ["1 Corinthians 9:16-23"],
+      "Gospel": ["Mark 1:29-39"]
     },
     "Year C": {
-      "First Lesson": [
-        "Judg 6:11-24"
-      ],
-      "Psalm": [
-        "Psalm 85"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 15:1-11"
-      ],
-      "Gospel": [
-        "Luke 5:1-11"
-      ]
+      "First Lesson": ["Judges 6:11-24"],
+      "Psalm": ["Psalm 85"],
+      "Second Lesson": ["1 Corinthians 15:1-11"],
+      "Gospel": ["Luke 5:1-11"]
     }
   },
   "The Sixth Sunday of Epiphany": {
     "Year A": {
-      "First Lesson": [
-        "Ecclesiasticus 15:11-20"
-      ],
-      "Psalm": [
-        "Psalm 119:(1-8), 9-16"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 3:1-9"
-      ],
-      "Gospel": [
-        "Matthew 5:21-37"
-      ]
+      "First Lesson": ["Ecclesiasticus 15:11-20"],
+      "Psalm": ["Psalm 119:(1-8), 9-16"],
+      "Second Lesson": ["1 Corinthians 3:1-9"],
+      "Gospel": ["Matthew 5:21-37"]
     },
     "Year B": {
-      "First Lesson": [
-        "2 Kings 5:1-15a"
-      ],
-      "Psalm": [
-        "Psalm 42:1-7, (8-15)"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 9:24-27"
-      ],
-      "Gospel": [
-        "Mark 1:40-45"
-      ]
+      "First Lesson": ["2 Kings 5:1-15a"],
+      "Psalm": ["Psalm 42:1-7, (8-15)"],
+      "Second Lesson": ["1 Corinthians 9:24-27"],
+      "Gospel": ["Mark 1:40-45"]
     },
     "Year C": {
-      "First Lesson": [
-        "Jeremiah 17:5-10"
-      ],
-      "Psalm": [
-        "Psalm 1"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 15:12-20"
-      ],
-      "Gospel": [
-        "Luke 6:17-26"
-      ]
+      "First Lesson": ["Jeremiah 17:5-10"],
+      "Psalm": ["Psalm 1"],
+      "Second Lesson": ["1 Corinthians 15:12-20"],
+      "Gospel": ["Luke 6:17-26"]
     }
   },
   "The Seventh Sunday of Epiphany": {
     "Year A": {
-      "First Lesson": [
-        "Leviticus 19:1-2, 9-18"
-      ],
-      "Psalm": [
-        "Psalm 71",
-        "Psalm 71:11-23"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 3:10-23"
-      ],
-      "Gospel": [
-        "Matthew 5:38-48"
-      ]
+      "First Lesson": ["Leviticus 19:1-2, 9-18"],
+      "Psalm": ["Psalm 71", "Psalm 71:11-23"],
+      "Second Lesson": ["1 Corinthians 3:10-23"],
+      "Gospel": ["Matthew 5:38-48"]
     },
     "Year B": {
-      "First Lesson": [
-        "Isaiah 43:18-25"
-      ],
-      "Psalm": [
-        "Psalm 32"
-      ],
-      "Second Lesson": [
-        "2 Corinthians 1:18-22"
-      ],
-      "Gospel": [
-        "Mark 2:1-12"
-      ]
+      "First Lesson": ["Isaiah 43:18-25"],
+      "Psalm": ["Psalm 32"],
+      "Second Lesson": ["2 Corinthians 1:18-22"],
+      "Gospel": ["Mark 2:1-12"]
     },
     "Year C": {
-      "First Lesson": [
-        "Genesis 45:3-11, 21-28"
-      ],
-      "Psalm": [
-        "Psalm 37:(1-7), 8-17"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 15:35-49"
-      ],
-      "Gospel": [
-        "Luke 6:27-38"
-      ]
+      "First Lesson": ["Genesis 45:3-11, 21-28"],
+      "Psalm": ["Psalm 37:(1-7), 8-17"],
+      "Second Lesson": ["1 Corinthians 15:35-49"],
+      "Gospel": ["Luke 6:27-38"]
     }
   },
   "The Eighth Sunday of Epiphany": {
     "Year A": {
-      "First Lesson": [
-        "Isaiah 49:8-18, (19-23)"
-      ],
-      "Psalm": [
-        "Psalm 62"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 4:1-13"
-      ],
-      "Gospel": [
-        "Matthew 6:24-34"
-      ]
+      "First Lesson": ["Isaiah 49:8-18, (19-23)"],
+      "Psalm": ["Psalm 62"],
+      "Second Lesson": ["1 Corinthians 4:1-13"],
+      "Gospel": ["Matthew 6:24-34"]
     },
     "Year B": {
-      "First Lesson": [
-        "Hosea 2:14-23"
-      ],
-      "Psalm": [
-        "Psalm 103",
-        "Psalm 103:1-14"
-      ],
-      "Second Lesson": [
-        "2 Corinthians 3:4-18"
-      ],
-      "Gospel": [
-        "Mark 2:18-22"
-      ]
+      "First Lesson": ["Hosea 2:14-23"],
+      "Psalm": ["Psalm 103", "Psalm 103:1-14"],
+      "Second Lesson": ["2 Corinthians 3:4-18"],
+      "Gospel": ["Mark 2:18-22"]
     },
     "Year C": {
-      "First Lesson": [
-        "Jeremiah 7:1-15"
-      ],
-      "Psalm": [
-        "Psalm 92"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 15:50-58"
-      ],
-      "Gospel": [
-        "Luke 6:39-49"
-      ]
+      "First Lesson": ["Jeremiah 7:1-15"],
+      "Psalm": ["Psalm 92"],
+      "Second Lesson": ["1 Corinthians 15:50-58"],
+      "Gospel": ["Luke 6:39-49"]
     }
   },
   "The Second to Last Sunday of Epiphany: World Mission": {
     "Year A": {
-      "First Lesson": [
-        "Isaiah 49:1-7"
-      ],
-      "Psalm": [
-        "Psalm 67"
-      ],
-      "Second Lesson": [
-        "Acts 1:1-8"
-      ],
-      "Gospel": [
-        "Matthew 9:35-38"
-      ]
+      "First Lesson": ["Isaiah 49:1-7"],
+      "Psalm": ["Psalm 67"],
+      "Second Lesson": ["Acts 1:1-8"],
+      "Gospel": ["Matthew 9:35-38"]
     },
     "Year B": {
-      "First Lesson": [
-        "Genesis 12:1-3"
-      ],
-      "Psalm": [
-        "Psalm 86:8-13"
-      ],
-      "Second Lesson": [
-        "Revelation 7:9-17"
-      ],
-      "Gospel": [
-        "Matthew 28:16-20"
-      ]
+      "First Lesson": ["Genesis 12:1-3"],
+      "Psalm": ["Psalm 86:8-13"],
+      "Second Lesson": ["Revelation 7:9-17"],
+      "Gospel": ["Matthew 28:16-20"]
     },
     "Year C": {
-      "First Lesson": [
-        "Isaiah 61:1-4"
-      ],
-      "Psalm": [
-        "Psalm 96"
-      ],
-      "Second Lesson": [
-        "Romans 10:9-17"
-      ],
-      "Gospel": [
-        "John 20:19-31"
-      ]
+      "First Lesson": ["Isaiah 61:1-4"],
+      "Psalm": ["Psalm 96"],
+      "Second Lesson": ["Romans 10:9-17"],
+      "Gospel": ["John 20:19-31"]
     }
   },
   "The Last Sunday of Epiphany: Transfiguration": {
     "Year A": {
-      "First Lesson": [
-        "Exodus 24:12-18"
-      ],
-      "Psalm": [
-        "Psalm 99"
-      ],
-      "Second Lesson": [
-        "Philippians 3:7-14"
-      ],
-      "Gospel": [
-        "Matthew 17:1-9"
-      ]
+      "First Lesson": ["Exodus 24:12-18"],
+      "Psalm": ["Psalm 99"],
+      "Second Lesson": ["Philippians 3:7-14"],
+      "Gospel": ["Matthew 17:1-9"]
     },
     "Year B": {
-      "First Lesson": [
-        "1 Kings 19:9-18"
-      ],
-      "Psalm": [
-        "Psalm 27"
-      ],
-      "Second Lesson": [
-        "2 Peter 1:13-21"
-      ],
-      "Gospel": [
-        "Mark 9:2-9"
-      ]
+      "First Lesson": ["1 Kings 19:9-18"],
+      "Psalm": ["Psalm 27"],
+      "Second Lesson": ["2 Peter 1:13-21"],
+      "Gospel": ["Mark 9:2-9"]
     },
     "Year C": {
-      "First Lesson": [
-        "Exodus 34:29-35"
-      ],
-      "Psalm": [
-        "Psalm 99"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 12:27-13:13"
-      ],
-      "Gospel": [
-        "Luke 9:28-36"
-      ]
+      "First Lesson": ["Exodus 34:29-35"],
+      "Psalm": ["Psalm 99"],
+      "Second Lesson": ["1 Corinthians 12:27-13:13"],
+      "Gospel": ["Luke 9:28-36"]
     }
   },
   "The First Sunday in Lent": {
     "Year A": {
-      "First Lesson": [
-        "Genesis 2:4-9, 15-17, 25-3:7"
-      ],
-      "Psalm": [
-        "Psalm 51",
-        "Psalm 51:1-12"
-      ],
-      "Second Lesson": [
-        "Romans 5:12-21"
-      ],
-      "Gospel": [
-        "Matthew 4:1-11"
-      ]
+      "First Lesson": ["Genesis 2:4-9, 15-17, 25-3:7"],
+      "Psalm": ["Psalm 51", "Psalm 51:1-12"],
+      "Second Lesson": ["Romans 5:12-21"],
+      "Gospel": ["Matthew 4:1-11"]
     },
     "Year B": {
-      "First Lesson": [
-        "Genesis 9:8-17"
-      ],
-      "Psalm": [
-        "Psalm 25",
-        "Psalm 25:3-9"
-      ],
-      "Second Lesson": [
-        "1 Peter 3:18-22"
-      ],
-      "Gospel": [
-        "Mark 1:9-13"
-      ]
+      "First Lesson": ["Genesis 9:8-17"],
+      "Psalm": ["Psalm 25", "Psalm 25:3-9"],
+      "Second Lesson": ["1 Peter 3:18-22"],
+      "Gospel": ["Mark 1:9-13"]
     },
     "Year C": {
-      "First Lesson": [
-        "Deuteronomy 26:(1-4), 5-11"
-      ],
-      "Psalm": [
-        "Psalm 91",
-        "Psalm 91:9-16"
-      ],
-      "Second Lesson": [
-        "Romans 10:4-13"
-      ],
-      "Gospel": [
-        "Luke 4:1-13"
-      ]
+      "First Lesson": ["Deuteronomy 26:(1-4), 5-11"],
+      "Psalm": ["Psalm 91", "Psalm 91:9-16"],
+      "Second Lesson": ["Romans 10:4-13"],
+      "Gospel": ["Luke 4:1-13"]
     }
   },
   "The Second Sunday in Lent": {
     "Year A": {
-      "First Lesson": [
-        "Genesis 12:1-9"
-      ],
-      "Psalm": [
-        "Psalm 33:12-21"
-      ],
-      "Second Lesson": [
-        "Romans 4:1-5, (6-12), 13-17"
-      ],
-      "Gospel": [
-        "John 3:1-16"
-      ]
+      "First Lesson": ["Genesis 12:1-9"],
+      "Psalm": ["Psalm 33:12-21"],
+      "Second Lesson": ["Romans 4:1-5, (6-12), 13-17"],
+      "Gospel": ["John 3:1-16"]
     },
     "Year B": {
-      "First Lesson": [
-        "Genesis 22:1-14"
-      ],
-      "Psalm": [
-        "Psalm 16",
-        "Psalm 16:6-12"
-      ],
-      "Second Lesson": [
-        "Romans 8:31-39"
-      ],
-      "Gospel": [
-        "Mark 8:31-38"
-      ]
+      "First Lesson": ["Genesis 22:1-14"],
+      "Psalm": ["Psalm 16", "Psalm 16:6-12"],
+      "Second Lesson": ["Romans 8:31-39"],
+      "Gospel": ["Mark 8:31-38"]
     },
     "Year C": {
-      "First Lesson": [
-        "Genesis 15:1-18"
-      ],
-      "Psalm": [
-        "Psalm 27",
-        "Psalm 27:9-17"
-      ],
-      "Second Lesson": [
-        "Philippians 3:17-4:1"
-      ],
-      "Gospel": [
-        "Luke 13:(22-30), 31-35"
-      ]
+      "First Lesson": ["Genesis 15:1-18"],
+      "Psalm": ["Psalm 27", "Psalm 27:9-17"],
+      "Second Lesson": ["Philippians 3:17-4:1"],
+      "Gospel": ["Luke 13:(22-30), 31-35"]
     }
   },
   "The Third Sunday in Lent": {
     "Year A": {
-      "First Lesson": [
-        "Exodus 17:1-7"
-      ],
-      "Psalm": [
-        "Psalm 95"
-      ],
-      "Second Lesson": [
-        "Romans 1:16-32"
-      ],
-      "Gospel": [
-        "John 4:5-26, (27-38), 39-42"
-      ]
+      "First Lesson": ["Exodus 17:1-7"],
+      "Psalm": ["Psalm 95"],
+      "Second Lesson": ["Romans 1:16-32"],
+      "Gospel": ["John 4:5-26, (27-38), 39-42"]
     },
     "Year B": {
-      "First Lesson": [
-        "Exodus 20:1-21"
-      ],
-      "Psalm": [
-        "Psalm 19:7-14"
-      ],
-      "Second Lesson": [
-        "Romans 7:12-25"
-      ],
-      "Gospel": [
-        "John 2:13-22"
-      ]
+      "First Lesson": ["Exodus 20:1-21"],
+      "Psalm": ["Psalm 19:7-14"],
+      "Second Lesson": ["Romans 7:12-25"],
+      "Gospel": ["John 2:13-22"]
     },
     "Year C": {
-      "First Lesson": [
-        "Exodus 3:1-15"
-      ],
-      "Psalm": [
-        "Psalm 103",
-        "Psalm 103:1-12"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 10:1-13"
-      ],
-      "Gospel": [
-        "Luke 13:1-9, (10-17)"
-      ]
+      "First Lesson": ["Exodus 3:1-15"],
+      "Psalm": ["Psalm 103", "Psalm 103:1-12"],
+      "Second Lesson": ["1 Corinthians 10:1-13"],
+      "Gospel": ["Luke 13:1-9, (10-17)"]
     }
   },
   "The Fourth Sunday in Lent": {
     "Year A": {
-      "First Lesson": [
-        "1 Sam 16:1-13"
-      ],
-      "Psalm": [
-        "Psalm 23"
-      ],
-      "Second Lesson": [
-        "Ephesians 5:1-14"
-      ],
-      "Gospel": [
-        "John 9:1-13, 28-38, (39-41)"
-      ]
+      "First Lesson": ["1 Samuel 16:1-13"],
+      "Psalm": ["Psalm 23"],
+      "Second Lesson": ["Ephesians 5:1-14"],
+      "Gospel": ["John 9:1-13, 28-38, (39-41)"]
     },
     "Year B": {
-      "First Lesson": [
-        "2 Chronicles 36:14-23"
-      ],
-      "Psalm": [
-        "Psalm 122"
-      ],
-      "Second Lesson": [
-        "Ephesians 2:1-10"
-      ],
-      "Gospel": [
-        "John 6:1-15"
-      ]
+      "First Lesson": ["2 Chronicles 36:14-23"],
+      "Psalm": ["Psalm 122"],
+      "Second Lesson": ["Ephesians 2:1-10"],
+      "Gospel": ["John 6:1-15"]
     },
     "Year C": {
-      "First Lesson": [
-        "Joshua (4:19-24); 5:1, (2-8), 9-12"
-      ],
-      "Psalm": [
-        "Psalm 34",
-        "Psalm 34:1-8"
-      ],
-      "Second Lesson": [
-        "2 Corinthians 5:17-21"
-      ],
-      "Gospel": [
-        "Luke 15:11-32"
-      ]
+      "First Lesson": ["Joshua (4:19-24); 5:1, (2-8), 9-12"],
+      "Psalm": ["Psalm 34", "Psalm 34:1-8"],
+      "Second Lesson": ["2 Corinthians 5:17-21"],
+      "Gospel": ["Luke 15:11-32"]
     }
   },
   "The Fifth Sunday in Lent: Passion Sunday": {
     "Year A": {
-      "First Lesson": [
-        "Ezek 37:1-14"
-      ],
-      "Psalm": [
-        "Psalm 130"
-      ],
-      "Second Lesson": [
-        "Romans 6:15-23"
-      ],
-      "Gospel": [
-        "John 11:(1-17), 18-44"
-      ]
+      "First Lesson": ["Ezekiel 37:1-14"],
+      "Psalm": ["Psalm 130"],
+      "Second Lesson": ["Romans 6:15-23"],
+      "Gospel": ["John 11:(1-17), 18-44"]
     },
     "Year B": {
-      "First Lesson": [
-        "Jeremiah 31:31-34"
-      ],
-      "Psalm": [
-        "Psalm 51",
-        "Psalm 51:10-15"
-      ],
-      "Second Lesson": [
-        "Hebrews (4:14-16); 5:1-10"
-      ],
-      "Gospel": [
-        "John 12:20-33, (34-36)"
-      ]
+      "First Lesson": ["Jeremiah 31:31-34"],
+      "Psalm": ["Psalm 51", "Psalm 51:10-15"],
+      "Second Lesson": ["Hebrews (4:14-16); 5:1-10"],
+      "Gospel": ["John 12:20-33, (34-36)"]
     },
     "Year C": {
-      "First Lesson": [
-        "Isaiah 43:16-21"
-      ],
-      "Psalm": [
-        "Psalm 126"
-      ],
-      "Second Lesson": [
-        "Philippians 3:7-16"
-      ],
-      "Gospel": [
-        "Luke 20:9-19"
-      ]
+      "First Lesson": ["Isaiah 43:16-21"],
+      "Psalm": ["Psalm 126"],
+      "Second Lesson": ["Philippians 3:7-16"],
+      "Gospel": ["Luke 20:9-19"]
     }
   },
   "The Second Sunday of Easter": {
     "Year A": {
-      "First Lesson": [
-        "Acts 2:14a, 22-32",
-        "Genesis 8:6-16; 9:8-16"
-      ],
-      "Psalm": [
-        "Psalm 111"
-      ],
-      "Second Lesson": [
-        "1 Peter 1:3-9"
-      ],
-      "Gospel": [
-        "John 20:19-31"
-      ]
+      "First Lesson": ["Acts 2:14a, 22-32", "Genesis 8:6-16; 9:8-16"],
+      "Psalm": ["Psalm 111"],
+      "Second Lesson": ["1 Peter 1:3-9"],
+      "Gospel": ["John 20:19-31"]
     },
     "Year B": {
-      "First Lesson": [
-        "Acts 3:12a, 13-15, 17-26",
-        "Isaiah 26:1-9, 19"
-      ],
-      "Psalm": [
-        "Psalm 111"
-      ],
-      "Second Lesson": [
-        "1 John 5:1-5"
-      ],
-      "Gospel": [
-        "John 20:19-31"
-      ]
+      "First Lesson": ["Acts 3:12a, 13-15, 17-26", "Isaiah 26:1-9, 19"],
+      "Psalm": ["Psalm 111"],
+      "Second Lesson": ["1 John 5:1-5"],
+      "Gospel": ["John 20:19-31"]
     },
     "Year C": {
-      "First Lesson": [
-        "Acts 5:12a, 17-22, 25-29",
-        "Job 42:1-6"
-      ],
-      "Psalm": [
-        "Psalm 111"
-      ],
-      "Second Lesson": [
-        "Revelation 1:(1-8), 9-19"
-      ],
-      "Gospel": [
-        "John 20:19-31"
-      ]
+      "First Lesson": ["Acts 5:12a, 17-22, 25-29", "Job 42:1-6"],
+      "Psalm": ["Psalm 111"],
+      "Second Lesson": ["Revelation 1:(1-8), 9-19"],
+      "Gospel": ["John 20:19-31"]
     }
   },
   "The Third Sunday of Easter": {
     "Year A": {
-      "First Lesson": [
-        "Acts 2:14a, 36-47",
-        "Isaiah 43:1-12"
-      ],
-      "Psalm": [
-        "Psalm 116:11-16"
-      ],
-      "Second Lesson": [
-        "1 Peter 1:13-25"
-      ],
-      "Gospel": [
-        "Luke 24:13-35"
-      ]
+      "First Lesson": ["Acts 2:14a, 36-47", "Isaiah 43:1-12"],
+      "Psalm": ["Psalm 116:11-16"],
+      "Second Lesson": ["1 Peter 1:13-25"],
+      "Gospel": ["Luke 24:13-35"]
     },
     "Year B": {
-      "First Lesson": [
-        "Acts 4:5-14",
-        "Micah 4:1-5"
-      ],
-      "Psalm": [
-        "Psalm 98",
-        "Psalm 98:1-5"
-      ],
-      "Second Lesson": [
-        "1 John 1:1-2:2"
-      ],
-      "Gospel": [
-        "Luke 24:36-49"
-      ]
+      "First Lesson": ["Acts 4:5-14", "Micah 4:1-5"],
+      "Psalm": ["Psalm 98", "Psalm 98:1-5"],
+      "Second Lesson": ["1 John 1:1-2:2"],
+      "Gospel": ["Luke 24:36-49"]
     },
     "Year C": {
-      "First Lesson": [
-        "Acts 9:1-19a",
-        "Jeremiah 32:36-41"
-      ],
-      "Psalm": [
-        "Psalm 33",
-        "Psalm 33:1-11"
-      ],
-      "Second Lesson": [
-        "Revelation 5:(1-5), 6-14"
-      ],
-      "Gospel": [
-        "John 21:1-14"
-      ]
+      "First Lesson": ["Acts 9:1-19a", "Jeremiah 32:36-41"],
+      "Psalm": ["Psalm 33", "Psalm 33:1-11"],
+      "Second Lesson": ["Revelation 5:(1-5), 6-14"],
+      "Gospel": ["John 21:1-14"]
     }
   },
   "The Fourth Sunday of Easter: Good Shepherd": {
     "Year A": {
-      "First Lesson": [
-        "Acts 6:1-9; 7:2a, 51-60",
-        "Neh 9:(1-3), 6-15"
-      ],
-      "Psalm": [
-        "Psalm 23"
-      ],
-      "Second Lesson": [
-        "1 Peter 2:13-25"
-      ],
-      "Gospel": [
-        "John 10:1-10"
-      ]
+      "First Lesson": ["Acts 6:1-9; 7:2a, 51-60", "Neh 9:(1-3), 6-15"],
+      "Psalm": ["Psalm 23"],
+      "Second Lesson": ["1 Peter 2:13-25"],
+      "Gospel": ["John 10:1-10"]
     },
     "Year B": {
-      "First Lesson": [
-        "Acts 4:(23-31), 32-37",
-        "Ezek 34:1-10"
-      ],
-      "Psalm": [
-        "Psalm 23"
-      ],
-      "Second Lesson": [
-        "1 John 3:1-10"
-      ],
-      "Gospel": [
-        "John 10:11-16"
-      ]
+      "First Lesson": ["Acts 4:(23-31), 32-37", "Ezekiel 34:1-10"],
+      "Psalm": ["Psalm 23"],
+      "Second Lesson": ["1 John 3:1-10"],
+      "Gospel": ["John 10:11-16"]
     },
     "Year C": {
-      "First Lesson": [
-        "Acts 13:14b-16, 26-39",
-        "Num 27:12-23"
-      ],
-      "Psalm": [
-        "Psalm 100"
-      ],
-      "Second Lesson": [
-        "Revelation 7:9-17"
-      ],
-      "Gospel": [
-        "John 10:22-30"
-      ]
+      "First Lesson": ["Acts 13:14b-16, 26-39", "Numbers 27:12-23"],
+      "Psalm": ["Psalm 100"],
+      "Second Lesson": ["Revelation 7:9-17"],
+      "Gospel": ["John 10:22-30"]
     }
   },
   "The Fifth Sunday of Easter": {
     "Year A": {
-      "First Lesson": [
-        "Acts 17:1-15",
-        "Deuteronomy 6:20-25"
-      ],
-      "Psalm": [
-        "Psalm 66:1-11",
-        "Psalm 66:1-8"
-      ],
-      "Second Lesson": [
-        "1 Peter 2:1-12"
-      ],
-      "Gospel": [
-        "John 14:1-14"
-      ]
+      "First Lesson": ["Acts 17:1-15", "Deuteronomy 6:20-25"],
+      "Psalm": ["Psalm 66:1-11", "Psalm 66:1-8"],
+      "Second Lesson": ["1 Peter 2:1-12"],
+      "Gospel": ["John 14:1-14"]
     },
     "Year B": {
-      "First Lesson": [
-        "Acts 8:26-40",
-        "Deuteronomy 4:32-40"
-      ],
-      "Psalm": [
-        "Psalm 66:1-11",
-        "Psalm 66:1-8"
-      ],
-      "Second Lesson": [
-        "1 John 3:(11-17), 18-24"
-      ],
-      "Gospel": [
-        "John 14:15-21"
-      ]
+      "First Lesson": ["Acts 8:26-40", "Deuteronomy 4:32-40"],
+      "Psalm": ["Psalm 66:1-11", "Psalm 66:1-8"],
+      "Second Lesson": ["1 John 3:(11-17), 18-24"],
+      "Gospel": ["John 14:15-21"]
     },
     "Year C": {
-      "First Lesson": [
-        "Acts 13:44-52",
-        "Leviticus 19:1-2, 9-18"
-      ],
-      "Psalm": [
-        "Psalm 145",
-        "Psalm 145:1-9"
-      ],
-      "Second Lesson": [
-        "Revelation 19:1-9"
-      ],
-      "Gospel": [
-        "John 13:31-35"
-      ]
+      "First Lesson": ["Acts 13:44-52", "Leviticus 19:1-2, 9-18"],
+      "Psalm": ["Psalm 145", "Psalm 145:1-9"],
+      "Second Lesson": ["Revelation 19:1-9"],
+      "Gospel": ["John 13:31-35"]
     }
   },
   "The Sixth Sunday of Easter: Rogation Sunday": {
     "Year A": {
-      "First Lesson": [
-        "Acts 17:(16-21), 22-34",
-        "Isaiah 41:17-20"
-      ],
-      "Psalm": [
-        "Psalm 148",
-        "Psalm 148:7-14"
-      ],
-      "Second Lesson": [
-        "1 Peter 3:8-18"
-      ],
-      "Gospel": [
-        "John 15:1-11"
-      ]
+      "First Lesson": ["Acts 17:(16-21), 22-34", "Isaiah 41:17-20"],
+      "Psalm": ["Psalm 148", "Psalm 148:7-14"],
+      "Second Lesson": ["1 Peter 3:8-18"],
+      "Gospel": ["John 15:1-11"]
     },
     "Year B": {
-      "First Lesson": [
-        "Acts 11:19-30",
-        "Isaiah 45:11-13, 18-19, (20-25)"
-      ],
-      "Psalm": [
-        "Psalm 33",
-        "Psalm 33:1-8, 17-21"
-      ],
-      "Second Lesson": [
-        "1 John 4:7-21"
-      ],
-      "Gospel": [
-        "John 15:9-17"
-      ]
+      "First Lesson": ["Acts 11:19-30", "Isaiah 45:11-13, 18-19, (20-25)"],
+      "Psalm": ["Psalm 33", "Psalm 33:1-8, 17-21"],
+      "Second Lesson": ["1 John 4:7-21"],
+      "Gospel": ["John 15:9-17"]
     },
     "Year C": {
-      "First Lesson": [
-        "Acts 14:8-18",
-        "Joel 2:21-27"
-      ],
-      "Psalm": [
-        "Psalm 67"
-      ],
-      "Second Lesson": [
-        "Revelation 21:1-4; 21:22-22:5"
-      ],
-      "Gospel": [
-        "John 14:21-29"
-      ]
+      "First Lesson": ["Acts 14:8-18", "Joel 2:21-27"],
+      "Psalm": ["Psalm 67"],
+      "Second Lesson": ["Revelation 21:1-4, 22-22:5"],
+      "Gospel": ["John 14:21-29"]
     }
   },
   "The Sunday after Ascension Day": {
     "Year A": {
-      "First Lesson": [
-        "Acts 1:(1-5), 6-14",
-        "Ezek 39:21-29"
-      ],
-      "Psalm": [
-        "Psalm 68:1-20",
-        "Psalm 47"
-      ],
-      "Second Lesson": [
-        "1 Peter 4:12-19"
-      ],
-      "Gospel": [
-        "John 17:1-11"
-      ]
+      "First Lesson": ["Acts 1:(1-5), 6-14", "Ezekiel 39:21-29"],
+      "Psalm": ["Psalm 68:1-20", "Psalm 47"],
+      "Second Lesson": ["1 Peter 4:12-19"],
+      "Gospel": ["John 17:1-11"]
     },
     "Year B": {
-      "First Lesson": [
-        "Acts 1:15-26",
-        "Exodus 28:1-4, 9-10, 29-30"
-      ],
-      "Psalm": [
-        "Psalm 68:1-20",
-        "Psalm 47"
-      ],
-      "Second Lesson": [
-        "1 John 5:6-15"
-      ],
-      "Gospel": [
-        "John 17:11b-19"
-      ]
+      "First Lesson": ["Acts 1:15-26", "Exodus 28:1-4, 9-10, 29-30"],
+      "Psalm": ["Psalm 68:1-20", "Psalm 47"],
+      "Second Lesson": ["1 John 5:6-15"],
+      "Gospel": ["John 17:11b-19"]
     },
     "Year C": {
-      "First Lesson": [
-        "Acts 16:16-34",
-        "1 Sam 12:19-24"
-      ],
-      "Psalm": [
-        "Psalm 68:1-20",
-        "Psalm 47"
-      ],
-      "Second Lesson": [
-        "Revelation 22:10-21"
-      ],
-      "Gospel": [
-        "John 17:20-26"
-      ]
+      "First Lesson": ["Acts 16:16-34", "1 Samuel 12:19-24"],
+      "Psalm": ["Psalm 68:1-20", "Psalm 47"],
+      "Second Lesson": ["Revelation 22:10-21"],
+      "Gospel": ["John 17:20-26"]
     }
   },
   "The Day of Pentecost": {
     "Year A": {
-      "First Lesson": [
-        "Genesis 11:1-9",
-        "Acts 2:1-11, (12-21)"
-      ],
-      "Psalm": [
-        "Psalm 104:24-35"
-      ],
-      "Second Lesson": [
-        "Acts 2:1-11, (12-21)",
-        "1 Corinthians 12:4-13",
-      ],
-      "Gospel": [
-        "John 14:8-17"
-      ]
+      "First Lesson": ["Genesis 11:1-9", "Acts 2:1-11, (12-21)"],
+      "Psalm": ["Psalm 104:24-35"],
+      "Second Lesson": ["Acts 2:1-11, (12-21)", "1 Corinthians 12:4-13"],
+      "Gospel": ["John 14:8-17"]
     },
     "Year B": {
-      "First Lesson": [
-        "Genesis 11:1-9",
-        "Acts 2:1-11, (12-21)"
-      ],
-      "Psalm": [
-        "Psalm 104:24-35"
-      ],
-      "Second Lesson": [
-        "Acts 2:1-11, (12-21)",
-        "1 Corinthians 12:4-13"
-      ],
-      "Gospel": [
-        "John 14:8-17"
-      ]
+      "First Lesson": ["Genesis 11:1-9", "Acts 2:1-11, (12-21)"],
+      "Psalm": ["Psalm 104:24-35"],
+      "Second Lesson": ["Acts 2:1-11, (12-21)", "1 Corinthians 12:4-13"],
+      "Gospel": ["John 14:8-17"]
     },
     "Year C": {
-      "First Lesson": [
-        "Genesis 11:1-9",
-        "Acts 2:1-11(12-21)"
-      ],
-      "Psalm": [
-        "Psalm 104:24-35"
-      ],
-      "Second Lesson": [
-        "Acts 2:1-11, (12-21)",
-        "1 Corinthians 12:4-13"
-      ],
-      "Gospel": [
-        "John 14:8-17"
-      ]
+      "First Lesson": ["Genesis 11:1-9", "Acts 2:1-11(12-21)"],
+      "Psalm": ["Psalm 104:24-35"],
+      "Second Lesson": ["Acts 2:1-11, (12-21)", "1 Corinthians 12:4-13"],
+      "Gospel": ["John 14:8-17"]
     }
   },
   "Trinity Sunday": {
     "Year A": {
-      "First Lesson": [
-        "Genesis 1:1-2:3"
-      ],
-      "Psalm": [
-        "Psalm 150"
-      ],
-      "Second Lesson": [
-        "2 Corinthians 13:5-14"
-      ],
-      "Gospel": [
-        "Matthew 28:16-20"
-      ]
+      "First Lesson": ["Genesis 1:1-2:3"],
+      "Psalm": ["Psalm 150"],
+      "Second Lesson": ["2 Corinthians 13:5-14"],
+      "Gospel": ["Matthew 28:16-20"]
     },
     "Year B": {
-      "First Lesson": [
-        "Exodus 3:1-6"
-      ],
-      "Psalm": [
-        "Psalm 93"
-      ],
-      "Second Lesson": [
-        "Romans 8:12-17"
-      ],
-      "Gospel": [
-        "John 3:1-16"
-      ]
+      "First Lesson": ["Exodus 3:1-6"],
+      "Psalm": ["Psalm 93"],
+      "Second Lesson": ["Romans 8:12-17"],
+      "Gospel": ["John 3:1-16"]
     },
     "Year C": {
-      "First Lesson": [
-        "Isaiah 6:1-7"
-      ],
-      "Psalm": [
-        "Psalm 29"
-      ],
-      "Second Lesson": [
-        "Revelation 4:1-11"
-      ],
-      "Gospel": [
-        "John 16:(5-11), 12-15"
-      ]
+      "First Lesson": ["Isaiah 6:1-7"],
+      "Psalm": ["Psalm 29"],
+      "Second Lesson": ["Revelation 4:1-11"],
+      "Gospel": ["John 16:(5-11), 12-15"]
     }
   },
   "Proper 1": {
     "Year A": {
-      "First Lesson": [
-        "Ecclesiasticus 15:11-20"
-      ],
-      "Psalm": [
-        "Psalm 119:1-16"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 3:1-9"
-      ],
-      "Gospel": [
-        "Matthew 5:21-37"
-      ]
+      "First Lesson": ["Ecclesiasticus 15:11-20"],
+      "Psalm": ["Psalm 119:1-16"],
+      "Second Lesson": ["1 Corinthians 3:1-9"],
+      "Gospel": ["Matthew 5:21-37"]
     },
     "Year B": {
-      "First Lesson": [
-        "2 Kings 5:1-15a"
-      ],
-      "Psalm": [
-        "Psalm 42"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 9:24-27"
-      ],
-      "Gospel": [
-        "Mark 1:40-45"
-      ]
+      "First Lesson": ["2 Kings 5:1-15a"],
+      "Psalm": ["Psalm 42"],
+      "Second Lesson": ["1 Corinthians 9:24-27"],
+      "Gospel": ["Mark 1:40-45"]
     },
     "Year C": {
-      "First Lesson": [
-        "Jeremiah 17:5-10"
-      ],
-      "Psalm": [
-        "Psalm 1"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 15:12-20"
-      ],
-      "Gospel": [
-        "Luke 6:17-26"
-      ]
+      "First Lesson": ["Jeremiah 17:5-10"],
+      "Psalm": ["Psalm 1"],
+      "Second Lesson": ["1 Corinthians 15:12-20"],
+      "Gospel": ["Luke 6:17-26"]
     }
   },
   "Proper 2": {
     "Year A": {
-      "First Lesson": [
-        "Leviticus 19:1-2, 9-18"
-      ],
-      "Psalm": [
-        "Psalm 71",
-        "Psalm 71:11-23"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 3:10-23"
-      ],
-      "Gospel": [
-        "Matthew 5:38-48"
-      ]
+      "First Lesson": ["Leviticus 19:1-2, 9-18"],
+      "Psalm": ["Psalm 71", "Psalm 71:11-23"],
+      "Second Lesson": ["1 Corinthians 3:10-23"],
+      "Gospel": ["Matthew 5:38-48"]
     },
     "Year B": {
-      "First Lesson": [
-        "Isaiah 43:18-25"
-      ],
-      "Psalm": [
-        "Psalm 32"
-      ],
-      "Second Lesson": [
-        "2 Corinthians 1:18-22"
-      ],
-      "Gospel": [
-        "Mark 2:1-12"
-      ]
+      "First Lesson": ["Isaiah 43:18-25"],
+      "Psalm": ["Psalm 32"],
+      "Second Lesson": ["2 Corinthians 1:18-22"],
+      "Gospel": ["Mark 2:1-12"]
     },
     "Year C": {
-      "First Lesson": [
-        "Genesis 45:3-11, 21-28"
-      ],
-      "Psalm": [
-        "Psalm 37:(1-6), 7-17"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 15:35-49"
-      ],
-      "Gospel": [
-        "Luke 6:27-38"
-      ]
+      "First Lesson": ["Genesis 45:3-11, 21-28"],
+      "Psalm": ["Psalm 37:(1-6), 7-17"],
+      "Second Lesson": ["1 Corinthians 15:35-49"],
+      "Gospel": ["Luke 6:27-38"]
     }
   },
   "Proper 3": {
     "Year A": {
-      "First Lesson": [
-        "Isaiah 49:8-18, (19-23)"
-      ],
-      "Psalm": [
-        "Psalm 62"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 4:1-13"
-      ],
-      "Gospel": [
-        "Matthew 6:24-34"
-      ]
+      "First Lesson": ["Isaiah 49:8-18, (19-23)"],
+      "Psalm": ["Psalm 62"],
+      "Second Lesson": ["1 Corinthians 4:1-13"],
+      "Gospel": ["Matthew 6:24-34"]
     },
     "Year B": {
-      "First Lesson": [
-        "Hosea 2:14-23"
-      ],
-      "Psalm": [
-        "Psalm 103",
-        "Psalm 103:1-14"
-      ],
-      "Second Lesson": [
-        "2 Corinthians 3:4-18"
-      ],
-      "Gospel": [
-        "Mark 2:18-22"
-      ]
+      "First Lesson": ["Hosea 2:14-23"],
+      "Psalm": ["Psalm 103", "Psalm 103:1-14"],
+      "Second Lesson": ["2 Corinthians 3:4-18"],
+      "Gospel": ["Mark 2:18-22"]
     },
     "Year C": {
-      "First Lesson": [
-        "Jeremiah 7:1-15"
-      ],
-      "Psalm": [
-        "Psalm 92"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 15:50-58"
-      ],
-      "Gospel": [
-        "Luke 6:39-49"
-      ]
+      "First Lesson": ["Jeremiah 7:1-15"],
+      "Psalm": ["Psalm 92"],
+      "Second Lesson": ["1 Corinthians 15:50-58"],
+      "Gospel": ["Luke 6:39-49"]
     }
   },
   "Proper 4": {
     "Year A": {
-      "First Lesson": [
-        "Deuteronomy 11:18-32"
-      ],
-      "Psalm": [
-        "Psalm 31",
-        "Psalm 31:18-27"
-      ],
-      "Second Lesson": [
-        "Romans 3:21-31"
-      ],
-      "Gospel": [
-        "Matthew 7:21-27"
-      ]
+      "First Lesson": ["Deuteronomy 11:18-32"],
+      "Psalm": ["Psalm 31", "Psalm 31:18-27"],
+      "Second Lesson": ["Romans 3:21-31"],
+      "Gospel": ["Matthew 7:21-27"]
     },
     "Year B": {
-      "First Lesson": [
-        "Deuteronomy 5:6-21"
-      ],
-      "Psalm": [
-        "Psalm 81:1-10, (11-16)"
-      ],
-      "Second Lesson": [
-        "2 Corinthians 4:1-12"
-      ],
-      "Gospel": [
-        "Mark 2:23-28"
-      ]
+      "First Lesson": ["Deuteronomy 5:6-21"],
+      "Psalm": ["Psalm 81:1-10, (11-16)"],
+      "Second Lesson": ["2 Corinthians 4:1-12"],
+      "Gospel": ["Mark 2:23-28"]
     },
     "Year C": {
-      "First Lesson": [
-        "1 Kings 8:22-30, 41-43"
-      ],
-      "Psalm": [
-        "Psalm 96"
-      ],
-      "Second Lesson": [
-        "Galatians 1:1-10"
-      ],
-      "Gospel": [
-        "Luke 7:1-10"
-      ]
+      "First Lesson": ["1 Kings 8:22-30, 41-43"],
+      "Psalm": ["Psalm 96"],
+      "Second Lesson": ["Galatians 1:1-10"],
+      "Gospel": ["Luke 7:1-10"]
     }
   },
   "Proper 5": {
     "Year A": {
-      "First Lesson": [
-        "Hosea 5:15-6:6"
-      ],
-      "Psalm": [
-        "Psalm 50"
-      ],
-      "Second Lesson": [
-        "Romans 4:13-18"
-      ],
-      "Gospel": [
-        "Matthew 9:9-13"
-      ]
+      "First Lesson": ["Hosea 5:15-6:6"],
+      "Psalm": ["Psalm 50"],
+      "Second Lesson": ["Romans 4:13-18"],
+      "Gospel": ["Matthew 9:9-13"]
     },
     "Year B": {
-      "First Lesson": [
-        "Genesis 3:1-21"
-      ],
-      "Psalm": [
-        "Psalm 130"
-      ],
-      "Second Lesson": [
-        "2 Corinthians 4:13-18"
-      ],
-      "Gospel": [
-        "Mark 3:20-35"
-      ]
+      "First Lesson": ["Genesis 3:1-21"],
+      "Psalm": ["Psalm 130"],
+      "Second Lesson": ["2 Corinthians 4:13-18"],
+      "Gospel": ["Mark 3:20-35"]
     },
     "Year C": {
-      "First Lesson": [
-        "1 Kings 17:17-24"
-      ],
-      "Psalm": [
-        "Psalm 30"
-      ],
-      "Second Lesson": [
-        "Galatians 1:11-24"
-      ],
-      "Gospel": [
-        "Luke 7:11-17"
-      ]
+      "First Lesson": ["1 Kings 17:17-24"],
+      "Psalm": ["Psalm 30"],
+      "Second Lesson": ["Galatians 1:11-24"],
+      "Gospel": ["Luke 7:11-17"]
     }
   },
   "Proper 6": {
     "Year A": {
-      "First Lesson": [
-        "Exodus 19:1-8"
-      ],
-      "Psalm": [
-        "Psalm 100"
-      ],
-      "Second Lesson": [
-        "Romans 5:1-11"
-      ],
-      "Gospel": [
-        "Matthew 9:35-10:15"
-      ]
+      "First Lesson": ["Exodus 19:1-8"],
+      "Psalm": ["Psalm 100"],
+      "Second Lesson": ["Romans 5:1-11"],
+      "Gospel": ["Matthew 9:35-10:15"]
     },
     "Year B": {
-      "First Lesson": [
-        "Ezek 31:1-6, (7-9), 10-14"
-      ],
-      "Psalm": [
-        "Psalm 92"
-      ],
-      "Second Lesson": [
-        "2 Corinthians 5:1-10"
-      ],
-      "Gospel": [
-        "Mark 4:26-34"
-      ]
+      "First Lesson": ["Ezekiel 31:1-6, (7-9), 10-14"],
+      "Psalm": ["Psalm 92"],
+      "Second Lesson": ["2 Corinthians 5:1-10"],
+      "Gospel": ["Mark 4:26-34"]
     },
     "Year C": {
-      "First Lesson": [
-        "2 Sam 11:26-12:15"
-      ],
-      "Psalm": [
-        "Psalm 32:1-6, (7-12)"
-      ],
-      "Second Lesson": [
-        "Galatians 2:11-21"
-      ],
-      "Gospel": [
-        "Luke 7:36-8:3"
-      ]
+      "First Lesson": ["2 Samuel 11:26-12:15"],
+      "Psalm": ["Psalm 32:1-6, (7-12)"],
+      "Second Lesson": ["Galatians 2:11-21"],
+      "Gospel": ["Luke 7:36-8:3"]
     }
   },
   "Proper 7": {
     "Year A": {
-      "First Lesson": [
-        "Jeremiah 20:7-13"
-      ],
-      "Psalm": [
-        "Psalm 69:1-15, (16-18)"
-      ],
-      "Second Lesson": [
-        "Romans 5:15b-19"
-      ],
-      "Gospel": [
-        "Matthew 10:16-33"
-      ]
+      "First Lesson": ["Jeremiah 20:7-13"],
+      "Psalm": ["Psalm 69:1-15, (16-18)"],
+      "Second Lesson": ["Romans 5:15b-19"],
+      "Gospel": ["Matthew 10:16-33"]
     },
     "Year B": {
-      "First Lesson": [
-        "Job 38:1-11, (12-15), 16-18"
-      ],
-      "Psalm": [
-        "Psalm 107:1-3, (4-22), 23-32"
-      ],
-      "Second Lesson": [
-        "2 Corinthians 5:14-21"
-      ],
-      "Gospel": [
-        "Mark 4:35-41; (5:1-20)"
-      ]
+      "First Lesson": ["Job 38:1-11, (12-15), 16-18"],
+      "Psalm": ["Psalm 107:1-3, (4-22), 23-32"],
+      "Second Lesson": ["2 Corinthians 5:14-21"],
+      "Gospel": ["Mark 4:35-41; (5:1-20)"]
     },
     "Year C": {
-      "First Lesson": [
-        "Zechariah 12:8-10; 13:1"
-      ],
-      "Psalm": [
-        "Psalm 63"
-      ],
-      "Second Lesson": [
-        "Galatians 3:23-29"
-      ],
-      "Gospel": [
-        "Luke 9:18-24"
-      ]
+      "First Lesson": ["Zechariah 12:8-10; 13:1"],
+      "Psalm": ["Psalm 63"],
+      "Second Lesson": ["Galatians 3:23-29"],
+      "Gospel": ["Luke 9:18-24"]
     }
   },
   "Proper 8": {
     "Year A": {
-      "First Lesson": [
-        "Isaiah 2:10-17"
-      ],
-      "Psalm": [
-        "Psalm 89:1-18"
-      ],
-      "Second Lesson": [
-        "Romans 6:1-11"
-      ],
-      "Gospel": [
-        "Matthew 10:34-42"
-      ]
+      "First Lesson": ["Isaiah 2:10-17"],
+      "Psalm": ["Psalm 89:1-18"],
+      "Second Lesson": ["Romans 6:1-11"],
+      "Gospel": ["Matthew 10:34-42"]
     },
     "Year B": {
-      "First Lesson": [
-        "Deuteronomy 15:7-11"
-      ],
-      "Psalm": [
-        "Psalm 112"
-      ],
-      "Second Lesson": [
-        "2 Corinthians 8:1-15"
-      ],
-      "Gospel": [
-        "Mark 5:22-43"
-      ]
+      "First Lesson": ["Deuteronomy 15:7-11"],
+      "Psalm": ["Psalm 112"],
+      "Second Lesson": ["2 Corinthians 8:1-15"],
+      "Gospel": ["Mark 5:22-43"]
     },
     "Year C": {
-      "First Lesson": [
-        "1 Kings 19:15-21"
-      ],
-      "Psalm": [
-        "Psalm 16"
-      ],
-      "Second Lesson": [
-        "Galatians 5:1, 13-25"
-      ],
-      "Gospel": [
-        "Luke 9:51-62"
-      ]
+      "First Lesson": ["1 Kings 19:15-21"],
+      "Psalm": ["Psalm 16"],
+      "Second Lesson": ["Galatians 5:1, 13-25"],
+      "Gospel": ["Luke 9:51-62"]
     }
   },
   "Proper 9": {
     "Year A": {
-      "First Lesson": [
-        "Zechariah 9:9-12"
-      ],
-      "Psalm": [
-        "Psalm 145:1-13 (14-21)"
-      ],
-      "Second Lesson": [
-        "Romans 7:21-8:6"
-      ],
-      "Gospel": [
-        "Matthew 11:25-30"
-      ]
+      "First Lesson": ["Zechariah 9:9-12"],
+      "Psalm": ["Psalm 145:1-13, (14-21)"],
+      "Second Lesson": ["Romans 7:21-8:6"],
+      "Gospel": ["Matthew 11:25-30"]
     },
     "Year B": {
-      "First Lesson": [
-        "Ezek 2:1-7"
-      ],
-      "Psalm": [
-        "Psalm 123"
-      ],
-      "Second Lesson": [
-        "2 Corinthians 12:2-10"
-      ],
-      "Gospel": [
-        "Mark 6:1-6"
-      ]
+      "First Lesson": ["Ezekiel 2:1-7"],
+      "Psalm": ["Psalm 123"],
+      "Second Lesson": ["2 Corinthians 12:2-10"],
+      "Gospel": ["Mark 6:1-6"]
     },
     "Year C": {
-      "First Lesson": [
-        "Isaiah 66:10-16"
-      ],
-      "Psalm": [
-        "Psalm 66",
-        "Psalm 66:1-8"
-      ],
-      "Second Lesson": [
-        "Galatians 6:(1-5), 6-18"
-      ],
-      "Gospel": [
-        "Luke 10:1-20"
-      ]
+      "First Lesson": ["Isaiah 66:10-16"],
+      "Psalm": ["Psalm 66", "Psalm 66:1-8"],
+      "Second Lesson": ["Galatians 6:(1-5), 6-18"],
+      "Gospel": ["Luke 10:1-20"]
     }
   },
   "Proper 10": {
     "Year A": {
-      "First Lesson": [
-        "Isaiah 55"
-      ],
-      "Psalm": [
-        "Psalm 65"
-      ],
-      "Second Lesson": [
-        "Romans 8:7-17"
-      ],
-      "Gospel": [
-        "Matthew 13:1-9, 18-23"
-      ]
+      "First Lesson": ["Isaiah 55"],
+      "Psalm": ["Psalm 65"],
+      "Second Lesson": ["Romans 8:7-17"],
+      "Gospel": ["Matthew 13:1-9, 18-23"]
     },
     "Year B": {
-      "First Lesson": [
-        "Amos 7:7-15"
-      ],
-      "Psalm": [
-        "Psalm 85"
-      ],
-      "Second Lesson": [
-        "Ephesians 1:1-14, (15-23)"
-      ],
-      "Gospel": [
-        "Mark 6:7-13"
-      ]
+      "First Lesson": ["Amos 7:7-15"],
+      "Psalm": ["Psalm 85"],
+      "Second Lesson": ["Ephesians 1:1-14, (15-23)"],
+      "Gospel": ["Mark 6:7-13"]
     },
     "Year C": {
-      "First Lesson": [
-        "Deuteronomy 30:9-14"
-      ],
-      "Psalm": [
-        "Psalm 25:1-14, (15-21)"
-      ],
-      "Second Lesson": [
-        "Col 1:1-14"
-      ],
-      "Gospel": [
-        "Luke 10:25-37"
-      ]
+      "First Lesson": ["Deuteronomy 30:9-14"],
+      "Psalm": ["Psalm 25:1-14, (15-21)"],
+      "Second Lesson": ["Colossians 1:1-14"],
+      "Gospel": ["Luke 10:25-37"]
     }
   },
   "Proper 11": {
     "Year A": {
-      "First Lesson": [
-        "Wisdom 12:13, 16-19"
-      ],
-      "Psalm": [
-        "Psalm 86"
-      ],
-      "Second Lesson": [
-        "Romans 8:18-25"
-      ],
-      "Gospel": [
-        "Matthew 13:24-30, 34-43"
-      ]
+      "First Lesson": ["Wisdom 12:13, 16-19"],
+      "Psalm": ["Psalm 86"],
+      "Second Lesson": ["Romans 8:18-25"],
+      "Gospel": ["Matthew 13:24-30, 34-43"]
     },
     "Year B": {
-      "First Lesson": [
-        "Isaiah 57:14-21"
-      ],
-      "Psalm": [
-        "Psalm 22:23-31"
-      ],
-      "Second Lesson": [
-        "Ephesians 2:11-22"
-      ],
-      "Gospel": [
-        "Mark 6:30-44"
-      ]
+      "First Lesson": ["Isaiah 57:14-21"],
+      "Psalm": ["Psalm 22:23-31"],
+      "Second Lesson": ["Ephesians 2:11-22"],
+      "Gospel": ["Mark 6:30-44"]
     },
     "Year C": {
-      "First Lesson": [
-        "Genesis 18:1-14"
-      ],
-      "Psalm": [
-        "Psalm 15"
-      ],
-      "Second Lesson": [
-        "Col 1:21-29"
-      ],
-      "Gospel": [
-        "Luke 10:38-42"
-      ]
+      "First Lesson": ["Genesis 18:1-14"],
+      "Psalm": ["Psalm 15"],
+      "Second Lesson": ["Colossians 1:21-29"],
+      "Gospel": ["Luke 10:38-42"]
     }
   },
   "Proper 12": {
     "Year A": {
-      "First Lesson": [
-        "1 Kings 3:3-14"
-      ],
-      "Psalm": [
-        "Psalm 119:121-136"
-      ],
-      "Second Lesson": [
-        "Romans 8:26-34"
-      ],
-      "Gospel": [
-        "Matthew 13:31-33, 44-50"
-      ]
+      "First Lesson": ["1 Kings 3:3-14"],
+      "Psalm": ["Psalm 119:121-136"],
+      "Second Lesson": ["Romans 8:26-34"],
+      "Gospel": ["Matthew 13:31-33, 44-50"]
     },
     "Year B": {
-      "First Lesson": [
-        "2 Kings 2:1-15"
-      ],
-      "Psalm": [
-        "Psalm 114"
-      ],
-      "Second Lesson": [
-        "Ephesians 3:(1-7), 8-21"
-      ],
-      "Gospel": [
-        "Mark 6:45-52"
-      ]
+      "First Lesson": ["2 Kings 2:1-15"],
+      "Psalm": ["Psalm 114"],
+      "Second Lesson": ["Ephesians 3:(1-7), 8-21"],
+      "Gospel": ["Mark 6:45-52"]
     },
     "Year C": {
-      "First Lesson": [
-        "Genesis 18:20-33"
-      ],
-      "Psalm": [
-        "Psalm 138"
-      ],
-      "Second Lesson": [
-        "Col 2:6-15"
-      ],
-      "Gospel": [
-        "Luke 11:1-13"
-      ]
+      "First Lesson": ["Genesis 18:20-33"],
+      "Psalm": ["Psalm 138"],
+      "Second Lesson": ["Colossians 2:6-15"],
+      "Gospel": ["Luke 11:1-13"]
     }
   },
   "Proper 13": {
     "Year A": {
-      "First Lesson": [
-        "Neh 9:16-21"
-      ],
-      "Psalm": [
-        "Psalm 78:(1-13), 14-26"
-      ],
-      "Second Lesson": [
-        "Romans 8:35-39"
-      ],
-      "Gospel": [
-        "Matthew 14:13-21"
-      ]
+      "First Lesson": ["Neh 9:16-21"],
+      "Psalm": ["Psalm 78:(1-13), 14-26"],
+      "Second Lesson": ["Romans 8:35-39"],
+      "Gospel": ["Matthew 14:13-21"]
     },
     "Year B": {
-      "First Lesson": [
-        "Exodus 16:2-4, (5-8), 9-15"
-      ],
-      "Psalm": [
-        "Psalm 78:(1-13), 14-26"
-      ],
-      "Second Lesson": [
-        "Ephesians 4:1-16"
-      ],
-      "Gospel": [
-        "John 6:24-35"
-      ]
+      "First Lesson": ["Exodus 16:2-4, (5-8), 9-15"],
+      "Psalm": ["Psalm 78:(1-13), 14-26"],
+      "Second Lesson": ["Ephesians 4:1-16"],
+      "Gospel": ["John 6:24-35"]
     },
     "Year C": {
-      "First Lesson": [
-        "Ecclesiastes 1:12-2:11"
-      ],
-      "Psalm": [
-        "Psalm 49:1-12, (13-21)"
-      ],
-      "Second Lesson": [
-        "Col 3:5-17"
-      ],
-      "Gospel": [
-        "Luke 12:13-21"
-      ]
+      "First Lesson": ["Ecclesiastes 1:12-2:11"],
+      "Psalm": ["Psalm 49:1-12, (13-21)"],
+      "Second Lesson": ["Colossians 3:5-17"],
+      "Gospel": ["Luke 12:13-21"]
     }
   },
   "Proper 14": {
     "Year A": {
-      "First Lesson": [
-        "Jon 2:1-10"
-      ],
-      "Psalm": [
-        "Psalm 29"
-      ],
-      "Second Lesson": [
-        "Romans 9:1-5"
-      ],
-      "Gospel": [
-        "Matthew 14:22-33"
-      ]
+      "First Lesson": ["Jonah 2:1-10"],
+      "Psalm": ["Psalm 29"],
+      "Second Lesson": ["Romans 9:1-5"],
+      "Gospel": ["Matthew 14:22-33"]
     },
     "Year B": {
-      "First Lesson": [
-        "Deuteronomy 8:1-10"
-      ],
-      "Psalm": [
-        "Psalm 34:(1-7), 8-15, (16-22)"
-      ],
-      "Second Lesson": [
-        "Ephesians 4:17-5:2"
-      ],
-      "Gospel": [
-        "John 6:37-51"
-      ]
+      "First Lesson": ["Deuteronomy 8:1-10"],
+      "Psalm": ["Psalm 34:(1-7), 8-15, (16-22)"],
+      "Second Lesson": ["Ephesians 4:17-5:2"],
+      "Gospel": ["John 6:37-51"]
     },
     "Year C": {
-      "First Lesson": [
-        "Genesis 15:1-6"
-      ],
-      "Psalm": [
-        "Psalm 33(1-9), 10-21"
-      ],
-      "Second Lesson": [
-        "Hebrews 11:1-16"
-      ],
-      "Gospel": [
-        "Luke 12:32-40"
-      ]
+      "First Lesson": ["Genesis 15:1-6"],
+      "Psalm": ["Psalm 33(1-9), 10-21"],
+      "Second Lesson": ["Hebrews 11:1-16"],
+      "Gospel": ["Luke 12:32-40"]
     }
   },
   "Proper 15": {
     "Year A": {
-      "First Lesson": [
-        "Isaiah 56:1-8"
-      ],
-      "Psalm": [
-        "Psalm 67"
-      ],
-      "Second Lesson": [
-        "Romans 11:13-24"
-      ],
-      "Gospel": [
-        "Matthew 15:21-28"
-      ]
+      "First Lesson": ["Isaiah 56:1-8"],
+      "Psalm": ["Psalm 67"],
+      "Second Lesson": ["Romans 11:13-24"],
+      "Gospel": ["Matthew 15:21-28"]
     },
     "Year B": {
-      "First Lesson": [
-        "Proverbs 9:1-6"
-      ],
-      "Psalm": [
-        "Psalm 147"
-      ],
-      "Second Lesson": [
-        "Ephesians 5:3-14"
-      ],
-      "Gospel": [
-        "John 6:53-59"
-      ]
+      "First Lesson": ["Proverbs 9:1-6"],
+      "Psalm": ["Psalm 147"],
+      "Second Lesson": ["Ephesians 5:3-14"],
+      "Gospel": ["John 6:53-59"]
     },
     "Year C": {
-      "First Lesson": [
-        "Jeremiah 23:23-29"
-      ],
-      "Psalm": [
-        "Psalm 82"
-      ],
-      "Second Lesson": [
-        "Hebrews 12:1-14"
-      ],
-      "Gospel": [
-        "Luke 12:49-56"
-      ]
+      "First Lesson": ["Jeremiah 23:23-29"],
+      "Psalm": ["Psalm 82"],
+      "Second Lesson": ["Hebrews 12:1-14"],
+      "Gospel": ["Luke 12:49-56"]
     }
   },
   "Proper 16": {
     "Year A": {
-      "First Lesson": [
-        "Isaiah 51:1-6"
-      ],
-      "Psalm": [
-        "Psalm 138"
-      ],
-      "Second Lesson": [
-        "Romans 11:25-36"
-      ],
-      "Gospel": [
-        "Matthew 16:13-20"
-      ]
+      "First Lesson": ["Isaiah 51:1-6"],
+      "Psalm": ["Psalm 138"],
+      "Second Lesson": ["Romans 11:25-36"],
+      "Gospel": ["Matthew 16:13-20"]
     },
     "Year B": {
-      "First Lesson": [
-        "Joshua 24:1-2a, 14-25"
-      ],
-      "Psalm": [
-        "Psalm 16"
-      ],
-      "Second Lesson": [
-        "Ephesians 5:15-33(6:1-9)"
-      ],
-      "Gospel": [
-        "John 6:60-69"
-      ]
+      "First Lesson": ["Joshua 24:1-2a, 14-25"],
+      "Psalm": ["Psalm 16"],
+      "Second Lesson": ["Ephesians 5:15-33; (6:1-9)"],
+      "Gospel": ["John 6:60-69"]
     },
     "Year C": {
-      "First Lesson": [
-        "Isaiah 28:14-22"
-      ],
-      "Psalm": [
-        "Psalm 46"
-      ],
-      "Second Lesson": [
-        "Hebrews 12:(15-17)18-29"
-      ],
-      "Gospel": [
-        "Luke 13:22-30"
-      ]
+      "First Lesson": ["Isaiah 28:14-22"],
+      "Psalm": ["Psalm 46"],
+      "Second Lesson": ["Hebrews 12:(15-17), 18-29"],
+      "Gospel": ["Luke 13:22-30"]
     }
   },
   "Proper 17": {
     "Year A": {
-      "First Lesson": [
-        "Jeremiah 15:15-21"
-      ],
-      "Psalm": [
-        "Psalm 26"
-      ],
-      "Second Lesson": [
-        "Romans 12:1-8"
-      ],
-      "Gospel": [
-        "Matthew 16:21-27"
-      ]
+      "First Lesson": ["Jeremiah 15:15-21"],
+      "Psalm": ["Psalm 26"],
+      "Second Lesson": ["Romans 12:1-8"],
+      "Gospel": ["Matthew 16:21-27"]
     },
     "Year B": {
-      "First Lesson": [
-        "Deuteronomy 4:1-9"
-      ],
-      "Psalm": [
-        "Psalm 15"
-      ],
-      "Second Lesson": [
-        "Ephesians 6:10-20"
-      ],
-      "Gospel": [
-        "Mark 7:1-23"
-      ]
+      "First Lesson": ["Deuteronomy 4:1-9"],
+      "Psalm": ["Psalm 15"],
+      "Second Lesson": ["Ephesians 6:10-20"],
+      "Gospel": ["Mark 7:1-23"]
     },
     "Year C": {
-      "First Lesson": [
-        "Ecclesiasticus 10:7-18"
-      ],
-      "Psalm": [
-        "Psalm 112"
-      ],
-      "Second Lesson": [
-        "Hebrews 13:1-8"
-      ],
-      "Gospel": [
-        "Luke 14:1,7-14"
-      ]
+      "First Lesson": ["Ecclesiasticus 10:7-18"],
+      "Psalm": ["Psalm 112"],
+      "Second Lesson": ["Hebrews 13:1-8"],
+      "Gospel": ["Luke 14:1, 7-14"]
     }
   },
   "Proper 18": {
     "Year A": {
-      "First Lesson": [
-        "Ezek 33:1-11"
-      ],
-      "Psalm": [
-        "Psalm 119:33-48"
-      ],
-      "Second Lesson": [
-        "Romans 12:9-21"
-      ],
-      "Gospel": [
-        "Matthew 18:15-20"
-      ]
+      "First Lesson": ["Ezekiel 33:1-11"],
+      "Psalm": ["Psalm 119:33-48"],
+      "Second Lesson": ["Romans 12:9-21"],
+      "Gospel": ["Matthew 18:15-20"]
     },
     "Year B": {
-      "First Lesson": [
-        "Isaiah 35:4-7a"
-      ],
-      "Psalm": [
-        "Psalm 146"
-      ],
-      "Second Lesson": [
-        "James 1:17-27"
-      ],
-      "Gospel": [
-        "Mark 7:31-37"
-      ]
+      "First Lesson": ["Isaiah 35:4-7a"],
+      "Psalm": ["Psalm 146"],
+      "Second Lesson": ["James 1:17-27"],
+      "Gospel": ["Mark 7:31-37"]
     },
     "Year C": {
-      "First Lesson": [
-        "Deuteronomy 30:15-20"
-      ],
-      "Psalm": [
-        "Psalm 1"
-      ],
-      "Second Lesson": [
-        "Philemon(1-3)4-21(22-25)"
-      ],
-      "Gospel": [
-        "Luke 14:25-33"
-      ]
+      "First Lesson": ["Deuteronomy 30:15-20"],
+      "Psalm": ["Psalm 1"],
+      "Second Lesson": ["Philemon(1-3), 4-21, (22-25)"],
+      "Gospel": ["Luke 14:25-33"]
     }
   },
   "Proper 19": {
     "Year A": {
-      "First Lesson": [
-        "Ecclesiasticus 27:30-28:7"
-      ],
-      "Psalm": [
-        "Psalm 103",
-        "Psalm 103:1-14"
-      ],
-      "Second Lesson": [
-        "Romans 14:5-12"
-      ],
-      "Gospel": [
-        "Matthew 18:21-35"
-      ]
+      "First Lesson": ["Ecclesiasticus 27:30-28:7"],
+      "Psalm": ["Psalm 103", "Psalm 103:1-14"],
+      "Second Lesson": ["Romans 14:5-12"],
+      "Gospel": ["Matthew 18:21-35"]
     },
     "Year B": {
-      "First Lesson": [
-        "Isaiah 50:4-9"
-      ],
-      "Psalm": [
-        "Psalm 116:1-9(10-16)"
-      ],
-      "Second Lesson": [
-        "James 2:1-18"
-      ],
-      "Gospel": [
-        "Mark 9:14-29"
-      ]
+      "First Lesson": ["Isaiah 50:4-9"],
+      "Psalm": ["Psalm 116:1-9, (10-16)"],
+      "Second Lesson": ["James 2:1-18"],
+      "Gospel": ["Mark 9:14-29"]
     },
     "Year C": {
-      "First Lesson": [
-        "Exodus 32:1,7-14"
-      ],
-      "Psalm": [
-        "Psalm 51:1-17"
-      ],
-      "Second Lesson": [
-        "1 Tim 1:12-17"
-      ],
-      "Gospel": [
-        "Luke 15:1-10"
-      ]
+      "First Lesson": ["Exodus 32:1, 7-14"],
+      "Psalm": ["Psalm 51:1-17"],
+      "Second Lesson": ["1 Timothy 1:12-17"],
+      "Gospel": ["Luke 15:1-10"]
     }
   },
   "Proper 20": {
     "Year A": {
-      "First Lesson": [
-        "Jonah 3:10-4:11"
-      ],
-      "Psalm": [
-        "Psalm 145:(1-13)14-21"
-      ],
-      "Second Lesson": [
-        "Philippians 1:21-27"
-      ],
-      "Gospel": [
-        "Matthew 20:1-16"
-      ]
+      "First Lesson": ["Jonah 3:10-4:11"],
+      "Psalm": ["Psalm 145:(1-13), 14-21"],
+      "Second Lesson": ["Philippians 1:21-27"],
+      "Gospel": ["Matthew 20:1-16"]
     },
     "Year B": {
-      "First Lesson": [
-        "Wisdom 1:16-2:1,12-22"
-      ],
-      "Psalm": [
-        "Psalm 54"
-      ],
-      "Second Lesson": [
-        "James 3:16-4:6"
-      ],
-      "Gospel": [
-        "Mark 9:30-37"
-      ]
+      "First Lesson": ["Wisdom 1:16-2:1, 12-22"],
+      "Psalm": ["Psalm 54"],
+      "Second Lesson": ["James 3:16-4:6"],
+      "Gospel": ["Mark 9:30-37"]
     },
     "Year C": {
-      "First Lesson": [
-        "Amos 8:4-12"
-      ],
-      "Psalm": [
-        "Psalm 138"
-      ],
-      "Second Lesson": [
-        "1 Tim 2:1-7(8-15)"
-      ],
-      "Gospel": [
-        "Luke 16:1-13"
-      ]
+      "First Lesson": ["Amos 8:4-12"],
+      "Psalm": ["Psalm 138"],
+      "Second Lesson": ["1 Timothy 2:1-7, (8-15)"],
+      "Gospel": ["Luke 16:1-13"]
     }
   },
   "Proper 21": {
     "Year A": {
-      "First Lesson": [
-        "Ezek 18:1-4,25-32"
-      ],
-      "Psalm": [
-        "Psalm 25:1-14(15-21)"
-      ],
-      "Second Lesson": [
-        "Philippians 2:1-13"
-      ],
-      "Gospel": [
-        "Matthew 21:28-32"
-      ]
+      "First Lesson": ["Ezekiel 18:1-4, 25-32"],
+      "Psalm": ["Psalm 25:1-14, (15-21)"],
+      "Second Lesson": ["Philippians 2:1-13"],
+      "Gospel": ["Matthew 21:28-32"]
     },
     "Year B": {
-      "First Lesson": [
-        "Num 11:4-6,10-17,24-29"
-      ],
-      "Psalm": [
-        "Psalm 19:(1-6)7-14"
-      ],
-      "Second Lesson": [
-        "James 4:7-12(13-5:6)"
-      ],
-      "Gospel": [
-        "Mark 9:38-48"
-      ]
+      "First Lesson": ["Numbers 11:4-6, 10-17, 24-29"],
+      "Psalm": ["Psalm 19:(1-6), 7-14"],
+      "Second Lesson": ["James 4:7-12, (13-5:6)"],
+      "Gospel": ["Mark 9:38-48"]
     },
     "Year C": {
-      "First Lesson": [
-        "Amos 6:1-7"
-      ],
-      "Psalm": [
-        "Psalm 146"
-      ],
-      "Second Lesson": [
-        "1 Tim 6:11-19"
-      ],
-      "Gospel": [
-        "Luke 16:19-31"
-      ]
+      "First Lesson": ["Amos 6:1-7"],
+      "Psalm": ["Psalm 146"],
+      "Second Lesson": ["1 Timothy 6:11-19"],
+      "Gospel": ["Luke 16:19-31"]
     }
   },
   "Proper 22": {
     "Year A": {
-      "First Lesson": [
-        "Isaiah 5:1-7"
-      ],
-      "Psalm": [
-        "Psalm 80:(1-6)7-19"
-      ],
-      "Second Lesson": [
-        "Philippians 3:14-21"
-      ],
-      "Gospel": [
-        "Matthew 21:33-44"
-      ]
+      "First Lesson": ["Isaiah 5:1-7"],
+      "Psalm": ["Psalm 80:(1-6), 7-19"],
+      "Second Lesson": ["Philippians 3:14-21"],
+      "Gospel": ["Matthew 21:33-44"]
     },
     "Year B": {
-      "First Lesson": [
-        "Genesis 2:18-24"
-      ],
-      "Psalm": [
-        "Psalm 8"
-      ],
-      "Second Lesson": [
-        "Hebrews 2:(1-8)9-18"
-      ],
-      "Gospel": [
-        "Mark 10:2-16"
-      ]
+      "First Lesson": ["Genesis 2:18-24"],
+      "Psalm": ["Psalm 8"],
+      "Second Lesson": ["Hebrews 2:(1-8), 9-18"],
+      "Gospel": ["Mark 10:2-16"]
     },
     "Year C": {
-      "First Lesson": [
-        "Hab 1:1-13,2:1-4"
-      ],
-      "Psalm": [
-        "Psalm 37:1-17"
-      ],
-      "Second Lesson": [
-        "2 Timothy 1:1-14"
-      ],
-      "Gospel": [
-        "Luke 17:5-10"
-      ]
+      "First Lesson": ["Habakkuk 1:1-13; 2:1-4"],
+      "Psalm": ["Psalm 37:1-17"],
+      "Second Lesson": ["2 Timothy 1:1-14"],
+      "Gospel": ["Luke 17:5-10"]
     }
   },
   "Proper 23": {
     "Year A": {
-      "First Lesson": [
-        "Isaiah 25:1-9"
-      ],
-      "Psalm": [
-        "Psalm 23"
-      ],
-      "Second Lesson": [
-        "Philippians 4:4-13"
-      ],
-      "Gospel": [
-        "Matthew 22:1-14"
-      ]
+      "First Lesson": ["Isaiah 25:1-9"],
+      "Psalm": ["Psalm 23"],
+      "Second Lesson": ["Philippians 4:4-13"],
+      "Gospel": ["Matthew 22:1-14"]
     },
     "Year B": {
-      "First Lesson": [
-        "Amos 5:6-15"
-      ],
-      "Psalm": [
-        "Psalm 90:1-12(13-17)"
-      ],
-      "Second Lesson": [
-        "Hebrews 3:1-6"
-      ],
-      "Gospel": [
-        "Mark 10:17-31"
-      ]
+      "First Lesson": ["Amos 5:6-15"],
+      "Psalm": ["Psalm 90:1-12, (13-17)"],
+      "Second Lesson": ["Hebrews 3:1-6"],
+      "Gospel": ["Mark 10:17-31"]
     },
     "Year C": {
-      "First Lesson": [
-        "Ruth 1:1-19a"
-      ],
-      "Psalm": [
-        "Psalm 113"
-      ],
-      "Second Lesson": [
-        "2 Timothy 2:1-15"
-      ],
-      "Gospel": [
-        "Luke 17:11-19"
-      ]
+      "First Lesson": ["Ruth 1:1-19a"],
+      "Psalm": ["Psalm 113"],
+      "Second Lesson": ["2 Timothy 2:1-15"],
+      "Gospel": ["Luke 17:11-19"]
     }
   },
   "Proper 24": {
     "Year A": {
-      "First Lesson": [
-        "Malachi 3:6-12"
-      ],
-      "Psalm": [
-        "Psalm 96"
-      ],
-      "Second Lesson": [
-        "1 Thessalonians 1:1-10"
-      ],
-      "Gospel": [
-        "Matthew 22:15-22"
-      ]
+      "First Lesson": ["Malachi 3:6-12"],
+      "Psalm": ["Psalm 96"],
+      "Second Lesson": ["1 Thessalonians 1:1-10"],
+      "Gospel": ["Matthew 22:15-22"]
     },
     "Year B": {
-      "First Lesson": [
-        "Isaiah 53:4-12"
-      ],
-      "Psalm": [
-        "Psalm 91"
-      ],
-      "Second Lesson": [
-        "Hebrews 4:12-16"
-      ],
-      "Gospel": [
-        "Mark 10:35-45"
-      ]
+      "First Lesson": ["Isaiah 53:4-12"],
+      "Psalm": ["Psalm 91"],
+      "Second Lesson": ["Hebrews 4:12-16"],
+      "Gospel": ["Mark 10:35-45"]
     },
     "Year C": {
-      "First Lesson": [
-        "Genesis 32:3-8,22-30"
-      ],
-      "Psalm": [
-        "Psalm 121"
-      ],
-      "Second Lesson": [
-        "2 Timothy 3:14-4:5"
-      ],
-      "Gospel": [
-        "Luke 18:1-8"
-      ]
+      "First Lesson": ["Genesis 32:3-8, 22-30"],
+      "Psalm": ["Psalm 121"],
+      "Second Lesson": ["2 Timothy 3:14-4:5"],
+      "Gospel": ["Luke 18:1-8"]
     }
   },
   "Proper 25": {
     "Year A": {
-      "First Lesson": [
-        "Exodus 22:21-27"
-      ],
-      "Psalm": [
-        "Psalm 1"
-      ],
-      "Second Lesson": [
-        "1 Thessalonians 2:1-8"
-      ],
-      "Gospel": [
-        "Matthew 22:34-46"
-      ]
+      "First Lesson": ["Exodus 22:21-27"],
+      "Psalm": ["Psalm 1"],
+      "Second Lesson": ["1 Thessalonians 2:1-8"],
+      "Gospel": ["Matthew 22:34-46"]
     },
     "Year B": {
-      "First Lesson": [
-        "Isaiah 59:9-20"
-      ],
-      "Psalm": [
-        "Psalm 13"
-      ],
-      "Second Lesson": [
-        "Hebrews 5:11-6:12"
-      ],
-      "Gospel": [
-        "Mark 10:46-52"
-      ]
+      "First Lesson": ["Isaiah 59:9-20"],
+      "Psalm": ["Psalm 13"],
+      "Second Lesson": ["Hebrews 5:11-6:12"],
+      "Gospel": ["Mark 10:46-52"]
     },
     "Year C": {
-      "First Lesson": [
-        "Jeremiah 14:(1-6)7-10,19-22"
-      ],
-      "Psalm": [
-        "Psalm 84"
-      ],
-      "Second Lesson": [
-        "2 Timothy 4:6-18"
-      ],
-      "Gospel": [
-        "Luke 18:9-14"
-      ]
+      "First Lesson": ["Jeremiah 14:(1-6), 7-10, 19-22"],
+      "Psalm": ["Psalm 84"],
+      "Second Lesson": ["2 Timothy 4:6-18"],
+      "Gospel": ["Luke 18:9-14"]
     }
   },
   "Proper 26": {
     "Year A": {
-      "First Lesson": [
-        "Micah 3:5-12"
-      ],
-      "Psalm": [
-        "Psalm 43"
-      ],
-      "Second Lesson": [
-        "1 Thessalonians 2:9-20"
-      ],
-      "Gospel": [
-        "Matthew 23:1-12"
-      ]
+      "First Lesson": ["Micah 3:5-12"],
+      "Psalm": ["Psalm 43"],
+      "Second Lesson": ["1 Thessalonians 2:9-20"],
+      "Gospel": ["Matthew 23:1-12"]
     },
     "Year B": {
-      "First Lesson": [
-        "Deuteronomy 6:1-9"
-      ],
-      "Psalm": [
-        "Psalm 119:1-16"
-      ],
-      "Second Lesson": [
-        "Hebrews 7:23-28"
-      ],
-      "Gospel": [
-        "Mark 12:28-34"
-      ]
+      "First Lesson": ["Deuteronomy 6:1-9"],
+      "Psalm": ["Psalm 119:1-16"],
+      "Second Lesson": ["Hebrews 7:23-28"],
+      "Gospel": ["Mark 12:28-34"]
     },
     "Year C": {
-      "First Lesson": [
-        "Isaiah 1:10-20"
-      ],
-      "Psalm": [
-        "Psalm 32"
-      ],
-      "Second Lesson": [
-        "2 Thessalonians 1:1-12"
-      ],
-      "Gospel": [
-        "Luke 19:1-10"
-      ]
+      "First Lesson": ["Isaiah 1:10-20"],
+      "Psalm": ["Psalm 32"],
+      "Second Lesson": ["2 Thessalonians 1:1-12"],
+      "Gospel": ["Luke 19:1-10"]
     }
   },
   "Proper 27": {
     "Year A": {
-      "First Lesson": [
-        "Amos 5:18-24"
-      ],
-      "Psalm": [
-        "Psalm 70"
-      ],
-      "Second Lesson": [
-        "1 Thessalonians 4:13-18"
-      ],
-      "Gospel": [
-        "Matthew 25:1-13"
-      ]
+      "First Lesson": ["Amos 5:18-24"],
+      "Psalm": ["Psalm 70"],
+      "Second Lesson": ["1 Thessalonians 4:13-18"],
+      "Gospel": ["Matthew 25:1-13"]
     },
     "Year B": {
-      "First Lesson": [
-        "1 Kings 17:8-16"
-      ],
-      "Psalm": [
-        "Psalm 146"
-      ],
-      "Second Lesson": [
-        "Hebrews 9:24-28"
-      ],
-      "Gospel": [
-        "Mark 12:38-44"
-      ]
+      "First Lesson": ["1 Kings 17:8-16"],
+      "Psalm": ["Psalm 146"],
+      "Second Lesson": ["Hebrews 9:24-28"],
+      "Gospel": ["Mark 12:38-44"]
     },
     "Year C": {
-      "First Lesson": [
-        "Job 19:23-27a"
-      ],
-      "Psalm": [
-        "Psalm 17"
-      ],
-      "Second Lesson": [
-        "2 Thessalonians 2:13-3:5"
-      ],
-      "Gospel": [
-        "Luke 20:27-38"
-      ]
+      "First Lesson": ["Job 19:23-27a"],
+      "Psalm": ["Psalm 17"],
+      "Second Lesson": ["2 Thessalonians 2:13-3:5"],
+      "Gospel": ["Luke 20:27-38"]
     }
   },
   "Proper 28": {
     "Year A": {
-      "First Lesson": [
-        "Zephaniah 1:7,12-18"
-      ],
-      "Psalm": [
-        "Psalm 90:1-12(13-17)"
-      ],
-      "Second Lesson": [
-        "1 Thessalonians 5:1-10"
-      ],
-      "Gospel": [
-        "Matthew 25:14-30"
-      ]
+      "First Lesson": ["Zephaniah 1:7, 12-18"],
+      "Psalm": ["Psalm 90:1-12, (13-17)"],
+      "Second Lesson": ["1 Thessalonians 5:1-10"],
+      "Gospel": ["Matthew 25:14-30"]
     },
     "Year B": {
-      "First Lesson": [
-        "Dan 12:1-4a(4b-13)"
-      ],
-      "Psalm": [
-        "Psalm 16"
-      ],
-      "Second Lesson": [
-        "Hebrews 10:31-39"
-      ],
-      "Gospel": [
-        "Mark 13:14-23"
-      ]
+      "First Lesson": ["Daniel 12:1-4a, (4b-13)"],
+      "Psalm": ["Psalm 16"],
+      "Second Lesson": ["Hebrews 10:31-39"],
+      "Gospel": ["Mark 13:14-23"]
     },
     "Year C": {
-      "First Lesson": [
-        "Malachi 3:13-4:6"
-      ],
-      "Psalm": [
-        "Psalm 98"
-      ],
-      "Second Lesson": [
-        "2 Thessalonians 3:6-16"
-      ],
-      "Gospel": [
-        "Luke 21:5-19"
-      ]
+      "First Lesson": ["Malachi 3:13-4:6"],
+      "Psalm": ["Psalm 98"],
+      "Second Lesson": ["2 Thessalonians 3:6-16"],
+      "Gospel": ["Luke 21:5-19"]
     }
   },
   "Proper 29: Christ the King": {
     "Year A": {
-      "First Lesson": [
-        "Ezek 34:11-20"
-      ],
-      "Psalm": [
-        "Psalm 95"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 15:20-28"
-      ],
-      "Gospel": [
-        "Matthew 25:31-46"
-      ]
+      "First Lesson": ["Ezekiel 34:11-20"],
+      "Psalm": ["Psalm 95"],
+      "Second Lesson": ["1 Corinthians 15:20-28"],
+      "Gospel": ["Matthew 25:31-46"]
     },
     "Year B": {
-      "First Lesson": [
-        "Dan 7:9-14"
-      ],
-      "Psalm": [
-        "Psalm 93"
-      ],
-      "Second Lesson": [
-        "Revelation 1:1-8"
-      ],
-      "Gospel": [
-        "John 18:33-37"
-      ]
+      "First Lesson": ["Daniel 7:9-14"],
+      "Psalm": ["Psalm 93"],
+      "Second Lesson": ["Revelation 1:1-8"],
+      "Gospel": ["John 18:33-37"]
     },
     "Year C": {
-      "First Lesson": [
-        "Jeremiah 23:1-6"
-      ],
-      "Psalm": [
-        "Psalm 46"
-      ],
-      "Second Lesson": [
-        "Col 1:11-20"
-      ],
-      "Gospel": [
-        "Luke 23:35-43"
-      ]
+      "First Lesson": ["Jeremiah 23:1-6"],
+      "Psalm": ["Psalm 46"],
+      "Second Lesson": ["Colossians 1:11-20"],
+      "Gospel": ["Luke 23:35-43"]
     }
   },
   "Ash Wednesday": {
     "Year A": {
-      "First Lesson": [
-        "Joel 2:1-2,12-17",
-        "Isaiah 58:1-12"
-      ],
-      "Psalm": [
-        "Psalm 103",
-        "Psalm 103:8-14"
-      ],
-      "Second Lesson": [
-        "2 Corinthians 5:20-6:10"
-      ],
-      "Gospel": [
-        "Matthew 6:1-6,16-21"
-      ]
+      "First Lesson": ["Joel 2:1-2, 12-17", "Isaiah 58:1-12"],
+      "Psalm": ["Psalm 103", "Psalm 103:8-14"],
+      "Second Lesson": ["2 Corinthians 5:20-6:10"],
+      "Gospel": ["Matthew 6:1-6, 16-21"]
     },
     "Year B": {
-      "First Lesson": [
-        "Joel 2:1-2,12-17",
-        "Isaiah 58:1-12"
-      ],
-      "Psalm": [
-        "Psalm 103",
-        "Psalm 103:8-14"
-      ],
-      "Second Lesson": [
-        "2 Corinthians 5:20-6:10"
-      ],
-      "Gospel": [
-        "Matthew 6:1-6,16-21"
-      ]
+      "First Lesson": ["Joel 2:1-2, 12-17", "Isaiah 58:1-12"],
+      "Psalm": ["Psalm 103", "Psalm 103:8-14"],
+      "Second Lesson": ["2 Corinthians 5:20-6:10"],
+      "Gospel": ["Matthew 6:1-6, 16-21"]
     },
     "Year C": {
-      "First Lesson": [
-        "Joel 2:1-2,12-17",
-        "Isaiah 58:1-12"
-      ],
-      "Psalm": [
-        "Psalm 103",
-        "Psalm 103:8-14"
-      ],
-      "Second Lesson": [
-        "2 Corinthians 5:20-6:10"
-      ],
-      "Gospel": [
-        "Matthew 6:1-6, 16-21"
-      ]
+      "First Lesson": ["Joel 2:1-2, 12-17", "Isaiah 58:1-12"],
+      "Psalm": ["Psalm 103", "Psalm 103:8-14"],
+      "Second Lesson": ["2 Corinthians 5:20-6:10"],
+      "Gospel": ["Matthew 6:1-6, 16-21"]
     }
   },
   "Palm Sunday": {
     "Year A": {
-      "Liturgy of the Palms": [
-        "Matthew 21:1-11"
-      ],
-      "First Lesson": [
-        "Isaiah 52:13-53:12"
-      ],
-      "Psalm": [
-        "Psalm 22:1-22",
-        "Psalm 22:1-11",
-        "Psalm 31:10-18"
-      ],
-      "Second Lesson": [
-        "Philippians 2:5-11"
-      ],
-      "Gospel": [
-        "Matthew(26:36-75)27:1-54(55-66)"
-      ]
+      "Liturgy of the Palms": ["Matthew 21:1-11"],
+      "First Lesson": ["Isaiah 52:13-53:12"],
+      "Psalm": ["Psalm 22:1-22", "Psalm 22:1-11", "Psalm 31:10-18"],
+      "Second Lesson": ["Philippians 2:5-11"],
+      "Gospel": ["Matthew(26:36-75); 27:1-54, (55-66)"]
     },
     "Year B": {
-      "Liturgy of the Palms": [
-        "Mark 11:1-11a"
-      ],
-      "First Lesson": [
-        "Isaiah 52:13-53:12"
-      ],
-      "Psalm": [
-        "Psalm 22:1-22",
-        "Psalm 22:1-11",
-        "Psalm 31:10-18"
-      ],
-      "Second Lesson": [
-        "Philippians 2:5-11"
-      ],
-      "Gospel": [
-        "Mark(14:32-72)15:1-39(40-47)"
-      ]
+      "Liturgy of the Palms": ["Mark 11:1-11a"],
+      "First Lesson": ["Isaiah 52:13-53:12"],
+      "Psalm": ["Psalm 22:1-22", "Psalm 22:1-11", "Psalm 31:10-18"],
+      "Second Lesson": ["Philippians 2:5-11"],
+      "Gospel": ["Mark(14:32-72); 15:1-39, (40-47)"]
     },
     "Year C": {
-      "Liturgy of the Palms": [
-        "Luke 19:29-40"
-      ],
-      "First Lesson": [
-        "Isaiah 52:13-53:12"
-      ],
-      "Psalm": [
-        "Psalm 22:1-22",
-        "Psalm 22:1-11",
-        "Psalm 31:10-18"
-      ],
-      "Second Lesson": [
-        "Philippians 2:5-11"
-      ],
-      "Gospel": [
-        "Luke(22:39-71)23:1-49(50-56)"
-      ]
+      "Liturgy of the Palms": ["Luke 19:29-40"],
+      "First Lesson": ["Isaiah 52:13-53:12"],
+      "Psalm": ["Psalm 22:1-22", "Psalm 22:1-11", "Psalm 31:10-18"],
+      "Second Lesson": ["Philippians 2:5-11"],
+      "Gospel": ["Luke(22:39-71); 23:1-49, (50-56)"]
     }
   },
   "Monday of Holy Week": {
     "Year A": {
-      "First Lesson": [
-        "Isaiah 42:1-9"
-      ],
-      "Psalm": [
-        "Psalm 36:5-10"
-      ],
-      "Second Lesson": [
-        "Hebrews 11:39-12:3"
-      ],
-      "Gospel": [
-        "John 12:1-11",
-        "Mark 14:3-9"
-      ]
+      "First Lesson": ["Isaiah 42:1-9"],
+      "Psalm": ["Psalm 36:5-10"],
+      "Second Lesson": ["Hebrews 11:39-12:3"],
+      "Gospel": ["John 12:1-11", "Mark 14:3-9"]
     },
     "Year B": {
-      "First Lesson": [
-        "Isaiah 42:1-9"
-      ],
-      "Psalm": [
-        "Psalm 36:5-10"
-      ],
-      "Second Lesson": [
-        "Hebrews 11:39-12:3"
-      ],
-      "Gospel": [
-        "John 12:1-11",
-        "Mark 14:3-9"
-      ]
+      "First Lesson": ["Isaiah 42:1-9"],
+      "Psalm": ["Psalm 36:5-10"],
+      "Second Lesson": ["Hebrews 11:39-12:3"],
+      "Gospel": ["John 12:1-11", "Mark 14:3-9"]
     },
     "Year C": {
-      "First Lesson": [
-        "Isaiah 42:1-9"
-      ],
-      "Psalm": [
-        "Psalm 36:5-10"
-      ],
-      "Second Lesson": [
-        "Hebrews 11:39-12:3"
-      ],
-      "Gospel": [
-        "John 12:1-11",
-        "Mark 14:3-9"
-      ]
+      "First Lesson": ["Isaiah 42:1-9"],
+      "Psalm": ["Psalm 36:5-10"],
+      "Second Lesson": ["Hebrews 11:39-12:3"],
+      "Gospel": ["John 12:1-11", "Mark 14:3-9"]
     }
   },
   "Tuesday of Holy Week": {
     "Year A": {
-      "First Lesson": [
-        "Isaiah 49:1-6"
-      ],
-      "Psalm": [
-        "Psalm 71:1-11"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 1:18-31"
-      ],
-      "Gospel": [
-        "John 12:37-38,42-50",
-        "Mark 11:15-19"
-      ]
+      "First Lesson": ["Isaiah 49:1-6"],
+      "Psalm": ["Psalm 71:1-11"],
+      "Second Lesson": ["1 Corinthians 1:18-31"],
+      "Gospel": ["John 12:37-38, 42-50", "Mark 11:15-19"]
     },
     "Year B": {
-      "First Lesson": [
-        "Isaiah 49:1-6"
-      ],
-      "Psalm": [
-        "Psalm 71:1-11"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 1:18-31"
-      ],
-      "Gospel": [
-        "John 12:37-38,42-50",
-        "Mark 11:15-19"
-      ]
+      "First Lesson": ["Isaiah 49:1-6"],
+      "Psalm": ["Psalm 71:1-11"],
+      "Second Lesson": ["1 Corinthians 1:18-31"],
+      "Gospel": ["John 12:37-38, 42-50", "Mark 11:15-19"]
     },
     "Year C": {
-      "First Lesson": [
-        "Isaiah 49:1-6"
-      ],
-      "Psalm": [
-        "Psalm 71:1-11"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 1:18-31"
-      ],
-      "Gospel": [
-        "John 12:37-38,42-50",
-        "Mark 11:15-19"
-      ]
+      "First Lesson": ["Isaiah 49:1-6"],
+      "Psalm": ["Psalm 71:1-11"],
+      "Second Lesson": ["1 Corinthians 1:18-31"],
+      "Gospel": ["John 12:37-38, 42-50", "Mark 11:15-19"]
     }
   },
   "Wednesday of Holy Week": {
     "Year A": {
-      "First Lesson": [
-        "Isaiah 50:4-9"
-      ],
-      "Psalm": [
-        "Psalm 69:6-14,21-22"
-      ],
-      "Second Lesson": [
-        "Hebrews 9:11-28"
-      ],
-      "Gospel": [
-        "Matthew 26:1-5,14-25"
-      ]
+      "First Lesson": ["Isaiah 50:4-9"],
+      "Psalm": ["Psalm 69:6-14, 21-22"],
+      "Second Lesson": ["Hebrews 9:11-28"],
+      "Gospel": ["Matthew 26:1-5, 14-25"]
     },
     "Year B": {
-      "First Lesson": [
-        "Isaiah 50:4-9"
-      ],
-      "Psalm": [
-        "Psalm 69:6-14,21-22"
-      ],
-      "Second Lesson": [
-        "Hebrews 9:11-28"
-      ],
-      "Gospel": [
-        "Matthew 26:1-5,14-25"
-      ]
+      "First Lesson": ["Isaiah 50:4-9"],
+      "Psalm": ["Psalm 69:6-14, 21-22"],
+      "Second Lesson": ["Hebrews 9:11-28"],
+      "Gospel": ["Matthew 26:1-5, 14-25"]
     },
     "Year C": {
-      "First Lesson": [
-        "Isaiah 50:4-9"
-      ],
-      "Psalm": [
-        "Psalm 69:6-14,21-22"
-      ],
-      "Second Lesson": [
-        "Hebrews 9:11-28"
-      ],
-      "Gospel": [
-        "Matthew 26:1-5,14-25"
-      ]
+      "First Lesson": ["Isaiah 50:4-9"],
+      "Psalm": ["Psalm 69:6-14, 21-22"],
+      "Second Lesson": ["Hebrews 9:11-28"],
+      "Gospel": ["Matthew 26:1-5, 14-25"]
     }
   },
   "Maundy Thursday": {
     "Year A": {
-      "First Lesson": [
-        "Exodus 12:1-14"
-      ],
-      "Psalm": [
-        "Psalm 78:15-26"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 11:23-26(27-34)"
-      ],
-      "Gospel": [
-        "John 13:1-15",
-        "Luke 22:14-30"
-      ]
+      "First Lesson": ["Exodus 12:1-14"],
+      "Psalm": ["Psalm 78:15-26"],
+      "Second Lesson": ["1 Corinthians 11:23-26, (27-34)"],
+      "Gospel": ["John 13:1-15", "Luke 22:14-30"]
     },
     "Year B": {
-      "First Lesson": [
-        "Exodus 12:1-14"
-      ],
-      "Psalm": [
-        "Psalm 78:15-26"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 11:23-26(27-34)"
-      ],
-      "Gospel": [
-        "John 13:1-15",
-        "Luke 22:14-30"
-      ]
+      "First Lesson": ["Exodus 12:1-14"],
+      "Psalm": ["Psalm 78:15-26"],
+      "Second Lesson": ["1 Corinthians 11:23-26, (27-34)"],
+      "Gospel": ["John 13:1-15", "Luke 22:14-30"]
     },
     "Year C": {
-      "First Lesson": [
-        "Exodus 12:1-14"
-      ],
-      "Psalm": [
-        "Psalm 78:15-26"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 11:23-26(27-34)"
-      ],
-      "Gospel": [
-        "John 13:1-15",
-        "Luke 22:14-30"
-      ]
+      "First Lesson": ["Exodus 12:1-14"],
+      "Psalm": ["Psalm 78:15-26"],
+      "Second Lesson": ["1 Corinthians 11:23-26, (27-34)"],
+      "Gospel": ["John 13:1-15", "Luke 22:14-30"]
     }
   },
   "Good Friday": {
     "Year A": {
-      "First Lesson": [
-        "Genesis 22:1-18",
-        "Isaiah 52:13-53:12"
-      ],
-      "Psalm": [
-        "Psalm 22:1-11(12-21)",
-        "Psalm 40:1-16",
-        "Psalm 69:1-22"
-      ],
-      "Second Lesson": [
-        "Hebrews 10:1-25"
-      ],
-      "Gospel": [
-        "John(18:1-40)19:1-37"
-      ]
+      "First Lesson": ["Genesis 22:1-18", "Isaiah 52:13-53:12"],
+      "Psalm": ["Psalm 22:1-11, (12-21)", "Psalm 40:1-16", "Psalm 69:1-22"],
+      "Second Lesson": ["Hebrews 10:1-25"],
+      "Gospel": ["John(18:1-40); 19:1-37"]
     },
     "Year B": {
-      "First Lesson": [
-        "Genesis 22:1-18",
-        "Isaiah 52:13-53:12"
-      ],
-      "Psalm": [
-        "Psalm 22:1-11(12-21)",
-        "Psalm 40:1-16",
-        "Psalm 69:1-22"
-      ],
-      "Second Lesson": [
-        "Hebrews 10:1-25"
-      ],
-      "Gospel": [
-        "John(18:1-40)19:1-37"
-      ]
+      "First Lesson": ["Genesis 22:1-18", "Isaiah 52:13-53:12"],
+      "Psalm": ["Psalm 22:1-11, (12-21)", "Psalm 40:1-16", "Psalm 69:1-22"],
+      "Second Lesson": ["Hebrews 10:1-25"],
+      "Gospel": ["John(18:1-40); 19:1-37"]
     },
     "Year C": {
-      "First Lesson": [
-        "Genesis 22:1-18",
-        "Isaiah 52:13-53:12"
-      ],
-      "Psalm": [
-        "Psalm 22:1-11(12-21)",
-        "Psalm 40:1-16",
-        "Psalm 69:1-22"
-      ],
-      "Second Lesson": [
-        "Hebrews 10:1-25"
-      ],
-      "Gospel": [
-        "John(18:1-40)19:1-37"
-      ]
+      "First Lesson": ["Genesis 22:1-18", "Isaiah 52:13-53:12"],
+      "Psalm": ["Psalm 22:1-11, (12-21)", "Psalm 40:1-16", "Psalm 69:1-22"],
+      "Second Lesson": ["Hebrews 10:1-25"],
+      "Gospel": ["John(18:1-40); 19:1-37"]
     }
   },
   "Holy Saturday": {
     "Year A": {
-      "First Lesson": [
-        "Job 14:1-17"
-      ],
-      "Psalm": [
-        "Psalm 130",
-        "Psalm 31:1-6"
-      ],
-      "Second Lesson": [
-        "1 Peter 4:1-8"
-      ],
-      "Gospel": [
-        "Matthew 27:57-66",
-        "John 19:38-42"
-      ]
+      "First Lesson": ["Job 14:1-17"],
+      "Psalm": ["Psalm 130", "Psalm 31:1-6"],
+      "Second Lesson": ["1 Peter 4:1-8"],
+      "Gospel": ["Matthew 27:57-66", "John 19:38-42"]
     },
     "Year B": {
-      "First Lesson": [
-        "Job 14:1-17"
-      ],
-      "Psalm": [
-        "Psalm 130",
-        "Psalm 31:1-6"
-      ],
-      "Second Lesson": [
-        "1 Peter 4:1-8"
-      ],
-      "Gospel": [
-        "Matthew 27:57-66",
-        "John 19:38-42"
-      ]
+      "First Lesson": ["Job 14:1-17"],
+      "Psalm": ["Psalm 130", "Psalm 31:1-6"],
+      "Second Lesson": ["1 Peter 4:1-8"],
+      "Gospel": ["Matthew 27:57-66", "John 19:38-42"]
     },
     "Year C": {
-      "First Lesson": [
-        "Job 14:1-17"
-      ],
-      "Psalm": [
-        "Psalm 130",
-        "Psalm 31:1-6"
-      ],
-      "Second Lesson": [
-        "1 Peter 4:1-8"
-      ],
-      "Gospel": [
-        "Matthew 27:57-66",
-        "John 19:38-42"
-      ]
+      "First Lesson": ["Job 14:1-17"],
+      "Psalm": ["Psalm 130", "Psalm 31:1-6"],
+      "Second Lesson": ["1 Peter 4:1-8"],
+      "Gospel": ["Matthew 27:57-66", "John 19:38-42"]
     }
   },
   "The Great Vigil of Easter": {
@@ -3011,61 +1327,52 @@
       "Old Testament": [
         "Genesis 1:1-2:3",
         "Genesis 3",
-        "Genesis 7:1-5,11-18; 8:6-20; 9:8-13",
+        "Genesis 7:1-5, 11-18; 8:6-20; 9:8-13",
         "Genesis 22:1-18",
         "Exodus 14:10-15:1",
         "Isaiah 4:2-6",
         "Isaiah 55:1-11",
-        "Ezek 36:24-28",
-        "Ezek 37:1-14",
-        "Dan 3:1-28",
+        "Ezekiel 36:24-28",
+        "Ezekiel 37:1-14",
+        "Daniel 3:1-28",
         "Jonah 1:1-2:10",
-        "Zephaniah 3:12-20",
+        "Zephaniah 3:12-20"
       ],
-      "New Testament": [
-        "Romans 6:3-11",
-        "Matthew 28:1-10"
-      ]
+      "New Testament": ["Romans 6:3-11", "Matthew 28:1-10"]
     },
     "Year B": {
       "Old Testament": [
         "Genesis 1:1-2:3",
         "Genesis 3",
-        "Genesis 7:1-5,11-18; 8:6-20; 9:8-13",
+        "Genesis 7:1-5, 11-18; 8:6-20; 9:8-13",
         "Genesis 22:1-18",
         "Exodus 14:10-15:1",
         "Isaiah 4:2-6",
         "Isaiah 55:1-11",
-        "Ezek 36:24-28",
-        "Ezek 37:1-14",
-        "Dan 3:1-28",
+        "Ezekiel 36:24-28",
+        "Ezekiel 37:1-14",
+        "Daniel 3:1-28",
         "Jonah 1:1-2:10",
         "Zephaniah 3:12-20"
       ],
-      "New Testament": [
-        "Romans 6:3-11",
-        "Matthew 28:1-10"
-      ]
+      "New Testament": ["Romans 6:3-11", "Matthew 28:1-10"]
     },
     "Year C": {
       "Old Testament": [
         "Genesis 1:1-2:3",
         "Genesis 3",
-        "Genesis 7:1-5,11-18; 8:6-20; 9:8-13",
+        "Genesis 7:1-5, 11-18; 8:6-20; 9:8-13",
         "Genesis 22:1-18",
         "Exodus 14:10-15:1",
         "Isaiah 4:2-6",
         "Isaiah 55:1-11",
-        "Ezek 36:24-28",
-        "Ezek 37:1-14",
-        "Dan 3:1-28",
+        "Ezekiel 36:24-28",
+        "Ezekiel 37:1-14",
+        "Daniel 3:1-28",
         "Jonah 1:1-2:10",
         "Zephaniah 3:12-20"
       ],
-      "New Testament": [
-        "Romans 6:3-11",
-        "Matthew 28:1-10"
-      ]
+      "New Testament": ["Romans 6:3-11", "Matthew 28:1-10"]
     }
   },
   "Easter Day: Early Service": {
@@ -3073,1953 +1380,900 @@
       "First Lesson": [
         "Genesis 1:1-2:3",
         "Genesis 3",
-        "Genesis 7:1-5,11-18; 8:6-20; 9:8-13",
+        "Genesis 7:1-5, 11-18; 8:6-20; 9:8-13",
         "Genesis 22:1-18",
         "Exodus 14:10-15:1",
         "Isaiah 4:2-6",
         "Isaiah 55:1-11",
-        "Ezek 36:24-28",
-        "Ezek 37:1-14",
-        "Dan 3:1-28",
+        "Ezekiel 36:24-28",
+        "Ezekiel 37:1-14",
+        "Daniel 3:1-28",
         "Jonah 1:1-2:10",
         "Zephaniah 3:12-20"
       ],
-      "Psalm": [
-        "Psalm 114"
-      ],
-      "Second Lesson": [
-        "Romans 6:3-11"
-      ],
-      "Gospel": [
-        "Matthew 28:1-10"
-      ]
+      "Psalm": ["Psalm 114"],
+      "Second Lesson": ["Romans 6:3-11"],
+      "Gospel": ["Matthew 28:1-10"]
     },
     "Year B": {
       "First Lesson": [
         "Genesis 1:1-2:3",
         "Genesis 3",
-        "Genesis 7:1-5,11-18; 8:6-20; 9:8-13",
+        "Genesis 7:1-5, 11-18; 8:6-20; 9:8-13",
         "Genesis 22:1-18",
         "Exodus 14:10-15:1",
         "Isaiah 4:2-6",
         "Isaiah 55:1-11",
-        "Ezek 36:24-28",
-        "Ezek 37:1-14",
-        "Dan 3:1-28",
+        "Ezekiel 36:24-28",
+        "Ezekiel 37:1-14",
+        "Daniel 3:1-28",
         "Jonah 1:1-2:10",
         "Zephaniah 3:12-20"
       ],
-      "Psalm": [
-        "Psalm 114"
-      ],
-      "Second Lesson": [
-        "Romans 6:3-11"
-      ],
-      "Gospel": [
-        "Matthew 28:1-10"
-      ]
+      "Psalm": ["Psalm 114"],
+      "Second Lesson": ["Romans 6:3-11"],
+      "Gospel": ["Matthew 28:1-10"]
     },
     "Year C": {
       "First Lesson": [
         "Genesis 1:1-2:3",
         "Genesis 3",
-        "Genesis 7:1-5,11-18; 8:6-20; 9:8-13",
+        "Genesis 7:1-5, 11-18; 8:6-20; 9:8-13",
         "Genesis 22:1-18",
         "Exodus 14:10-15:1",
         "Isaiah 4:2-6",
         "Isaiah 55:1-11",
-        "Ezek 36:24-28",
-        "Ezek 37:1-14",
-        "Dan 3:1-28",
+        "Ezekiel 36:24-28",
+        "Ezekiel 37:1-14",
+        "Daniel 3:1-28",
         "Jonah 1:1-2:10",
         "Zephaniah 3:12-20"
       ],
-      "Psalm": [
-        "Psalm 114"
-      ],
-      "Second Lesson": [
-        "Romans 6:3-11"
-      ],
-      "Gospel": [
-        "Matthew 28:1-10"
-      ]
+      "Psalm": ["Psalm 114"],
+      "Second Lesson": ["Romans 6:3-11"],
+      "Gospel": ["Matthew 28:1-10"]
     }
   },
   "Easter Day: Principal Service": {
     "Year A": {
-      "First Lesson": [
-        "Acts 10:34-43",
-        "Exodus 14:10-14,21-31"
-      ],
-      "Psalm": [
-        "Psalm 118:14-17,22-24"
-      ],
-      "Second Lesson": [
-        "Col 3:1-4",
-        "Acts 10:34-43"
-      ],
-      "Gospel": [
-        "John 20:1-10(11-18)or Matthew 28:1-10"
-      ]
+      "First Lesson": ["Acts 10:34-43", "Exodus 14:10-14, 21-31"],
+      "Psalm": ["Psalm 118:14-17, 22-24"],
+      "Second Lesson": ["Colossians 3:1-4", "Acts 10:34-43"],
+      "Gospel": ["John 20:1-10, (11-18)", "Matthew 28:1-10"]
     },
     "Year B": {
-      "First Lesson": [
-        "Acts 10:34-43",
-        "Isaiah 25:6-9"
-      ],
-      "Psalm": [
-        "Psalm 118:14-17,22-24"
-      ],
-      "Second Lesson": [
-        "Col 3:1-4",
-        "Acts 10:34-43"
-      ],
-      "Gospel": [
-        "Mark 16:1-8"
-      ]
+      "First Lesson": ["Acts 10:34-43", "Isaiah 25:6-9"],
+      "Psalm": ["Psalm 118:14-17, 22-24"],
+      "Second Lesson": ["Colossians 3:1-4", "Acts 10:34-43"],
+      "Gospel": ["Mark 16:1-8"]
     },
     "Year C": {
-      "First Lesson": [
-        "Acts 10:34-43",
-        "Isaiah 51:9-11"
-      ],
-      "Psalm": [
-        "Psalm 118:14-17,22-24"
-      ],
-      "Second Lesson": [
-        "Col 3:1-4",
-        "Acts 10:34-43"
-      ],
-      "Gospel": [
-        "Luke 24:1-12"
-      ]
+      "First Lesson": ["Acts 10:34-43", "Isaiah 51:9-11"],
+      "Psalm": ["Psalm 118:14-17, 22-24"],
+      "Second Lesson": ["Colossians 3:1-4", "Acts 10:34-43"],
+      "Gospel": ["Luke 24:1-12"]
     }
   },
   "Easter Day: Evening Service": {
     "Year A": {
-      "First Lesson": [
-        "Dan 12:1-3"
-      ],
-      "Psalm": [
-        "Psalm 136"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 5:6-8"
-      ],
-      "Gospel": [
-        "Luke 24:13-35"
-      ]
+      "First Lesson": ["Daniel 12:1-3"],
+      "Psalm": ["Psalm 136"],
+      "Second Lesson": ["1 Corinthians 5:6-8"],
+      "Gospel": ["Luke 24:13-35"]
     },
     "Year B": {
-      "First Lesson": [
-        "Dan 12:1-3"
-      ],
-      "Psalm": [
-        "Psalm 136"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 5:6-8"
-      ],
-      "Gospel": [
-        "Luke 24:13-35"
-      ]
+      "First Lesson": ["Daniel 12:1-3"],
+      "Psalm": ["Psalm 136"],
+      "Second Lesson": ["1 Corinthians 5:6-8"],
+      "Gospel": ["Luke 24:13-35"]
     },
     "Year C": {
-      "First Lesson": [
-        "Dan 12:1-3"
-      ],
-      "Psalm": [
-        "Psalm 136"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 5:6-8"
-      ],
-      "Gospel": [
-        "Luke 24:13-35"
-      ]
+      "First Lesson": ["Daniel 12:1-3"],
+      "Psalm": ["Psalm 136"],
+      "Second Lesson": ["1 Corinthians 5:6-8"],
+      "Gospel": ["Luke 24:13-35"]
     }
   },
   "Monday of Easter Week": {
     "Year A": {
-      "First Lesson": [
-        "Acts 2:14,22-32"
-      ],
-      "Psalm": [
-        "Psalm 16"
-      ],
-      "Gospel": [
-        "Matthew 28:9-15"
-      ]
+      "First Lesson": ["Acts 2:14, 22-32"],
+      "Psalm": ["Psalm 16"],
+      "Gospel": ["Matthew 28:9-15"]
     },
     "Year B": {
-      "First Lesson": [
-        "Acts 2:14,22-32"
-      ],
-      "Psalm": [
-        "Psalm 16"
-      ],
-      "Gospel": [
-        "Matthew 28:9-15"
-      ]
+      "First Lesson": ["Acts 2:14, 22-32"],
+      "Psalm": ["Psalm 16"],
+      "Gospel": ["Matthew 28:9-15"]
     },
     "Year C": {
-      "First Lesson": [
-        "Acts 2:14,22-32"
-      ],
-      "Psalm": [
-        "Psalm 16"
-      ],
-      "Gospel": [
-        "Matthew 28:9-15"
-      ]
+      "First Lesson": ["Acts 2:14, 22-32"],
+      "Psalm": ["Psalm 16"],
+      "Gospel": ["Matthew 28:9-15"]
     }
   },
   "Tuesday of Easter Week": {
     "Year A": {
-      "First Lesson": [
-        "Acts 2:14,36-41"
-      ],
-      "Psalm": [
-        "Psalm 33:17-21"
-      ],
-      "Gospel": [
-        "John 20:11-18"
-      ]
+      "First Lesson": ["Acts 2:14, 36-41"],
+      "Psalm": ["Psalm 33:17-21"],
+      "Gospel": ["John 20:11-18"]
     },
     "Year B": {
-      "First Lesson": [
-        "Acts 2:14,36-41"
-      ],
-      "Psalm": [
-        "Psalm 33:17-21"
-      ],
-      "Gospel": [
-        "John 20:11-18"
-      ]
+      "First Lesson": ["Acts 2:14, 36-41"],
+      "Psalm": ["Psalm 33:17-21"],
+      "Gospel": ["John 20:11-18"]
     },
     "Year C": {
-      "First Lesson": [
-        "Acts 2:14,36-41"
-      ],
-      "Psalm": [
-        "Psalm 33:17-21"
-      ],
-      "Gospel": [
-        "John 20:11-18"
-      ]
+      "First Lesson": ["Acts 2:14, 36-41"],
+      "Psalm": ["Psalm 33:17-21"],
+      "Gospel": ["John 20:11-18"]
     }
   },
   "Wednesday of Easter Week": {
     "Year A": {
-      "First Lesson": [
-        "Acts 3:1-10"
-      ],
-      "Psalm": [
-        "Psalm 105:1-8"
-      ],
-      "Gospel": [
-        "Luke 24:13-35"
-      ]
+      "First Lesson": ["Acts 3:1-10"],
+      "Psalm": ["Psalm 105:1-8"],
+      "Gospel": ["Luke 24:13-35"]
     },
     "Year B": {
-      "First Lesson": [
-        "Acts 3:1-10"
-      ],
-      "Psalm": [
-        "Psalm 105:1-8"
-      ],
-      "Gospel": [
-        "Luke 24:13-35"
-      ]
+      "First Lesson": ["Acts 3:1-10"],
+      "Psalm": ["Psalm 105:1-8"],
+      "Gospel": ["Luke 24:13-35"]
     },
     "Year C": {
-      "First Lesson": [
-        "Acts 3:1-10"
-      ],
-      "Psalm": [
-        "Psalm 105:1-8"
-      ],
-      "Gospel": [
-        "Luke 24:13-35"
-      ]
+      "First Lesson": ["Acts 3:1-10"],
+      "Psalm": ["Psalm 105:1-8"],
+      "Gospel": ["Luke 24:13-35"]
     }
   },
   "Thursday of Easter Week": {
     "Year A": {
-      "First Lesson": [
-        "Acts 3:11-26"
-      ],
-      "Psalm": [
-        "Psalm 8"
-      ],
-      "Gospel": [
-        "Luke 24:36-49"
-      ]
+      "First Lesson": ["Acts 3:11-26"],
+      "Psalm": ["Psalm 8"],
+      "Gospel": ["Luke 24:36-49"]
     },
     "Year B": {
-      "First Lesson": [
-        "Acts 3:11-26"
-      ],
-      "Psalm": [
-        "Psalm 8"
-      ],
-      "Gospel": [
-        "Luke 24:36-49"
-      ]
+      "First Lesson": ["Acts 3:11-26"],
+      "Psalm": ["Psalm 8"],
+      "Gospel": ["Luke 24:36-49"]
     },
     "Year C": {
-      "First Lesson": [
-        "Acts 3:11-26"
-      ],
-      "Psalm": [
-        "Psalm 8"
-      ],
-      "Gospel": [
-        "Luke 24:36-49"
-      ]
+      "First Lesson": ["Acts 3:11-26"],
+      "Psalm": ["Psalm 8"],
+      "Gospel": ["Luke 24:36-49"]
     }
   },
   "Friday of Easter Week": {
     "Year A": {
-      "First Lesson": [
-        "1 Peter 1:3-9"
-      ],
-      "Psalm": [
-        "Psalm 116:1-9"
-      ],
-      "Gospel": [
-        "John 21:1-14"
-      ]
+      "First Lesson": ["1 Peter 1:3-9"],
+      "Psalm": ["Psalm 116:1-9"],
+      "Gospel": ["John 21:1-14"]
     },
     "Year B": {
-      "First Lesson": [
-        "1 Peter 1:3-9"
-      ],
-      "Psalm": [
-        "Psalm 116:1-9"
-      ],
-      "Gospel": [
-        "John 21:1-14"
-      ]
+      "First Lesson": ["1 Peter 1:3-9"],
+      "Psalm": ["Psalm 116:1-9"],
+      "Gospel": ["John 21:1-14"]
     },
     "Year C": {
-      "First Lesson": [
-        "1 Peter 1:3-9"
-      ],
-      "Psalm": [
-        "Psalm 116:1-9"
-      ],
-      "Gospel": [
-        "John 21:1-14"
-      ]
+      "First Lesson": ["1 Peter 1:3-9"],
+      "Psalm": ["Psalm 116:1-9"],
+      "Gospel": ["John 21:1-14"]
     }
   },
   "Saturday of Easter Week": {
     "Year A": {
-      "First Lesson": [
-        "Acts 4:1-22"
-      ],
-      "Psalm": [
-        "Psalm 118:14-18"
-      ],
-      "Gospel": [
-        "Mark 16:9-20"
-      ]
+      "First Lesson": ["Acts 4:1-22"],
+      "Psalm": ["Psalm 118:14-18"],
+      "Gospel": ["Mark 16:9-20"]
     },
     "Year B": {
-      "First Lesson": [
-        "Acts 4:1-22"
-      ],
-      "Psalm": [
-        "Psalm 118:14-18"
-      ],
-      "Gospel": [
-        "Mark 16:9-20"
-      ]
+      "First Lesson": ["Acts 4:1-22"],
+      "Psalm": ["Psalm 118:14-18"],
+      "Gospel": ["Mark 16:9-20"]
     },
     "Year C": {
-      "First Lesson": [
-        "Acts 4:1-22"
-      ],
-      "Psalm": [
-        "Psalm 118:14-18"
-      ],
-      "Gospel": [
-        "Mark 16:9-20"
-      ]
+      "First Lesson": ["Acts 4:1-22"],
+      "Psalm": ["Psalm 118:14-18"],
+      "Gospel": ["Mark 16:9-20"]
     }
   },
   "Ascension Day": {
     "Year A": {
-      "First Lesson": [
-        "Acts 1:1-11"
-      ],
-      "Psalm": [
-        "Psalm 47",
-        "Psalm 110:1-5"
-      ],
-      "Second Lesson": [
-        "Ephesians 1:15-23"
-      ],
-      "Gospel": [
-        "Luke 24:44-53",
-        "Mark 16:9-20"
-      ]
+      "First Lesson": ["Acts 1:1-11"],
+      "Psalm": ["Psalm 47", "Psalm 110:1-5"],
+      "Second Lesson": ["Ephesians 1:15-23"],
+      "Gospel": ["Luke 24:44-53", "Mark 16:9-20"]
     },
     "Year B": {
-      "First Lesson": [
-        "Acts 1:1-11"
-      ],
-      "Psalm": [
-        "Psalm 47",
-        "Psalm 110:1-5"
-      ],
-      "Second Lesson": [
-        "Ephesians 1:15-23"
-      ],
-      "Gospel": [
-        "Luke 24:44-53",
-        "Mark 16:9-20"
-      ]
+      "First Lesson": ["Acts 1:1-11"],
+      "Psalm": ["Psalm 47", "Psalm 110:1-5"],
+      "Second Lesson": ["Ephesians 1:15-23"],
+      "Gospel": ["Luke 24:44-53", "Mark 16:9-20"]
     },
     "Year C": {
-      "First Lesson": [
-        "Acts 1:1-11"
-      ],
-      "Psalm": [
-        "Psalm 47",
-        "Psalm 110:1-5"
-      ],
-      "Second Lesson": [
-        "Ephesians 1:15-23"
-      ],
-      "Gospel": [
-        "Luke 24:44-53",
-        "Mark 16:9-20"
-      ]
+      "First Lesson": ["Acts 1:1-11"],
+      "Psalm": ["Psalm 47", "Psalm 110:1-5"],
+      "Second Lesson": ["Ephesians 1:15-23"],
+      "Gospel": ["Luke 24:44-53", "Mark 16:9-20"]
     }
   },
   "The Circumcision and Holy Name of Our Lord Jesus Christ": {
     "Year A": {
-      "First Lesson": [
-        "Exodus 34:1-9"
-      ],
-      "Psalm": [
-        "Psalm 8"
-      ],
-      "Second Lesson": [
-        "Romans 1:1-7"
-      ],
-      "Gospel": [
-        "Luke 2:15-21"
-      ]
+      "First Lesson": ["Exodus 34:1-9"],
+      "Psalm": ["Psalm 8"],
+      "Second Lesson": ["Romans 1:1-7"],
+      "Gospel": ["Luke 2:15-21"]
     },
     "Year B": {
-      "First Lesson": [
-        "Exodus 34:1-9"
-      ],
-      "Psalm": [
-        "Psalm 8"
-      ],
-      "Second Lesson": [
-        "Romans 1:1-7"
-      ],
-      "Gospel": [
-        "Luke 2:15-21"
-      ]
+      "First Lesson": ["Exodus 34:1-9"],
+      "Psalm": ["Psalm 8"],
+      "Second Lesson": ["Romans 1:1-7"],
+      "Gospel": ["Luke 2:15-21"]
     },
     "Year C": {
-      "First Lesson": [
-        "Exodus 34:1-9"
-      ],
-      "Psalm": [
-        "Psalm 8"
-      ],
-      "Second Lesson": [
-        "Romans 1:1-7"
-      ],
-      "Gospel": [
-        "Luke 2:15-21"
-      ]
+      "First Lesson": ["Exodus 34:1-9"],
+      "Psalm": ["Psalm 8"],
+      "Second Lesson": ["Romans 1:1-7"],
+      "Gospel": ["Luke 2:15-21"]
     }
   },
   "The Epiphany of Our Lord Jesus Christ": {
     "Year A": {
-      "First Lesson": [
-        "Isaiah 60:1-9"
-      ],
-      "Psalm": [
-        "Psalm 72",
-        "72:1-11"
-      ],
-      "Second Lesson": [
-        "Ephesians 3:1-13"
-      ],
-      "Gospel": [
-        "Matthew 2:1-12"
-      ]
+      "First Lesson": ["Isaiah 60:1-9"],
+      "Psalm": ["Psalm 72", "Psalm 72:1-11"],
+      "Second Lesson": ["Ephesians 3:1-13"],
+      "Gospel": ["Matthew 2:1-12"]
     },
     "Year B": {
-      "First Lesson": [
-        "Isaiah 60:1-9"
-      ],
-      "Psalm": [
-        "Psalm 72",
-        "72:1-11"
-      ],
-      "Second Lesson": [
-        "Ephesians 3:1-13"
-      ],
-      "Gospel": [
-        "Matthew 2:1-12"
-      ]
+      "First Lesson": ["Isaiah 60:1-9"],
+      "Psalm": ["Psalm 72", "Psalm 72:1-11"],
+      "Second Lesson": ["Ephesians 3:1-13"],
+      "Gospel": ["Matthew 2:1-12"]
     },
     "Year C": {
-      "First Lesson": [
-        "Isaiah 60:1-9"
-      ],
-      "Psalm": [
-        "Psalm 72",
-        "72:1-11"
-      ],
-      "Second Lesson": [
-        "Ephesians 3:1-13"
-      ],
-      "Gospel": [
-        "Matthew 2:1-12"
-      ]
+      "First Lesson": ["Isaiah 60:1-9"],
+      "Psalm": ["Psalm 72", "Psalm 72:1-11"],
+      "Second Lesson": ["Ephesians 3:1-13"],
+      "Gospel": ["Matthew 2:1-12"]
     }
   },
   "Confession of Peter the Apostle": {
     "Year A": {
-      "First Lesson": [
-        "Acts 4:8-13"
-      ],
-      "Psalm": [
-        "Psalm 23"
-      ],
-      "Second Lesson": [
-        "1 Peter 5:1-11"
-      ],
-      "Gospel": [
-        "Matthew 16:13-19"
-      ]
+      "First Lesson": ["Acts 4:8-13"],
+      "Psalm": ["Psalm 23"],
+      "Second Lesson": ["1 Peter 5:1-11"],
+      "Gospel": ["Matthew 16:13-19"]
     },
     "Year B": {
-      "First Lesson": [
-        "Acts 4:8-13"
-      ],
-      "Psalm": [
-        "Psalm 23"
-      ],
-      "Second Lesson": [
-        "1 Peter 5:1-11"
-      ],
-      "Gospel": [
-        "Matthew 16:13-19"
-      ]
+      "First Lesson": ["Acts 4:8-13"],
+      "Psalm": ["Psalm 23"],
+      "Second Lesson": ["1 Peter 5:1-11"],
+      "Gospel": ["Matthew 16:13-19"]
     },
     "Year C": {
-      "First Lesson": [
-        "Acts 4:8-13"
-      ],
-      "Psalm": [
-        "Psalm 23"
-      ],
-      "Second Lesson": [
-        "1 Peter 5:1-11"
-      ],
-      "Gospel": [
-        "Matthew 16:13-19"
-      ]
+      "First Lesson": ["Acts 4:8-13"],
+      "Psalm": ["Psalm 23"],
+      "Second Lesson": ["1 Peter 5:1-11"],
+      "Gospel": ["Matthew 16:13-19"]
     }
   },
   "Conversion of Paul the Apostle": {
     "Year A": {
-      "First Lesson": [
-        "Acts 26:9-21"
-      ],
-      "Psalm": [
-        "Psalm 67"
-      ],
-      "Second Lesson": [
-        "Galatians 1:11-24"
-      ],
-      "Gospel": [
-        "Matthew 10:16-25"
-      ]
+      "First Lesson": ["Acts 26:9-21"],
+      "Psalm": ["Psalm 67"],
+      "Second Lesson": ["Galatians 1:11-24"],
+      "Gospel": ["Matthew 10:16-25"]
     },
     "Year B": {
-      "First Lesson": [
-        "Acts 26:9-21"
-      ],
-      "Psalm": [
-        "Psalm 67"
-      ],
-      "Second Lesson": [
-        "Galatians 1:11-24"
-      ],
-      "Gospel": [
-        "Matthew 10:16-25"
-      ]
+      "First Lesson": ["Acts 26:9-21"],
+      "Psalm": ["Psalm 67"],
+      "Second Lesson": ["Galatians 1:11-24"],
+      "Gospel": ["Matthew 10:16-25"]
     },
     "Year C": {
-      "First Lesson": [
-        "Acts 26:9-21"
-      ],
-      "Psalm": [
-        "Psalm 67"
-      ],
-      "Second Lesson": [
-        "Galatians 1:11-24"
-      ],
-      "Gospel": [
-        "Matthew 10:16-25"
-      ]
+      "First Lesson": ["Acts 26:9-21"],
+      "Psalm": ["Psalm 67"],
+      "Second Lesson": ["Galatians 1:11-24"],
+      "Gospel": ["Matthew 10:16-25"]
     }
   },
   "The Presentation of Our Lord Jesus Christ in the Temple": {
     "Year A": {
-      "First Lesson": [
-        "Malachi 3:1-4"
-      ],
-      "Psalm": [
-        "Psalm 84"
-      ],
-      "Second Lesson": [
-        "Hebrews 2:14-18"
-      ],
-      "Gospel": [
-        "Luke 2:22-40"
-      ]
+      "First Lesson": ["Malachi 3:1-4"],
+      "Psalm": ["Psalm 84"],
+      "Second Lesson": ["Hebrews 2:14-18"],
+      "Gospel": ["Luke 2:22-40"]
     },
     "Year B": {
-      "First Lesson": [
-        "Malachi 3:1-4"
-      ],
-      "Psalm": [
-        "Psalm 84"
-      ],
-      "Second Lesson": [
-        "Hebrews 2:14-18"
-      ],
-      "Gospel": [
-        "Luke 2:22-40"
-      ]
+      "First Lesson": ["Malachi 3:1-4"],
+      "Psalm": ["Psalm 84"],
+      "Second Lesson": ["Hebrews 2:14-18"],
+      "Gospel": ["Luke 2:22-40"]
     },
     "Year C": {
-      "First Lesson": [
-        "Malachi 3:1-4"
-      ],
-      "Psalm": [
-        "Psalm 84"
-      ],
-      "Second Lesson": [
-        "Hebrews 2:14-18"
-      ],
-      "Gospel": [
-        "Luke 2:22-40"
-      ]
+      "First Lesson": ["Malachi 3:1-4"],
+      "Psalm": ["Psalm 84"],
+      "Second Lesson": ["Hebrews 2:14-18"],
+      "Gospel": ["Luke 2:22-40"]
     }
   },
   "Matthewhias the Apostle": {
     "Year A": {
-      "First Lesson": [
-        "Acts 1:15-26"
-      ],
-      "Psalm": [
-        "Psalm 15"
-      ],
-      "Second Lesson": [
-        "Philippians 3:12-21"
-      ],
-      "Gospel": [
-        "John 15:1-16"
-      ]
+      "First Lesson": ["Acts 1:15-26"],
+      "Psalm": ["Psalm 15"],
+      "Second Lesson": ["Philippians 3:12-21"],
+      "Gospel": ["John 15:1-16"]
     },
     "Year B": {
-      "First Lesson": [
-        "Acts 1:15-26"
-      ],
-      "Psalm": [
-        "Psalm 15"
-      ],
-      "Second Lesson": [
-        "Philippians 3:12-21"
-      ],
-      "Gospel": [
-        "John 15:1-16"
-      ]
+      "First Lesson": ["Acts 1:15-26"],
+      "Psalm": ["Psalm 15"],
+      "Second Lesson": ["Philippians 3:12-21"],
+      "Gospel": ["John 15:1-16"]
     },
     "Year C": {
-      "First Lesson": [
-        "Acts 1:15-26"
-      ],
-      "Psalm": [
-        "Psalm 15"
-      ],
-      "Second Lesson": [
-        "Philippians 3:12-21"
-      ],
-      "Gospel": [
-        "John 15:1-16"
-      ]
+      "First Lesson": ["Acts 1:15-26"],
+      "Psalm": ["Psalm 15"],
+      "Second Lesson": ["Philippians 3:12-21"],
+      "Gospel": ["John 15:1-16"]
     }
   },
   "Joseph, Husband of the Virgin Mary and Guardian of Jesus": {
     "Year A": {
-      "First Lesson": [
-        "2 Sam 7:4,8-16"
-      ],
-      "Psalm": [
-        "Psalm 89:1-4(5-18)19-29"
-      ],
-      "Second Lesson": [
-        "Romans 4:13-18"
-      ],
-      "Gospel": [
-        "Luke 2:41-52"
-      ]
+      "First Lesson": ["2 Samuel 7:4,8-16"],
+      "Psalm": ["Psalm 89:1-4, (5-18), 19-29"],
+      "Second Lesson": ["Romans 4:13-18"],
+      "Gospel": ["Luke 2:41-52"]
     },
     "Year B": {
-      "First Lesson": [
-        "2 Sam 7:4,8-16"
-      ],
-      "Psalm": [
-        "Psalm 89:1-4(5-18)19-29"
-      ],
-      "Second Lesson": [
-        "Romans 4:13-18"
-      ],
-      "Gospel": [
-        "Luke 2:41-52"
-      ]
+      "First Lesson": ["2 Samuel 7:4,8-16"],
+      "Psalm": ["Psalm 89:1-4, (5-18), 19-29"],
+      "Second Lesson": ["Romans 4:13-18"],
+      "Gospel": ["Luke 2:41-52"]
     },
     "Year C": {
-      "First Lesson": [
-        "2 Sam 7:4,8-16"
-      ],
-      "Psalm": [
-        "Psalm 89:1-4(5-18)19-29"
-      ],
-      "Second Lesson": [
-        "Romans 4:13-18"
-      ],
-      "Gospel": [
-        "Luke 2:41-52"
-      ]
+      "First Lesson": ["2 Samuel 7:4,8-16"],
+      "Psalm": ["Psalm 89:1-4, (5-18), 19-29"],
+      "Second Lesson": ["Romans 4:13-18"],
+      "Gospel": ["Luke 2:41-52"]
     }
   },
   "The Annunciation of our Lord Jesus Christ to the Virgin Mary": {
     "Year A": {
-      "First Lesson": [
-        "Isaiah 7:10-14"
-      ],
-      "Psalm": [
-        "Psalm 40:1-13",
-        "Magnificat"
-      ],
-      "Second Lesson": [
-        "Hebrews 10:5-10"
-      ],
-      "Gospel": [
-        "Luke 1:26-38"
-      ]
+      "First Lesson": ["Isaiah 7:10-14"],
+      "Psalm": ["Psalm 40:1-13", "Magnificat"],
+      "Second Lesson": ["Hebrews 10:5-10"],
+      "Gospel": ["Luke 1:26-38"]
     },
     "Year B": {
-      "First Lesson": [
-        "Isaiah 7:10-14"
-      ],
-      "Psalm": [
-        "Psalm 40:1-13",
-        "Magnificat"
-      ],
-      "Second Lesson": [
-        "Hebrews 10:5-10"
-      ],
-      "Gospel": [
-        "Luke 1:26-38"
-      ]
+      "First Lesson": ["Isaiah 7:10-14"],
+      "Psalm": ["Psalm 40:1-13", "Magnificat"],
+      "Second Lesson": ["Hebrews 10:5-10"],
+      "Gospel": ["Luke 1:26-38"]
     },
     "Year C": {
-      "First Lesson": [
-        "Isaiah 7:10-14"
-      ],
-      "Psalm": [
-        "Psalm 40:1-13",
-        "Magnificat"
-      ],
-      "Second Lesson": [
-        "Hebrews 10:5-10"
-      ],
-      "Gospel": [
-        "Luke 1:26-38"
-      ]
+      "First Lesson": ["Isaiah 7:10-14"],
+      "Psalm": ["Psalm 40:1-13", "Magnificat"],
+      "Second Lesson": ["Hebrews 10:5-10"],
+      "Gospel": ["Luke 1:26-38"]
     }
   },
   "Mark the Evangelist": {
     "Year A": {
-      "First Lesson": [
-        "Isaiah 52:7-10"
-      ],
-      "Psalm": [
-        "Psalm 2"
-      ],
-      "Second Lesson": [
-        "Ephesians 4:7-8,11-16"
-      ],
-      "Gospel": [
-        "Mark 16:15-20"
-      ]
+      "First Lesson": ["Isaiah 52:7-10"],
+      "Psalm": ["Psalm 2"],
+      "Second Lesson": ["Ephesians 4:7-8, 11-16"],
+      "Gospel": ["Mark 16:15-20"]
     },
     "Year B": {
-      "First Lesson": [
-        "Isaiah 52:7-10"
-      ],
-      "Psalm": [
-        "Psalm 2"
-      ],
-      "Second Lesson": [
-        "Ephesians 4:7-8,11-16"
-      ],
-      "Gospel": [
-        "Mark 16:15-20"
-      ]
+      "First Lesson": ["Isaiah 52:7-10"],
+      "Psalm": ["Psalm 2"],
+      "Second Lesson": ["Ephesians 4:7-8, 11-16"],
+      "Gospel": ["Mark 16:15-20"]
     },
     "Year C": {
-      "First Lesson": [
-        "Isaiah 52:7-10"
-      ],
-      "Psalm": [
-        "Psalm 2"
-      ],
-      "Second Lesson": [
-        "Ephesians 4:7-8,11-16"
-      ],
-      "Gospel": [
-        "Mark 16:15-20"
-      ]
+      "First Lesson": ["Isaiah 52:7-10"],
+      "Psalm": ["Psalm 2"],
+      "Second Lesson": ["Ephesians 4:7-8, 11-16"],
+      "Gospel": ["Mark 16:15-20"]
     }
   },
   "Philip and James, Apostles": {
     "Year A": {
-      "First Lesson": [
-        "Isaiah 30:18-21"
-      ],
-      "Psalm": [
-        "Psalm 119:33-40"
-      ],
-      "Second Lesson": [
-        "2 Corinthians 4:1-7"
-      ],
-      "Gospel": [
-        "John 14:6-14"
-      ]
+      "First Lesson": ["Isaiah 30:18-21"],
+      "Psalm": ["Psalm 119:33-40"],
+      "Second Lesson": ["2 Corinthians 4:1-7"],
+      "Gospel": ["John 14:6-14"]
     },
     "Year B": {
-      "First Lesson": [
-        "Isaiah 30:18-21"
-      ],
-      "Psalm": [
-        "Psalm 119:33-40"
-      ],
-      "Second Lesson": [
-        "2 Corinthians 4:1-7"
-      ],
-      "Gospel": [
-        "John 14:6-14"
-      ]
+      "First Lesson": ["Isaiah 30:18-21"],
+      "Psalm": ["Psalm 119:33-40"],
+      "Second Lesson": ["2 Corinthians 4:1-7"],
+      "Gospel": ["John 14:6-14"]
     },
     "Year C": {
-      "First Lesson": [
-        "Isaiah 30:18-21"
-      ],
-      "Psalm": [
-        "Psalm 119:33-40"
-      ],
-      "Second Lesson": [
-        "2 Corinthians 4:1-7"
-      ],
-      "Gospel": [
-        "John 14:6-14"
-      ]
+      "First Lesson": ["Isaiah 30:18-21"],
+      "Psalm": ["Psalm 119:33-40"],
+      "Second Lesson": ["2 Corinthians 4:1-7"],
+      "Gospel": ["John 14:6-14"]
     }
   },
   "The Visitation of the Virgin Mary to Elizabeth and Zechariah": {
     "Year A": {
-      "First Lesson": [
-        "Zephaniah 3:14-18"
-      ],
-      "Psalm": [
-        "Psalm 113",
-        "Ecce Deus"
-      ],
-      "Second Lesson": [
-        "Col 3:12-17"
-      ],
-      "Gospel": [
-        "Luke 1:39-56"
-      ]
+      "First Lesson": ["Zephaniah 3:14-18"],
+      "Psalm": ["Psalm 113", "Ecce Deus"],
+      "Second Lesson": ["Colossians 3:12-17"],
+      "Gospel": ["Luke 1:39-56"]
     },
     "Year B": {
-      "First Lesson": [
-        "Zephaniah 3:14-18"
-      ],
-      "Psalm": [
-        "Psalm 113",
-        "Ecce Deus"
-      ],
-      "Second Lesson": [
-        "Col 3:12-17"
-      ],
-      "Gospel": [
-        "Luke 1:39-56"
-      ]
+      "First Lesson": ["Zephaniah 3:14-18"],
+      "Psalm": ["Psalm 113", "Ecce Deus"],
+      "Second Lesson": ["Colossians 3:12-17"],
+      "Gospel": ["Luke 1:39-56"]
     },
     "Year C": {
-      "First Lesson": [
-        "Zephaniah 3:14-18"
-      ],
-      "Psalm": [
-        "Psalm 113",
-        "Ecce Deus"
-      ],
-      "Second Lesson": [
-        "Col 3:12-17"
-      ],
-      "Gospel": [
-        "Luke 1:39-56"
-      ]
+      "First Lesson": ["Zephaniah 3:14-18"],
+      "Psalm": ["Psalm 113", "Ecce Deus"],
+      "Second Lesson": ["Colossians 3:12-17"],
+      "Gospel": ["Luke 1:39-56"]
     }
   },
   "Barnabas the Apostle": {
     "Year A": {
-      "First Lesson": [
-        "Isaiah 42:5-12"
-      ],
-      "Psalm": [
-        "Psalm 112"
-      ],
-      "Second Lesson": [
-        "Acts 11:19-30,13:1-3"
-      ],
-      "Gospel": [
-        "Matthew 10:7-16"
-      ]
+      "First Lesson": ["Isaiah 42:5-12"],
+      "Psalm": ["Psalm 112"],
+      "Second Lesson": ["Acts 11:19-30; 13:1-3"],
+      "Gospel": ["Matthew 10:7-16"]
     },
     "Year B": {
-      "First Lesson": [
-        "Isaiah 42:5-12"
-      ],
-      "Psalm": [
-        "Psalm 112"
-      ],
-      "Second Lesson": [
-        "Acts 11:19-30,13:1-3"
-      ],
-      "Gospel": [
-        "Matthew 10:7-16"
-      ]
+      "First Lesson": ["Isaiah 42:5-12"],
+      "Psalm": ["Psalm 112"],
+      "Second Lesson": ["Acts 11:19-30; 13:1-3"],
+      "Gospel": ["Matthew 10:7-16"]
     },
     "Year C": {
-      "First Lesson": [
-        "Isaiah 42:5-12"
-      ],
-      "Psalm": [
-        "Psalm 112"
-      ],
-      "Second Lesson": [
-        "Acts 11:19-30,13:1-3"
-      ],
-      "Gospel": [
-        "Matthew 10:7-16"
-      ]
+      "First Lesson": ["Isaiah 42:5-12"],
+      "Psalm": ["Psalm 112"],
+      "Second Lesson": ["Acts 11:19-30; 13:1-3"],
+      "Gospel": ["Matthew 10:7-16"]
     }
   },
   "The Nativity of John the Baptist": {
     "Year A": {
-      "First Lesson": [
-        "Isaiah 40:1-11"
-      ],
-      "Psalm": [
-        "Psalm 85:7-13"
-      ],
-      "Second Lesson": [
-        "Acts 13:14b-26"
-      ],
-      "Gospel": [
-        "Luke 1:57-80"
-      ]
+      "First Lesson": ["Isaiah 40:1-11"],
+      "Psalm": ["Psalm 85:7-13"],
+      "Second Lesson": ["Acts 13:14b-26"],
+      "Gospel": ["Luke 1:57-80"]
     },
     "Year B": {
-      "First Lesson": [
-        "Isaiah 40:1-11"
-      ],
-      "Psalm": [
-        "Psalm 85:7-13"
-      ],
-      "Second Lesson": [
-        "Acts 13:14b-26"
-      ],
-      "Gospel": [
-        "Luke 1:57-80"
-      ]
+      "First Lesson": ["Isaiah 40:1-11"],
+      "Psalm": ["Psalm 85:7-13"],
+      "Second Lesson": ["Acts 13:14b-26"],
+      "Gospel": ["Luke 1:57-80"]
     },
     "Year C": {
-      "First Lesson": [
-        "Isaiah 40:1-11"
-      ],
-      "Psalm": [
-        "Psalm 85:7-13"
-      ],
-      "Second Lesson": [
-        "Acts 13:14b-26"
-      ],
-      "Gospel": [
-        "Luke 1:57-80"
-      ]
+      "First Lesson": ["Isaiah 40:1-11"],
+      "Psalm": ["Psalm 85:7-13"],
+      "Second Lesson": ["Acts 13:14b-26"],
+      "Gospel": ["Luke 1:57-80"]
     }
   },
   "Peter and Paul, Apostles": {
     "Year A": {
-      "First Lesson": [
-        "Ezek 34:11-16"
-      ],
-      "Psalm": [
-        "Psalm 87"
-      ],
-      "Second Lesson": [
-        "2 Timothy 4:1-8"
-      ],
-      "Gospel": [
-        "John 21:15-19"
-      ]
+      "First Lesson": ["Ezekiel 34:11-16"],
+      "Psalm": ["Psalm 87"],
+      "Second Lesson": ["2 Timothy 4:1-8"],
+      "Gospel": ["John 21:15-19"]
     },
     "Year B": {
-      "First Lesson": [
-        "Ezek 34:11-16"
-      ],
-      "Psalm": [
-        "Psalm 87"
-      ],
-      "Second Lesson": [
-        "2 Timothy 4:1-8"
-      ],
-      "Gospel": [
-        "John 21:15-19"
-      ]
+      "First Lesson": ["Ezekiel 34:11-16"],
+      "Psalm": ["Psalm 87"],
+      "Second Lesson": ["2 Timothy 4:1-8"],
+      "Gospel": ["John 21:15-19"]
     },
     "Year C": {
-      "First Lesson": [
-        "Ezek 34:11-16"
-      ],
-      "Psalm": [
-        "Psalm 87"
-      ],
-      "Second Lesson": [
-        "2 Timothy 4:1-8"
-      ],
-      "Gospel": [
-        "John 21:15-19"
-      ]
+      "First Lesson": ["Ezekiel 34:11-16"],
+      "Psalm": ["Psalm 87"],
+      "Second Lesson": ["2 Timothy 4:1-8"],
+      "Gospel": ["John 21:15-19"]
     }
   },
   "Mary Magdalene": {
     "Year A": {
-      "First Lesson": [
-        "Judg 4:4-10",
-        "Judith 9:1,11-14"
-      ],
-      "Psalm": [
-        "Psalm 42:1-7(8-15)"
-      ],
-      "Second Lesson": [
-        "2 Corinthians 5:14-20a"
-      ],
-      "Gospel": [
-        "John 20:11-18"
-      ]
+      "First Lesson": ["Judges 4:4-10", "Judith 9:1, 11-14"],
+      "Psalm": ["Psalm 42:1-7, (8-15)"],
+      "Second Lesson": ["2 Corinthians 5:14-20a"],
+      "Gospel": ["John 20:11-18"]
     },
     "Year B": {
-      "First Lesson": [
-        "Judg 4:4-10",
-        "Judith 9:1,11-14"
-      ],
-      "Psalm": [
-        "Psalm 42:1-7(8-15)"
-      ],
-      "Second Lesson": [
-        "2 Corinthians 5:14-20a"
-      ],
-      "Gospel": [
-        "John 20:11-18"
-      ]
+      "First Lesson": ["Judges 4:4-10", "Judith 9:1, 11-14"],
+      "Psalm": ["Psalm 42:1-7, (8-15)"],
+      "Second Lesson": ["2 Corinthians 5:14-20a"],
+      "Gospel": ["John 20:11-18"]
     },
     "Year C": {
-      "First Lesson": [
-        "Judg 4:4-10",
-        "Judith 9:1,11-14"
-      ],
-      "Psalm": [
-        "Psalm 42:1-7(8-15)"
-      ],
-      "Second Lesson": [
-        "2 Corinthians 5:14-20a"
-      ],
-      "Gospel": [
-        "John 20:11-18"
-      ]
+      "First Lesson": ["Judges 4:4-10", "Judith 9:1, 11-14"],
+      "Psalm": ["Psalm 42:1-7, (8-15)"],
+      "Second Lesson": ["2 Corinthians 5:14-20a"],
+      "Gospel": ["John 20:11-18"]
     }
   },
   "James the Elder, Apostle": {
     "Year A": {
-      "First Lesson": [
-        "Jeremiah 45:1-5"
-      ],
-      "Psalm": [
-        "Psalm 7:1-11(12-18)"
-      ],
-      "Second Lesson": [
-        "Acts 11:27-12:3"
-      ],
-      "Gospel": [
-        "Matthew 20:20-28"
-      ]
+      "First Lesson": ["Jeremiah 45:1-5"],
+      "Psalm": ["Psalm 7:1-11, (12-18)"],
+      "Second Lesson": ["Acts 11:27-12:3"],
+      "Gospel": ["Matthew 20:20-28"]
     },
     "Year B": {
-      "First Lesson": [
-        "Jeremiah 45:1-5"
-      ],
-      "Psalm": [
-        "Psalm 7:1-11(12-18)"
-      ],
-      "Second Lesson": [
-        "Acts 11:27-12:3"
-      ],
-      "Gospel": [
-        "Matthew 20:20-28"
-      ]
+      "First Lesson": ["Jeremiah 45:1-5"],
+      "Psalm": ["Psalm 7:1-11, (12-18)"],
+      "Second Lesson": ["Acts 11:27-12:3"],
+      "Gospel": ["Matthew 20:20-28"]
     },
     "Year C": {
-      "First Lesson": [
-        "Jeremiah 45:1-5"
-      ],
-      "Psalm": [
-        "Psalm 7:1-11(12-18)"
-      ],
-      "Second Lesson": [
-        "Acts 11:27-12:3"
-      ],
-      "Gospel": [
-        "Matthew 20:20-28"
-      ]
+      "First Lesson": ["Jeremiah 45:1-5"],
+      "Psalm": ["Psalm 7:1-11, (12-18)"],
+      "Second Lesson": ["Acts 11:27-12:3"],
+      "Gospel": ["Matthew 20:20-28"]
     }
   },
   "The Transfiguration of Our Lord Jesus Christ": {
     "Year A": {
-      "First Lesson": [
-        "Exodus 34:29-35"
-      ],
-      "Psalm": [
-        "Psalm 99"
-      ],
-      "Second Lesson": [
-        "2 Peter 1:13-21"
-      ],
-      "Gospel": [
-        "Luke 9:28-36"
-      ]
+      "First Lesson": ["Exodus 34:29-35"],
+      "Psalm": ["Psalm 99"],
+      "Second Lesson": ["2 Peter 1:13-21"],
+      "Gospel": ["Luke 9:28-36"]
     },
     "Year B": {
-      "First Lesson": [
-        "Exodus 34:29-35"
-      ],
-      "Psalm": [
-        "Psalm 99"
-      ],
-      "Second Lesson": [
-        "2 Peter 1:13-21"
-      ],
-      "Gospel": [
-        "Luke 9:28-36"
-      ]
+      "First Lesson": ["Exodus 34:29-35"],
+      "Psalm": ["Psalm 99"],
+      "Second Lesson": ["2 Peter 1:13-21"],
+      "Gospel": ["Luke 9:28-36"]
     },
     "Year C": {
-      "First Lesson": [
-        "Exodus 34:29-35"
-      ],
-      "Psalm": [
-        "Psalm 99"
-      ],
-      "Second Lesson": [
-        "2 Peter 1:13-21"
-      ],
-      "Gospel": [
-        "Luke 9:28-36"
-      ]
+      "First Lesson": ["Exodus 34:29-35"],
+      "Psalm": ["Psalm 99"],
+      "Second Lesson": ["2 Peter 1:13-21"],
+      "Gospel": ["Luke 9:28-36"]
     }
   },
   "The Virgin Mary, Mother of Our Lord Jesus Christ": {
     "Year A": {
-      "First Lesson": [
-        "Isaiah 61:10-11"
-      ],
-      "Psalm": [
-        "Psalm 34"
-      ],
-      "Second Lesson": [
-        "Galatians 4:4-7"
-      ],
-      "Gospel": [
-        "Luke 1:46-55"
-      ]
+      "First Lesson": ["Isaiah 61:10-11"],
+      "Psalm": ["Psalm 34"],
+      "Second Lesson": ["Galatians 4:4-7"],
+      "Gospel": ["Luke 1:46-55"]
     },
     "Year B": {
-      "First Lesson": [
-        "Isaiah 61:10-11"
-      ],
-      "Psalm": [
-        "Psalm 34"
-      ],
-      "Second Lesson": [
-        "Galatians 4:4-7"
-      ],
-      "Gospel": [
-        "Luke 1:46-55"
-      ]
+      "First Lesson": ["Isaiah 61:10-11"],
+      "Psalm": ["Psalm 34"],
+      "Second Lesson": ["Galatians 4:4-7"],
+      "Gospel": ["Luke 1:46-55"]
     },
     "Year C": {
-      "First Lesson": [
-        "Isaiah 61:10-11"
-      ],
-      "Psalm": [
-        "Psalm 34"
-      ],
-      "Second Lesson": [
-        "Galatians 4:4-7"
-      ],
-      "Gospel": [
-        "Luke 1:46-55"
-      ]
+      "First Lesson": ["Isaiah 61:10-11"],
+      "Psalm": ["Psalm 34"],
+      "Second Lesson": ["Galatians 4:4-7"],
+      "Gospel": ["Luke 1:46-55"]
     }
   },
   "Bartholomew the Apostle": {
     "Year A": {
-      "First Lesson": [
-        "Deuteronomy 18:15-18"
-      ],
-      "Psalm": [
-        "Psalm 91"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 4:9-16"
-      ],
-      "Gospel": [
-        "Luke 22:24-30"
-      ]
+      "First Lesson": ["Deuteronomy 18:15-18"],
+      "Psalm": ["Psalm 91"],
+      "Second Lesson": ["1 Corinthians 4:9-16"],
+      "Gospel": ["Luke 22:24-30"]
     },
     "Year B": {
-      "First Lesson": [
-        "Deuteronomy 18:15-18"
-      ],
-      "Psalm": [
-        "Psalm 91"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 4:9-16"
-      ],
-      "Gospel": [
-        "Luke 22:24-30"
-      ]
+      "First Lesson": ["Deuteronomy 18:15-18"],
+      "Psalm": ["Psalm 91"],
+      "Second Lesson": ["1 Corinthians 4:9-16"],
+      "Gospel": ["Luke 22:24-30"]
     },
     "Year C": {
-      "First Lesson": [
-        "Deuteronomy 18:15-18"
-      ],
-      "Psalm": [
-        "Psalm 91"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 4:9-16"
-      ],
-      "Gospel": [
-        "Luke 22:24-30"
-      ]
+      "First Lesson": ["Deuteronomy 18:15-18"],
+      "Psalm": ["Psalm 91"],
+      "Second Lesson": ["1 Corinthians 4:9-16"],
+      "Gospel": ["Luke 22:24-30"]
     }
   },
   "Holy Cross Day": {
     "Year A": {
-      "First Lesson": [
-        "Isaiah 45:21-25"
-      ],
-      "Psalm": [
-        "Psalm 98"
-      ],
-      "Second Lesson": [
-        "Philippians 2:5-11"
-      ],
-      "Gospel": [
-        "John 12:31-36a"
-      ]
+      "First Lesson": ["Isaiah 45:21-25"],
+      "Psalm": ["Psalm 98"],
+      "Second Lesson": ["Philippians 2:5-11"],
+      "Gospel": ["John 12:31-36a"]
     },
     "Year B": {
-      "First Lesson": [
-        "Isaiah 45:21-25"
-      ],
-      "Psalm": [
-        "Psalm 98"
-      ],
-      "Second Lesson": [
-        "Philippians 2:5-11"
-      ],
-      "Gospel": [
-        "John 12:31-36a"
-      ]
+      "First Lesson": ["Isaiah 45:21-25"],
+      "Psalm": ["Psalm 98"],
+      "Second Lesson": ["Philippians 2:5-11"],
+      "Gospel": ["John 12:31-36a"]
     },
     "Year C": {
-      "First Lesson": [
-        "Isaiah 45:21-25"
-      ],
-      "Psalm": [
-        "Psalm 98"
-      ],
-      "Second Lesson": [
-        "Philippians 2:5-11"
-      ],
-      "Gospel": [
-        "John 12:31-36a"
-      ]
+      "First Lesson": ["Isaiah 45:21-25"],
+      "Psalm": ["Psalm 98"],
+      "Second Lesson": ["Philippians 2:5-11"],
+      "Gospel": ["John 12:31-36a"]
     }
   },
   "Matthewhew, Apostle and Evangelist": {
     "Year A": {
-      "First Lesson": [
-        "Proverbs 3:1-12"
-      ],
-      "Psalm": [
-        "Psalm 119:33-40"
-      ],
-      "Second Lesson": [
-        "2 Timothy 3:1-17"
-      ],
-      "Gospel": [
-        "Matthew 9:9-13"
-      ]
+      "First Lesson": ["Proverbs 3:1-12"],
+      "Psalm": ["Psalm 119:33-40"],
+      "Second Lesson": ["2 Timothy 3:1-17"],
+      "Gospel": ["Matthew 9:9-13"]
     },
     "Year B": {
-      "First Lesson": [
-        "Proverbs 3:1-12"
-      ],
-      "Psalm": [
-        "Psalm 119:33-40"
-      ],
-      "Second Lesson": [
-        "2 Timothy 3:1-17"
-      ],
-      "Gospel": [
-        "Matthew 9:9-13"
-      ]
+      "First Lesson": ["Proverbs 3:1-12"],
+      "Psalm": ["Psalm 119:33-40"],
+      "Second Lesson": ["2 Timothy 3:1-17"],
+      "Gospel": ["Matthew 9:9-13"]
     },
     "Year C": {
-      "First Lesson": [
-        "Proverbs 3:1-12"
-      ],
-      "Psalm": [
-        "Psalm 119:33-40"
-      ],
-      "Second Lesson": [
-        "2 Timothy 3:1-17"
-      ],
-      "Gospel": [
-        "Matthew 9:9-13"
-      ]
+      "First Lesson": ["Proverbs 3:1-12"],
+      "Psalm": ["Psalm 119:33-40"],
+      "Second Lesson": ["2 Timothy 3:1-17"],
+      "Gospel": ["Matthew 9:9-13"]
     }
   },
   "Holy Michael and All Angels": {
     "Year A": {
-      "First Lesson": [
-        "Genesis 28:10-17"
-      ],
-      "Psalm": [
-        "Psalm 103"
-      ],
-      "Second Lesson": [
-        "Revelation 12:7-12"
-      ],
-      "Gospel": [
-        "John 1:47-51"
-      ]
+      "First Lesson": ["Genesis 28:10-17"],
+      "Psalm": ["Psalm 103"],
+      "Second Lesson": ["Revelation 12:7-12"],
+      "Gospel": ["John 1:47-51"]
     },
     "Year B": {
-      "First Lesson": [
-        "Genesis 28:10-17"
-      ],
-      "Psalm": [
-        "Psalm 103"
-      ],
-      "Second Lesson": [
-        "Revelation 12:7-12"
-      ],
-      "Gospel": [
-        "John 1:47-51"
-      ]
+      "First Lesson": ["Genesis 28:10-17"],
+      "Psalm": ["Psalm 103"],
+      "Second Lesson": ["Revelation 12:7-12"],
+      "Gospel": ["John 1:47-51"]
     },
     "Year C": {
-      "First Lesson": [
-        "Genesis 28:10-17"
-      ],
-      "Psalm": [
-        "Psalm 103"
-      ],
-      "Second Lesson": [
-        "Revelation 12:7-12"
-      ],
-      "Gospel": [
-        "John 1:47-51"
-      ]
+      "First Lesson": ["Genesis 28:10-17"],
+      "Psalm": ["Psalm 103"],
+      "Second Lesson": ["Revelation 12:7-12"],
+      "Gospel": ["John 1:47-51"]
     }
   },
   "Luke the Evangelist and Companion of Paul": {
     "Year A": {
-      "First Lesson": [
-        "Ecclesiasticus 38:1-14"
-      ],
-      "Psalm": [
-        "Psalm 147:1-11"
-      ],
-      "Second Lesson": [
-        "2 Timothy 4:1-13"
-      ],
-      "Gospel": [
-        "Luke 4:14-21"
-      ]
+      "First Lesson": ["Ecclesiasticus 38:1-14"],
+      "Psalm": ["Psalm 147:1-11"],
+      "Second Lesson": ["2 Timothy 4:1-13"],
+      "Gospel": ["Luke 4:14-21"]
     },
     "Year B": {
-      "First Lesson": [
-        "Ecclesiasticus 38:1-14"
-      ],
-      "Psalm": [
-        "Psalm 147:1-11"
-      ],
-      "Second Lesson": [
-        "2 Timothy 4:1-13"
-      ],
-      "Gospel": [
-        "Luke 4:14-21"
-      ]
+      "First Lesson": ["Ecclesiasticus 38:1-14"],
+      "Psalm": ["Psalm 147:1-11"],
+      "Second Lesson": ["2 Timothy 4:1-13"],
+      "Gospel": ["Luke 4:14-21"]
     },
     "Year C": {
-      "First Lesson": [
-        "Ecclesiasticus 38:1-14"
-      ],
-      "Psalm": [
-        "Psalm 147:1-11"
-      ],
-      "Second Lesson": [
-        "2 Timothy 4:1-13"
-      ],
-      "Gospel": [
-        "Luke 4:14-21"
-      ]
+      "First Lesson": ["Ecclesiasticus 38:1-14"],
+      "Psalm": ["Psalm 147:1-11"],
+      "Second Lesson": ["2 Timothy 4:1-13"],
+      "Gospel": ["Luke 4:14-21"]
     }
   },
-  "James of Jeremiahusalem, Bishop and Martyr, Brother of Our Lord": {
+  "James of Jerusalem, Bishop and Martyr, Brother of Our Lord": {
     "Year A": {
-      "First Lesson": [
-        "Acts 15:12-22a"
-      ],
-      "Psalm": [
-        "Psalm 1"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 15:1-11"
-      ],
-      "Gospel": [
-        "Matthew 13:54-58"
-      ]
+      "First Lesson": ["Acts 15:12-22a"],
+      "Psalm": ["Psalm 1"],
+      "Second Lesson": ["1 Corinthians 15:1-11"],
+      "Gospel": ["Matthew 13:54-58"]
     },
     "Year B": {
-      "First Lesson": [
-        "Acts 15:12-22a"
-      ],
-      "Psalm": [
-        "Psalm 1"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 15:1-11"
-      ],
-      "Gospel": [
-        "Matthew 13:54-58"
-      ]
+      "First Lesson": ["Acts 15:12-22a"],
+      "Psalm": ["Psalm 1"],
+      "Second Lesson": ["1 Corinthians 15:1-11"],
+      "Gospel": ["Matthew 13:54-58"]
     },
     "Year C": {
-      "First Lesson": [
-        "Acts 15:12-22a"
-      ],
-      "Psalm": [
-        "Psalm 1"
-      ],
-      "Second Lesson": [
-        "1 Corinthians 15:1-11"
-      ],
-      "Gospel": [
-        "Matthew 13:54-58"
-      ]
+      "First Lesson": ["Acts 15:12-22a"],
+      "Psalm": ["Psalm 1"],
+      "Second Lesson": ["1 Corinthians 15:1-11"],
+      "Gospel": ["Matthew 13:54-58"]
     }
   },
   "Simon and Jude, Apostles": {
     "Year A": {
-      "First Lesson": [
-        "Deuteronomy 32:1-4"
-      ],
-      "Psalm": [
-        "Psalm 119:89-96"
-      ],
-      "Second Lesson": [
-        "Ephesians 2:13-22"
-      ],
-      "Gospel": [
-        "John 15:17-27"
-      ]
+      "First Lesson": ["Deuteronomy 32:1-4"],
+      "Psalm": ["Psalm 119:89-96"],
+      "Second Lesson": ["Ephesians 2:13-22"],
+      "Gospel": ["John 15:17-27"]
     },
     "Year B": {
-      "First Lesson": [
-        "Deuteronomy 32:1-4"
-      ],
-      "Psalm": [
-        "Psalm 119:89-96"
-      ],
-      "Second Lesson": [
-        "Ephesians 2:13-22"
-      ],
-      "Gospel": [
-        "John 15:17-27"
-      ]
+      "First Lesson": ["Deuteronomy 32:1-4"],
+      "Psalm": ["Psalm 119:89-96"],
+      "Second Lesson": ["Ephesians 2:13-22"],
+      "Gospel": ["John 15:17-27"]
     },
     "Year C": {
-      "First Lesson": [
-        "Deuteronomy 32:1-4"
-      ],
-      "Psalm": [
-        "Psalm 119:89-96"
-      ],
-      "Second Lesson": [
-        "Ephesians 2:13-22"
-      ],
-      "Gospel": [
-        "John 15:17-27"
-      ]
+      "First Lesson": ["Deuteronomy 32:1-4"],
+      "Psalm": ["Psalm 119:89-96"],
+      "Second Lesson": ["Ephesians 2:13-22"],
+      "Gospel": ["John 15:17-27"]
     }
   },
   "All Saints' Day": {
     "Year A": {
-      "First Lesson": [
-        "Ecclesiasticus 44:1-14",
-        "Revelation 7:9-17"
-      ],
-      "Psalm": [
-        "Psalm 149"
-      ],
-      "Second Lesson": [
-        "Revelation 7:9-17",
-        "Ephesians 1:(11-14)15-23"
-      ],
-      "Gospel": [
-        "Matthew 5:1-12",
-        "Luke 6:20-26(27-36)"
-      ]
+      "First Lesson": ["Ecclesiasticus 44:1-14", "Revelation 7:9-17"],
+      "Psalm": ["Psalm 149"],
+      "Second Lesson": ["Revelation 7:9-17", "Ephesians 1:(11-14), 15-23"],
+      "Gospel": ["Matthew 5:1-12", "Luke 6:20-26, (27-36)"]
     },
     "Year B": {
-      "First Lesson": [
-        "Ecclesiasticus 44:1-14",
-        "Revelation 7:9-17"
-      ],
-      "Psalm": [
-        "Psalm 149"
-      ],
-      "Second Lesson": [
-        "Revelation 7:9-17",
-        "Ephesians 1:(11-14)15-23"
-      ],
-      "Gospel": [
-        "Matthew 5:1-12",
-        "Luke 6:20-26(27-36)"
-      ]
+      "First Lesson": ["Ecclesiasticus 44:1-14", "Revelation 7:9-17"],
+      "Psalm": ["Psalm 149"],
+      "Second Lesson": ["Revelation 7:9-17", "Ephesians 1:(11-14), 15-23"],
+      "Gospel": ["Matthew 5:1-12", "Luke 6:20-26, (27-36)"]
     },
     "Year C": {
-      "First Lesson": [
-        "Ecclesiasticus 44:1-14",
-        "Revelation 7:9-17"
-      ],
-      "Psalm": [
-        "Psalm 149"
-      ],
-      "Second Lesson": [
-        "Revelation 7:9-17",
-        "Ephesians 1:(11-14)15-23"
-      ],
-      "Gospel": [
-        "Matthew 5:1-12",
-        "Luke 6:20-26(27-36)"
-      ]
+      "First Lesson": ["Ecclesiasticus 44:1-14", "Revelation 7:9-17"],
+      "Psalm": ["Psalm 149"],
+      "Second Lesson": ["Revelation 7:9-17", "Ephesians 1:(11-14), 15-23"],
+      "Gospel": ["Matthew 5:1-12", "Luke 6:20-26, (27-36)"]
     }
   },
   "Andrew the Apostle": {
     "Year A": {
-      "First Lesson": [
-        "Deuteronomy 30:11-14"
-      ],
-      "Psalm": [
-        "Psalm 19",
-        "19:1-6"
-      ],
-      "Second Lesson": [
-        "Romans 10:8b-18"
-      ],
-      "Gospel": [
-        "Matthew 4:18-22"
-      ]
+      "First Lesson": ["Deuteronomy 30:11-14"],
+      "Psalm": ["Psalm 19", "Psalm 19:1-6"],
+      "Second Lesson": ["Romans 10:8b-18"],
+      "Gospel": ["Matthew 4:18-22"]
     },
     "Year B": {
-      "First Lesson": [
-        "Deuteronomy 30:11-14"
-      ],
-      "Psalm": [
-        "Psalm 19",
-        "19:1-6"
-      ],
-      "Second Lesson": [
-        "Romans 10:8b-18"
-      ],
-      "Gospel": [
-        "Matthew 4:18-22"
-      ]
+      "First Lesson": ["Deuteronomy 30:11-14"],
+      "Psalm": ["Psalm 19", "Psalm 19:1-6"],
+      "Second Lesson": ["Romans 10:8b-18"],
+      "Gospel": ["Matthew 4:18-22"]
     },
     "Year C": {
-      "First Lesson": [
-        "Deuteronomy 30:11-14"
-      ],
-      "Psalm": [
-        "Psalm 19",
-        "19:1-6"
-      ],
-      "Second Lesson": [
-        "Romans 10:8b-18"
-      ],
-      "Gospel": [
-        "Matthew 4:18-22"
-      ]
+      "First Lesson": ["Deuteronomy 30:11-14"],
+      "Psalm": ["Psalm 19", "Psalm 19:1-6"],
+      "Second Lesson": ["Romans 10:8b-18"],
+      "Gospel": ["Matthew 4:18-22"]
     }
   },
   "Thomas the Apostle": {
     "Year A": {
-      "First Lesson": [
-        "Hab 2:1-4"
-      ],
-      "Psalm": [
-        "Psalm 126"
-      ],
-      "Second Lesson": [
-        "Hebrews 10:35-11:1"
-      ],
-      "Gospel": [
-        "John 20:19-29"
-      ]
+      "First Lesson": ["Habakkuk 2:1-4"],
+      "Psalm": ["Psalm 126"],
+      "Second Lesson": ["Hebrews 10:35-11:1"],
+      "Gospel": ["John 20:19-29"]
     },
     "Year B": {
-      "First Lesson": [
-        "Hab 2:1-4"
-      ],
-      "Psalm": [
-        "Psalm 126"
-      ],
-      "Second Lesson": [
-        "Hebrews 10:35-11:1"
-      ],
-      "Gospel": [
-        "John 20:19-29"
-      ]
+      "First Lesson": ["Habakkuk 2:1-4"],
+      "Psalm": ["Psalm 126"],
+      "Second Lesson": ["Hebrews 10:35-11:1"],
+      "Gospel": ["John 20:19-29"]
     },
     "Year C": {
-      "First Lesson": [
-        "Hab 2:1-4"
-      ],
-      "Psalm": [
-        "Psalm 126"
-      ],
-      "Second Lesson": [
-        "Hebrews 10:35-11:1"
-      ],
-      "Gospel": [
-        "John 20:19-29"
-      ]
+      "First Lesson": ["Habakkuk 2:1-4"],
+      "Psalm": ["Psalm 126"],
+      "Second Lesson": ["Hebrews 10:35-11:1"],
+      "Gospel": ["John 20:19-29"]
     }
   },
   "The Nativity of Our Lord Jesus Christ: Christmas Day I": {
     "Year A": {
-      "First Lesson": [
-        "Isaiah 9:1-7"
-      ],
-      "Psalm": [
-        "Psalm 96"
-      ],
-      "Second Lesson": [
-        "Titus 2:11-14"
-      ],
-      "Gospel": [
-        "Luke 2:1-14(15-20)"
-      ]
+      "First Lesson": ["Isaiah 9:1-7"],
+      "Psalm": ["Psalm 96"],
+      "Second Lesson": ["Titus 2:11-14"],
+      "Gospel": ["Luke 2:1-14, (15-20)"]
     },
     "Year B": {
-      "First Lesson": [
-        "Isaiah 9:1-7"
-      ],
-      "Psalm": [
-        "Psalm 96"
-      ],
-      "Second Lesson": [
-        "Titus 2:11-14"
-      ],
-      "Gospel": [
-        "Luke 2:1-14(15-20)"
-      ]
+      "First Lesson": ["Isaiah 9:1-7"],
+      "Psalm": ["Psalm 96"],
+      "Second Lesson": ["Titus 2:11-14"],
+      "Gospel": ["Luke 2:1-14, (15-20)"]
     },
     "Year C": {
-      "First Lesson": [
-        "Isaiah 9:1-7"
-      ],
-      "Psalm": [
-        "Psalm 96"
-      ],
-      "Second Lesson": [
-        "Titus 2:11-14"
-      ],
-      "Gospel": [
-        "Luke 2:1-14(15-20)"
-      ]
+      "First Lesson": ["Isaiah 9:1-7"],
+      "Psalm": ["Psalm 96"],
+      "Second Lesson": ["Titus 2:11-14"],
+      "Gospel": ["Luke 2:1-14, (15-20)"]
     }
   },
   "The Nativity of Our Lord Jesus Christ: Christmas Day II": {
     "Year A": {
-      "First Lesson": [
-        "Isaiah 62:6-12"
-      ],
-      "Psalm": [
-        "Psalm 97"
-      ],
-      "Second Lesson": [
-        "Titus 3:4-7"
-      ],
-      "Gospel": [
-        "Luke 2:(1-14)15-20"
-      ]
+      "First Lesson": ["Isaiah 62:6-12"],
+      "Psalm": ["Psalm 97"],
+      "Second Lesson": ["Titus 3:4-7"],
+      "Gospel": ["Luke 2:(1-14), 15-20"]
     },
     "Year B": {
-      "First Lesson": [
-        "Isaiah 62:6-12"
-      ],
-      "Psalm": [
-        "Psalm 97"
-      ],
-      "Second Lesson": [
-        "Titus 3:4-7"
-      ],
-      "Gospel": [
-        "Luke 2:(1-14)15-20"
-      ]
+      "First Lesson": ["Isaiah 62:6-12"],
+      "Psalm": ["Psalm 97"],
+      "Second Lesson": ["Titus 3:4-7"],
+      "Gospel": ["Luke 2:(1-14), 15-20"]
     },
     "Year C": {
-      "First Lesson": [
-        "Isaiah 62:6-12"
-      ],
-      "Psalm": [
-        "Psalm 97"
-      ],
-      "Second Lesson": [
-        "Titus 3:4-7"
-      ],
-      "Gospel": [
-        "Luke 2:(1-14)15-20"
-      ]
+      "First Lesson": ["Isaiah 62:6-12"],
+      "Psalm": ["Psalm 97"],
+      "Second Lesson": ["Titus 3:4-7"],
+      "Gospel": ["Luke 2:(1-14), 15-20"]
     }
   },
   "The Nativity of Our Lord Jesus Christ: Christmas Day III": {
     "Year A": {
-      "First Lesson": [
-        "Isaiah 52:7-12"
-      ],
-      "Psalm": [
-        "Psalm 98"
-      ],
-      "Second Lesson": [
-        "Hebrews 1:1-12"
-      ],
-      "Gospel": [
-        "John 1:1-18"
-      ]
+      "First Lesson": ["Isaiah 52:7-12"],
+      "Psalm": ["Psalm 98"],
+      "Second Lesson": ["Hebrews 1:1-12"],
+      "Gospel": ["John 1:1-18"]
     },
     "Year B": {
-      "First Lesson": [
-        "Isaiah 52:7-12"
-      ],
-      "Psalm": [
-        "Psalm 98"
-      ],
-      "Second Lesson": [
-        "Hebrews 1:1-12"
-      ],
-      "Gospel": [
-        "John 1:1-18"
-      ]
+      "First Lesson": ["Isaiah 52:7-12"],
+      "Psalm": ["Psalm 98"],
+      "Second Lesson": ["Hebrews 1:1-12"],
+      "Gospel": ["John 1:1-18"]
     },
     "Year C": {
-      "First Lesson": [
-        "Isaiah 52:7-12"
-      ],
-      "Psalm": [
-        "Psalm 98"
-      ],
-      "Second Lesson": [
-        "Hebrews 1:1-12"
-      ],
-      "Gospel": [
-        "John 1:1-18"
-      ]
+      "First Lesson": ["Isaiah 52:7-12"],
+      "Psalm": ["Psalm 98"],
+      "Second Lesson": ["Hebrews 1:1-12"],
+      "Gospel": ["John 1:1-18"]
     }
   },
   "Stephen, Deacon and Martyr": {
     "Year A": {
-      "First Lesson": [
-        "Jeremiah 26:1-9(10-11)12-15"
-      ],
-      "Psalm": [
-        "Psalm 31:1-6(7-27)"
-      ],
-      "Second Lesson": [
-        "Acts 6:8-7:2a,51-60"
-      ],
-      "Gospel": [
-        "Matthew 23:29-39"
-      ]
+      "First Lesson": ["Jeremiah 26:1-9, (10-11), 12-15"],
+      "Psalm": ["Psalm 31:1-6, (7-27)"],
+      "Second Lesson": ["Acts 6:8-7:2a, 51-60"],
+      "Gospel": ["Matthew 23:29-39"]
     },
     "Year B": {
-      "First Lesson": [
-        "Jeremiah 26:1-9(10-11)12-15"
-      ],
-      "Psalm": [
-        "Psalm 31:1-6(7-27)"
-      ],
-      "Second Lesson": [
-        "Acts 6:8-7:2a,51-60"
-      ],
-      "Gospel": [
-        "Matthew 23:29-39"
-      ]
+      "First Lesson": ["Jeremiah 26:1-9, (10-11), 12-15"],
+      "Psalm": ["Psalm 31:1-6, (7-27)"],
+      "Second Lesson": ["Acts 6:8-7:2a, 51-60"],
+      "Gospel": ["Matthew 23:29-39"]
     },
     "Year C": {
-      "First Lesson": [
-        "Jeremiah 26:1-9(10-11)12-15"
-      ],
-      "Psalm": [
-        "Psalm 31:1-6(7-27)"
-      ],
-      "Second Lesson": [
-        "Acts 6:8-7:2a,51-60"
-      ],
-      "Gospel": [
-        "Matthew 23:29-39"
-      ]
+      "First Lesson": ["Jeremiah 26:1-9, (10-11), 12-15"],
+      "Psalm": ["Psalm 31:1-6, (7-27)"],
+      "Second Lesson": ["Acts 6:8-7:2a, 51-60"],
+      "Gospel": ["Matthew 23:29-39"]
     }
   },
   "John, Apostle and Evangelist": {
     "Year A": {
-      "First Lesson": [
-        "Exodus 33:18-23"
-      ],
-      "Psalm": [
-        "Psalm 92:1-4(5-10)11-14"
-      ],
-      "Second Lesson": [
-        "1 John 1"
-      ],
-      "Gospel": [
-        "John 21:9-25",
-        "John 1:1-18"
-      ]
+      "First Lesson": ["Exodus 33:18-23"],
+      "Psalm": ["Psalm 92:1-4, (5-10), 11-14"],
+      "Second Lesson": ["1 John 1"],
+      "Gospel": ["John 21:9-25", "John 1:1-18"]
     },
     "Year B": {
-      "First Lesson": [
-        "Exodus 33:18-23"
-      ],
-      "Psalm": [
-        "Psalm 92:1-4(5-10)11-14"
-      ],
-      "Second Lesson": [
-        "1 John 1"
-      ],
-      "Gospel": [
-        "John 21:9-25",
-        "John 1:1-18"
-      ]
+      "First Lesson": ["Exodus 33:18-23"],
+      "Psalm": ["Psalm 92:1-4, (5-10), 11-14"],
+      "Second Lesson": ["1 John 1"],
+      "Gospel": ["John 21:9-25", "John 1:1-18"]
     },
     "Year C": {
-      "First Lesson": [
-        "Exodus 33:18-23"
-      ],
-      "Psalm": [
-        "Psalm 92:1-4(5-10)11-14"
-      ],
-      "Second Lesson": [
-        "1 John 1"
-      ],
-      "Gospel": [
-        "John 21:9-25",
-        "John 1:1-18"
-      ]
+      "First Lesson": ["Exodus 33:18-23"],
+      "Psalm": ["Psalm 92:1-4, (5-10), 11-14"],
+      "Second Lesson": ["1 John 1"],
+      "Gospel": ["John 21:9-25", "John 1:1-18"]
     }
   },
   "The Holy Innocents": {
     "Year A": {
-      "First Lesson": [
-        "Jeremiah 31:15-17"
-      ],
-      "Psalm": [
-        "Psalm 124"
-      ],
-      "Second Lesson": [
-        "Revelation 21:1-7"
-      ],
-      "Gospel": [
-        "Matthew 2:13-18"
-      ]
+      "First Lesson": ["Jeremiah 31:15-17"],
+      "Psalm": ["Psalm 124"],
+      "Second Lesson": ["Revelation 21:1-7"],
+      "Gospel": ["Matthew 2:13-18"]
     },
     "Year B": {
-      "First Lesson": [
-        "Jeremiah 31:15-17"
-      ],
-      "Psalm": [
-        "Psalm 124"
-      ],
-      "Second Lesson": [
-        "Revelation 21:1-7"
-      ],
-      "Gospel": [
-        "Matthew 2:13-18"
-      ]
+      "First Lesson": ["Jeremiah 31:15-17"],
+      "Psalm": ["Psalm 124"],
+      "Second Lesson": ["Revelation 21:1-7"],
+      "Gospel": ["Matthew 2:13-18"]
     },
     "Year C": {
-      "First Lesson": [
-        "Jeremiah 31:15-17"
-      ],
-      "Psalm": [
-        "Psalm 124"
-      ],
-      "Second Lesson": [
-        "Revelation 21:1-7"
-      ],
-      "Gospel": [
-        "Matthew 2:13-18"
-      ]
+      "First Lesson": ["Jeremiah 31:15-17"],
+      "Psalm": ["Psalm 124"],
+      "Second Lesson": ["Revelation 21:1-7"],
+      "Gospel": ["Matthew 2:13-18"]
     }
   }
 }
