@@ -1,4 +1,5 @@
 from enum import Enum
+import json
 
 
 class Year(Enum):
@@ -13,3 +14,7 @@ class Rank(Enum):
     SUNDAY = 2
     FIXED = 3
     PRINCIPAL = 4
+
+
+with open("lectionary.json") as f:
+    LECTIONARY = json.load(f)

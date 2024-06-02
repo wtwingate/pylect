@@ -6,8 +6,8 @@ from pylect.holyday import HolyDay
 
 
 class Lectionary:
-    """The lectionary class provides methods for calculating holy days according
-    to the liturgical calendar of the Anglican Church.
+    """The lectionary class provides methods for calculating holy days
+    according to the liturgical calendar of the Anglican Church.
     """
 
     def __init__(self, given_date: date) -> None:
@@ -85,7 +85,7 @@ class Lectionary:
         elif self.date == self.easter_day + timedelta(days=39):
             day_name = "Ascension Day"
         elif self.date == self.moveable_dates["pentecost"]:
-            day_name = "The Day of Pentecost"
+            day_name = "Day of Pentecost"
         elif self.date == self.easter_day + timedelta(days=56):
             day_name = "Trinity Sunday"
         elif self.date == date(self.date.year, 12, 25):
@@ -148,17 +148,17 @@ class Lectionary:
     def __check_easter_week(self, holy_days: list[HolyDay]) -> None:
         date_delta = self.date - self.easter_day
         if date_delta.days == 1:
-            day_name = "Monday of Easter Week"
+            day_name = "Monday in Easter Week"
         elif date_delta.days == 2:
-            day_name = "Tuesday of Easter Week"
+            day_name = "Tuesday in Easter Week"
         elif date_delta.days == 3:
-            day_name = "Wednesday of Easter Week"
+            day_name = "Wednesday in Easter Week"
         elif date_delta.days == 4:
-            day_name = "Thursday of Easter Week"
+            day_name = "Thursday in Easter Week"
         elif date_delta.days == 5:
-            day_name = "Friday of Easter Week"
+            day_name = "Friday in Easter Week"
         elif date_delta.days == 6:
-            day_name = "Saturday of Easter Week"
+            day_name = "Saturday in Easter Week"
         else:
             return
 
@@ -191,13 +191,13 @@ class Lectionary:
     def __check_advent_sundays(self, holy_days: list[HolyDay]) -> None:
         date_delta = self.date - self.moveable_dates["advent_sunday"]
         if date_delta.days == 0:
-            day_name = "The First Sunday in Advent"
+            day_name = "First Sunday in Advent"
         elif date_delta.days == 7:
-            day_name = "The Second Sunday in Advent"
+            day_name = "Second Sunday in Advent"
         elif date_delta.days == 14:
-            day_name = "The Third Sunday in Advent"
+            day_name = "Third Sunday in Advent"
         elif date_delta.days == 21:
-            day_name = "The Fourth Sunday in Advent"
+            day_name = "Fourth Sunday in Advent"
         else:
             return
 
@@ -213,9 +213,9 @@ class Lectionary:
     def __check_christmas_sundays(self, holy_days: list[HolyDay]) -> None:
         christmas_day = date(self.date.year, 12, 25)
         if christmas_day < self.date <= christmas_day + timedelta(days=7):
-            day_name = "The First Sunday of Christmas"
+            day_name = "First Sunday after Christmas"
         else:
-            day_name = "The Second Sunday of Christmas"
+            day_name = "Second Sunday after Christmas"
 
         holy_days.append(
             HolyDay(
@@ -235,25 +235,25 @@ class Lectionary:
         # The number of Sundays after Epiphany can range from 4 to 9.
         # To account for this, check for the final two Sundays first.
         if self.date == self.easter_day - timedelta(days=56):
-            day_name = "The Second to Last Sunday of Epiphany: World Mission"
+            day_name = "Second to Last Sunday after Epiphany"
         elif self.date == self.easter_day - timedelta(days=49):
-            day_name = "The Last Sunday of Epiphany: Transfiguration"
+            day_name = "Last Sunday after Epiphany"
         elif date_delta.days == 0:
-            day_name = "The First Sunday of Epiphany: Baptism of Our Lord"
+            day_name = "First Sunday after Epiphany"
         elif date_delta.days == 7:
-            day_name = "The Second Sunday of Epiphany"
+            day_name = "Second Sunday after Epiphany"
         elif date_delta.days == 14:
-            day_name = "The Third Sunday of Epiphany"
+            day_name = "Third Sunday after Epiphany"
         elif date_delta.days == 21:
-            day_name = "The Fourth Sunday of Epiphany"
+            day_name = "Fourth Sunday after Epiphany"
         elif date_delta.days == 28:
-            day_name = "The Fifth Sunday of Epiphany"
+            day_name = "Fifth Sunday after Epiphany"
         elif date_delta.days == 35:
-            day_name = "The Sixth Sunday of Epiphany"
+            day_name = "Sixth Sunday after Epiphany"
         elif date_delta.days == 42:
-            day_name = "The Seventh Sunday of Epiphany"
+            day_name = "Seventh Sunday after Epiphany"
         elif date_delta.days == 49:
-            day_name = "The Eighth Sunday of Epiphany"
+            day_name = "Eighth Sunday after Epiphany"
         else:
             return
 
@@ -269,15 +269,15 @@ class Lectionary:
     def __check_lent_sundays(self, holy_days: list[HolyDay]) -> None:
         date_delta = self.easter_day - self.date
         if date_delta.days == 42:
-            day_name = "The First Sunday in Lent"
+            day_name = "First Sunday in Lent"
         elif date_delta.days == 35:
-            day_name = "The Second Sunday in Lent"
+            day_name = "Second Sunday in Lent"
         elif date_delta.days == 28:
-            day_name = "The Third Sunday in Lent"
+            day_name = "Third Sunday in Lent"
         elif date_delta.days == 21:
-            day_name = "The Fourth Sunday in Lent"
+            day_name = "Fourth Sunday in Lent"
         elif date_delta.days == 14:
-            day_name = "The Fifth Sunday in Lent: Passion Sunday"
+            day_name = "Fifth Sunday in Lent"
         else:
             return
 
@@ -293,17 +293,17 @@ class Lectionary:
     def __check_easter_sundays(self, holy_days: list[HolyDay]) -> None:
         date_delta = self.date - self.easter_day
         if date_delta.days == 7:
-            day_name = "The Second Sunday of Easter"
+            day_name = "Second Sunday of Easter"
         elif date_delta.days == 14:
-            day_name = "The Third Sunday of Easter"
+            day_name = "Third Sunday of Easter"
         elif date_delta.days == 21:
-            day_name = "The Fourth Sunday of Easter: Good Shepherd"
+            day_name = "Fourth Sunday of Easter"
         elif date_delta.days == 28:
-            day_name = "The Fifth Sunday of Easter"
+            day_name = "Fifth Sunday of Easter"
         elif date_delta.days == 35:
-            day_name = "The Sixth Sunday of Easter: Rogation Sunday"
+            day_name = "Sixth Sunday of Easter"
         elif date_delta.days == 42:
-            day_name = "The Sunday after Ascension Day"
+            day_name = "Sunday after Ascension Day"
         else:
             return
 
@@ -375,7 +375,7 @@ class Lectionary:
         elif date_delta.days == 14:
             day_name = "Proper 28"
         elif date_delta.days == 7:
-            day_name = "Proper 29: Christ the King"
+            day_name = "Proper 29"
         else:
             return
 
@@ -389,76 +389,64 @@ class Lectionary:
         )
 
     def __check_red_letter_days(self, holy_days: list[HolyDay]) -> None:
-        if self.date == date(self.date.year, 1, 1):
-            day_name = (
-                "The Circumcision and Holy Name of Our Lord Jesus Christ"
-            )
+        if self.date == date(self.date.year, 11, 30):
+            day_name = "Saint Andrew"
+        elif self.date == date(self.date.year, 12, 21):
+            day_name = "Saint Thomas"
+        elif self.date == date(self.date.year, 12, 26):
+            day_name = "Saint Stephen"
+        elif self.date == date(self.date.year, 12, 27):
+            day_name = "Saint John"
+        elif self.date == date(self.date.year, 12, 28):
+            day_name = "Holy Innocents"
+        elif self.date == date(self.date.year, 1, 1):
+            day_name = "Holy Name"
         elif self.date == date(self.date.year, 1, 18):
-            day_name = "Confession of Peter the Apostle"
+            day_name = "Confession of Saint Peter"
         elif self.date == date(self.date.year, 1, 25):
-            day_name = "Conversion of Paul the Apostle"
+            day_name = "Conversion of Saint Paul"
         elif self.date == date(self.date.year, 2, 2):
-            day_name = (
-                "The Presentation of Our Lord Jesus Christ in the Temple"
-            )
+            day_name = "The Presentation"
         elif self.date == date(self.date.year, 2, 24):
-            day_name = "Matthias the Apostle"
+            day_name = "Saint Matthias"
         elif self.date == date(self.date.year, 3, 19):
-            day_name = (
-                "Joseph, Husband of the Virgin Mary and Guardian of Jesus"
-            )
+            day_name = "Saint Joseph"
         elif self.date == date(self.date.year, 3, 25):
-            day_name = (
-                "The Annunciation of our Lord Jesus Christ to the Virgin Mary"
-            )
+            day_name = "The Annunciation"
         elif self.date == date(self.date.year, 4, 25):
-            day_name = "Mark the Evangelist"
+            day_name = "Saint Mark"
         elif self.date == date(self.date.year, 5, 1):
-            day_name = "Philip and James, Apostles"
+            day_name = "Saint Philip and Saint James"
         elif self.date == date(self.date.year, 5, 31):
-            day_name = (
-                "The Visitation of the Virgin Mary to Elizabeth and Zechariah"
-            )
+            day_name = "The Visitation"
         elif self.date == date(self.date.year, 6, 11):
-            day_name = "Barnabas the Apostle"
+            day_name = "Saint Barnabas"
         elif self.date == date(self.date.year, 6, 24):
-            day_name = "The Nativity of John the Baptist"
+            day_name = "Nativity of Saint John the Baptist"
         elif self.date == date(self.date.year, 6, 29):
-            day_name = "Peter and Paul, Apostles"
+            day_name = "Saint Peter and Saint Paul"
         elif self.date == date(self.date.year, 7, 22):
-            day_name = "Mary Magdalene"
+            day_name = "Saint Mary Magdalene"
         elif self.date == date(self.date.year, 7, 25):
-            day_name = "James the Elder, Apostle"
+            day_name = "Saint James"
         elif self.date == date(self.date.year, 8, 6):
-            day_name = "The Transfiguration of Our Lord Jesus Christ"
+            day_name = "The Transfiguration"
         elif self.date == date(self.date.year, 8, 15):
-            day_name = "The Virgin Mary, Mother of Our Lord Jesus Christ"
+            day_name = "Saint Mary the Virgin"
         elif self.date == date(self.date.year, 8, 24):
-            day_name = "Bartholomew the Apostle"
+            day_name = "Saint Bartholomew"
         elif self.date == date(self.date.year, 9, 14):
             day_name = "Holy Cross Day"
         elif self.date == date(self.date.year, 9, 21):
-            day_name = "Matthew, Apostle and Evangelist"
+            day_name = "Saint Matthew"
         elif self.date == date(self.date.year, 9, 29):
-            day_name = "Holy Michael and All Angels"
+            day_name = "Saint Michael and All Angels"
         elif self.date == date(self.date.year, 10, 18):
-            day_name = "Luke the Evangelist and Companion of Paul"
+            day_name = "Saint Luke"
         elif self.date == date(self.date.year, 10, 23):
-            day_name = (
-                "James of Jerusalem, Bishop and Martyr, Brother of Our Lord"
-            )
+            day_name = "Saint James of Jerusalem"
         elif self.date == date(self.date.year, 10, 28):
-            day_name = "Simon and Jude, Apostles"
-        elif self.date == date(self.date.year, 11, 30):
-            day_name = "Andrew the Apostle"
-        elif self.date == date(self.date.year, 12, 21):
-            day_name = "Thomas the Apostle"
-        elif self.date == date(self.date.year, 12, 26):
-            day_name = "Stephen, Deacon and Martyr"
-        elif self.date == date(self.date.year, 12, 27):
-            day_name = "John, Apostle and Evangelist"
-        elif self.date == date(self.date.year, 12, 28):
-            day_name = "The Holy Innocents"
+            day_name = "Saint Simon and Saint Jude"
         else:
             return
 
