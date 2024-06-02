@@ -40,18 +40,18 @@ class Lectionary:
             days=-1, weekday=SU(-4)
         )
 
-    def __get_liturgical_year(self) -> Year:
+    def __get_liturgical_year(self) -> str:
         if self.date >= self.moveable_dates["advent_sunday"]:
             start_year = self.date.year
         else:
             start_year = self.date.year - 1
 
         if start_year % 3 == 0:
-            return Year.A
+            return "Year A"
         elif start_year % 3 == 1:
-            return Year.B
+            return "Year B"
         elif start_year % 3 == 2:
-            return Year.C
+            return "Year C"
 
     def __get_liturgical_season(self) -> str:
         if self.date < date(self.date.year, 1, 6):
@@ -191,13 +191,13 @@ class Lectionary:
     def __check_advent_sundays(self, holy_days: list[HolyDay]) -> None:
         date_delta = self.date - self.moveable_dates["advent_sunday"]
         if date_delta.days == 0:
-            day_name = "First Sunday in Advent"
+            day_name = "First Sunday of Advent"
         elif date_delta.days == 7:
-            day_name = "Second Sunday in Advent"
+            day_name = "Second Sunday of Advent"
         elif date_delta.days == 14:
-            day_name = "Third Sunday in Advent"
+            day_name = "Third Sunday of Advent"
         elif date_delta.days == 21:
-            day_name = "Fourth Sunday in Advent"
+            day_name = "Fourth Sunday of Advent"
         else:
             return
 
@@ -458,11 +458,3 @@ class Lectionary:
                 Rank.MAJOR,
             )
         )
-
-
-if __name__ == "__main__":
-    for i in range(365):
-        day = date.today() + timedelta(days=i)
-        lectionary = Lectionary(day)
-        for holy_day in lectionary.holy_days:
-            print(day, holy_day.name)

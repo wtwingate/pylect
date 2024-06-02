@@ -2,12 +2,6 @@ from enum import Enum
 import json
 
 
-class Year(Enum):
-    A = 0
-    B = 1
-    C = 2
-
-
 class Rank(Enum):
     MINOR = 0
     MAJOR = 1
@@ -16,5 +10,6 @@ class Rank(Enum):
     PRINCIPAL = 4
 
 
-with open("lectionary.json") as f:
+LECTIONARY: dict
+with open("src/pylect/lectionary.json") as f:
     LECTIONARY = json.load(f)
