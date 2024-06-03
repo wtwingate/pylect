@@ -6,19 +6,31 @@ build-backend = "setuptools.build_meta"
 name = "pylect"
 version = "0.3.0"
 dependencies = [
-    "black",
-    "isort",
-    "pylint",
-    "pyperclip",
-    "pytest",
-    "python-dateutil",
-    "python-dotenv",
-    "requests",
+	"pyperclip",
+	"python-dateutil",
+	"python-dotenv",
+	"requests",
 ]
+requires-python = ">= 3.12"
 authors = [{ name = "William Wingate", email = "wtwingate@gmail.com" }]
-description = "Tools for working with lectionaries and liturgical calendars."
+description = "Tools for working with the Anglican lectionary."
 readme = "README.md"
 license = { file = "LICENSE.txt" }
+keywords = ["lectionary", "liturgy", "calendar", "anglican"]
+classifiers = [
+	"Development Status :: 4 - Beta",
+	"License :: OSI Approved :: MIT License",
+	"Operating System :: OS Independent",
+	"Programming Language :: Python :: 3",
+]
+
+[project.optional-dependencies]
+dev = [
+	"black",
+	"isort",
+	"pylint",
+	"pytest",
+]
 
 [project.urls]
 Repository = "https://github.com/wtwingate/pylect"
