@@ -7,23 +7,23 @@ class TestParseReference:
 
     def test_chapter_only(self):
         ref = "Ps 23"
-        assert self.psalter._parse_reference(ref) == (23, [])
+        assert self.psalter.__parse_reference(ref) == (23, [])
 
     def test_chapter_verse(self):
         ref = "Ps 23:1-6"
-        assert self.psalter._parse_reference(ref) == (23, [1, 2, 3, 4, 5, 6])
+        assert self.psalter.__parse_reference(ref) == (23, [1, 2, 3, 4, 5, 6])
 
     def test_isolated_verses(self):
         ref = "Ps 23:1,6"
-        assert self.psalter._parse_reference(ref) == (23, [1, 6])
+        assert self.psalter.__parse_reference(ref) == (23, [1, 6])
 
     def test_optional_verses(self):
         ref = "Ps 23:1-3(4-6)"
-        assert self.psalter._parse_reference(ref) == (23, [1, 2, 3, 4, 5, 6])
+        assert self.psalter.__parse_reference(ref) == (23, [1, 2, 3, 4, 5, 6])
 
     def test_complex_reference(self):
         ref = "Ps 80:(1-3)7-10,19v"
-        assert self.psalter._parse_reference(ref) == (
+        assert self.psalter.__parse_reference(ref) == (
             80,
             [1, 2, 3, 7, 8, 9, 10, 19],
         )

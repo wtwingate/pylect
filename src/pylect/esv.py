@@ -3,7 +3,6 @@ the text of any Scripture lessons that are specified in the lectionary.
 """
 
 import os
-import re
 import requests
 from dotenv import load_dotenv
 
@@ -37,7 +36,6 @@ def get_esv_text(query):
     if passages:
         text = "\n".join([passage.strip() for passage in passages])
         text = text.replace("[", "").replace("]", "")
-        text = re.sub(r"\n    ", "\n", text)
         return text
     else:
         raise ValueError("Error: passage not found")

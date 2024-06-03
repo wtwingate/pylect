@@ -8,7 +8,7 @@ class Psalter:
     """Import the text of the Psalms as a dictionary and provide methods for retrieving them."""
 
     def __init__(self) -> None:
-        self._psalms = self._load_psalms_from_json()
+        self.__psalms = self.__load_psalms_from_json()
 
     def get_psalm(self, reference: str) -> str:
         """Get formatted psalm text by chapter and verse reference.
@@ -28,30 +28,31 @@ class Psalter:
         parentheses. For now, these are always included in the returned text.
         """
         text_list = []
-        chapter, verses = self._parse_reference(reference)
-        psalm = self._psalms[chapter - 1]  # zero-indexing ftw
+        chapter, verses = self.__parse_reference(reference)
+        psalm = self.__psalms[chapter - 1]  # zero-indexing ftw
         text_list.append(f"Psalm {psalm["number"]}\n")
+        text_list.append(f"{psalm["latin_title"]}\n")
         if len(verses) == 0:
             verses = psalm["verses"]
         else:
             verses = [psalm["verses"][v - 1] for v in verses]
         for verse in verses:
-            text_list.append(f"{verse["number"]} {verse["first_half"]} *")
-            text_list.append(f"    {verse["second_half"]}")
+            text_list.append(f"    {verse["number"]} {verse["first_half"]} *")
+            text_list.append(f"        {verse["second_half"]}")
         psalm_text = "\n".join(text_list)
         return psalm_text
 
-    def _parse_reference(self, ref: str) -> tuple[int, list[int]]:
+    def __parse_reference(self, ref: str) -> tuple[int, list[int]]:
         """Make human-readable psalm references computer-friendly."""
         ref = ref.replace("Psalm ", "")
         chapter = int(ref.split(":")[0])
         if ":" in ref:
-            verses = self._parse_verse_reference(ref.split(":")[1])
+            verses = self.__parse_verses(ref.split(":")[1])
         else:
             verses = []
         return chapter, verses
 
-    def _parse_verse_reference(self, verse_ref: str) -> list[int]:
+    def __parse_verses(self, verse_ref: str) -> list[int]:
         """Parse verse references into a list of verse numbers."""
         verse_ref = re.split(r";|,|\(|\)| ", verse_ref)
         verse_nums = []
@@ -66,7 +67,7 @@ class Psalter:
                 verse_nums.append(int(ref))
         return verse_nums
 
-    def _load_psalms_from_json(self) -> None:
+    def __load_psalms_from_json(self) -> None:
         """Load saved psalm dictionary"""
         with open(
             "src/pylect/psalter.json", "r", encoding="utf-8"

@@ -9,74 +9,18 @@ clipboard.
 from datetime import date, timedelta
 import sys
 
+import pyperclip
 from pylect.esv import get_esv_text
 from pylect.holyday import HolyDay
 from pylect.lectionary import Lectionary
 from pylect.psalter import Psalter
 
 
-# def get_next_week(self) -> date:
-#     """Set the end date to 7 days from the start date if no end date is specified"""
-#     return self.__start_date + timedelta(days=7)
+def get_holy_days() -> list[HolyDay]:
+    """Iterate through and range of dates and search for the corresponding
+    holy days in the lectionary.
+    """
 
-
-# def get_holy_days(self) -> list:
-#     """Iterate through range of dates and search for matches in the lectionary."""
-#     dates = []
-#     current_day = self.__start_date
-#     day_delta = timedelta(days=1)
-#     while current_day <= self.__end_date:
-#         dates.append(current_day)
-#         current_day += day_delta
-#     holy_days = self.__lectionary.get_holy_days(dates)
-#     return holy_days
-
-
-# def get_texts(self) -> None:
-#     """Print holy days within date range and allow user to fetch and copy specified texts."""
-#     print()
-#     print(
-#         f"Sundays and Holy Days between {self.__start_date} and {self.__end_date}:"
-#     )
-#     print()
-#     for index, holy_day in enumerate(self.__holy_days):
-#         print(f"{index + 1}) {holy_day['name']} [{holy_day['date']}]")
-#         for lesson in holy_day["lessons"]:
-#             print(f"   * {lesson}")
-#         print()
-#     print(
-#         """Enter a number to copy the lessons for the selected Sunday or Holy Day
-# into your clipboard, or enter "q" to quit the program."""
-#     )
-#     while True:
-#         selection = input("Please enter your selection: ")
-#         if selection.lower().startswith("q"):
-#             break
-#         try:
-#             holy_day = self.__holy_days[int(selection) - 1]
-#             lessons = holy_day["lessons"]
-#         except IndexError:
-#             print("Error: invalid selection")
-#             continue
-#         try:
-#             texts = []
-#             for lesson in lessons:
-#                 lesson = lesson.split(" or ")[0]
-#                 try:
-#                     if lesson.startswith("Ps"):
-#                         texts.append(self.__psalter.get_psalm(lesson))
-#                     else:
-#                         texts.append(get_esv_text(lesson))
-#                 except ValueError:
-#                     print(f"Error: could not get text for {lesson}")
-#             text = "\n\n".join(texts)
-#             pyperclip.copy(text)
-#             print(f"Lessons for {holy_day['name']} copied to clipboard!")
-#         except ValueError:
-#             print("Error: could not fetch requested texts")
-
-
-def main():
     start_date: date
     end_date: date
 
@@ -104,24 +48,61 @@ def main():
     holy_days: list[HolyDay] = []
     this_date = start_date
     while this_date <= end_date:
-        holy_days.extend(check_lectionary(this_date))
+        holy_days.extend(Lectionary(this_date).holy_days)
         this_date += timedelta(days=1)
 
-    psalter = Psalter()
-    for day in holy_days:
-        texts = [day.name]
-        for k, v in day.lessons.items():
-            if k == "Psalm":
-                texts.append(psalter.get_psalm(v[0]))
-            else:
-                texts.append(get_esv_text(v[0]))
-        print("\n\n".join(texts))
+    return holy_days
 
 
-def check_lectionary(this_date: date) -> list[HolyDay]:
-    lectionary = Lectionary(this_date)
-    return lectionary.holy_days
+def cli_start() -> None:
+    holy_days = get_holy_days()
+
+    print()
+    print("*** Welcome to the Pylect CLI ***\n")
+    print("Here are the upcoming days in the lectionary:\n")
+    for i, day in enumerate(holy_days):
+        print(f"{i + 1})\t{day.name}:")
+        for v in day.lessons.values():
+            print(f"\t- {" or ".join(v)}")
+        print()
+
+    print(
+        "Enter a number to copy the text of the lessons into your clipboard"
+        " or press and enter 'q' to exit the program."
+    )
+
+    cli_loop(holy_days)
+
+
+def cli_loop(holy_days: list[HolyDay]) -> None:
+    while True:
+        choice = input("Please enter your choice: ")
+
+        if choice.lower().startswith("q"):
+            break
+
+        try:
+            day = holy_days[int(choice) - 1]
+        except IndexError:
+            print("Error: invalid selection")
+            continue
+
+        psalter = Psalter()
+
+        try:
+            texts = [day.name]
+            for k, v in day.lessons.items():
+                if k == "Psalm":
+                    texts.append(psalter.get_psalm(v[0]))
+                else:
+                    texts.append(get_esv_text(v[0]))
+        except ValueError:
+            print("Error: could not fetch requested texts")
+            continue
+
+        pyperclip.copy("\n\n".join(texts))
+        print(f"Lessons for {day.name} copied to clipboard!")
 
 
 if __name__ == "__main__":
-    main()
+    cli_start()

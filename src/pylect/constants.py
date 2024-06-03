@@ -11,5 +11,5 @@ class Rank(Enum):
 
 
 LECTIONARY: dict
-with open("src/pylect/lectionary.json") as f:
+with open("src/pylect/lectionary.json", "r", encoding="utf-8") as f:
     LECTIONARY = json.load(f)
