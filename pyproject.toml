@@ -23,7 +23,7 @@ license = { file = "LICENSE.txt" }
 Repository = "https://github.com/wtwingate/pylect"
 
 [project.scripts]
-pylect = "pylect.cli:main"
+pylect = "pylect.main:cli_start"
 
 [tool.black]
 line-length = 79
