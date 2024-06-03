@@ -97,7 +97,7 @@ def check_lectionary() -> list[HolyDay]:
             end_date = date(end_arg[0], end_arg[1], end_arg[2])
         except IndexError:
             print("Error: Invalid date format in arguments")
-            sys.exit()
+            sys.exit(1)
     else:
         start_date = date.today()
         end_date = start_date + timedelta(days=7)

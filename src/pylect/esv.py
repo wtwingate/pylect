@@ -3,6 +3,7 @@ Scripture lessons provided by the lectionary.
 """
 
 import os
+import sys
 
 import requests
 from dotenv import load_dotenv
@@ -12,7 +13,14 @@ from dotenv import load_dotenv
 # we can reference below.
 load_dotenv()
 
-API_KEY = os.environ["ESV_API_KEY"]
+try:
+    API_KEY = os.environ["ESV_API_KEY"]
+except KeyError:
+    print("Error: missing ESV API key.")
+    print("Add `ESV_API_KEY=<your key goes here>` to your `.env` file.")
+    print("See README.md for more information.")
+    sys.exit(1)
+
 API_URL = "https://api.esv.org/v3/passage/text/"
 
 
