@@ -68,7 +68,7 @@ def cli_start() -> None:
 
     print(
         "Enter a number to copy the text of the lessons into your clipboard"
-        " or press and enter 'q' to exit the program."
+        " or press and enter 'q' to exit the program.\n"
     )
 
     cli_loop(holy_days)
