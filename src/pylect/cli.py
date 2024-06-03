@@ -6,10 +6,11 @@ readings so that it can fetch the texts and copy them to the system
 clipboard.
 """
 
-from datetime import date, timedelta
 import sys
+from datetime import date, timedelta
 
 import pyperclip
+
 from pylect.esv import get_esv_text
 from pylect.holyday import HolyDay
 from pylect.lectionary import Lectionary
@@ -17,6 +18,10 @@ from pylect.psalter import Psalter
 
 
 def start() -> None:
+    """Start the Pylect CLI tool and print all the upcoming days and lessons
+    found in the lectionary.
+    """
+
     holy_days = check_lectionary()
 
     print()
@@ -37,6 +42,8 @@ def start() -> None:
 
 
 def loop(holy_days: list[HolyDay]) -> None:
+    """Interactive loop for the Pylect CLI tool."""
+
     while True:
         choice = input("Please enter your choice: ")
 
@@ -67,7 +74,7 @@ def loop(holy_days: list[HolyDay]) -> None:
 
 
 def check_lectionary() -> list[HolyDay]:
-    """Iterate through and range of dates and search for the corresponding
+    """Iterate through a range of dates and search for their corresponding
     holy days in the lectionary.
     """
 
@@ -76,18 +83,18 @@ def check_lectionary() -> list[HolyDay]:
 
     if len(sys.argv) == 2:
         try:
-            start = [int(x) for x in sys.argv[1].split("-")]
-            start_date = date(start[0], start[1], start[2])
+            start_arg = [int(x) for x in sys.argv[1].split("-")]
+            start_date = date(start_arg[0], start_arg[1], start_arg[2])
             end_date = start_date + timedelta(days=7)
         except IndexError:
             print("Error: Invalid date format in arguments")
             sys.exit(1)
     elif len(sys.argv) == 3:
         try:
-            start = [int(x) for x in sys.argv[1].split("-")]
-            start_date = date(start[0], start[1], start[2])
-            end = [int(x) for x in sys.argv[2].split("-")]
-            end_date = date(end[0], end[1], end[2])
+            start_arg = [int(x) for x in sys.argv[1].split("-")]
+            start_date = date(start_arg[0], start_arg[1], start_arg[2])
+            end_arg = [int(x) for x in sys.argv[2].split("-")]
+            end_date = date(end_arg[0], end_arg[1], end_arg[2])
         except IndexError:
             print("Error: Invalid date format in arguments")
             sys.exit()

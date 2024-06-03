@@ -1,22 +1,29 @@
+"""Provides access to the Lectionary class."""
+
 from datetime import date, timedelta
-from dateutil.relativedelta import relativedelta, SU
+
 from dateutil.easter import easter
+from dateutil.relativedelta import SU, relativedelta
+
 from pylect.constants import Rank
 from pylect.holyday import HolyDay
 
 
 class Lectionary:
-    """The lectionary class provides methods for calculating holy days
-    according to the liturgical calendar of the Anglican Church.
+    """The Lectionary class provides a data structure which calculates the
+    relevant data for how any given date in the Gregorian calendar relates
+    to the Church's liturgical calendar. If any Sunday or Holy Day falls on
+    the specified date, then a new HolyDay object is created and stored in
+    the holy_days instance variable.
     """
 
     def __init__(self, this_date: date) -> None:
-        self.date = this_date
-        self.easter_day = self.__get_easter_day()
-        self.moveable_dates = self.__get_moveable_dates()
-        self.liturgical_year = self.__get_liturgical_year()
-        self.liturgical_season = self.__get_liturgical_season()
-        self.holy_days = self.__get_holy_days()
+        self.date: date = this_date
+        self.easter_day: date = self.__get_easter_day()
+        self.moveable_dates: dict[str, date] = self.__get_moveable_dates()
+        self.liturgical_year: str = self.__get_liturgical_year()
+        self.liturgical_season: str = self.__get_liturgical_season()
+        self.holy_days: list[HolyDay] = self.__get_holy_days()
 
     def __get_easter_day(self) -> date:
         return easter(self.date.year)
@@ -48,26 +55,24 @@ class Lectionary:
 
         if start_year % 3 == 0:
             return "Year A"
-        elif start_year % 3 == 1:
+        if start_year % 3 == 1:
             return "Year B"
-        elif start_year % 3 == 2:
-            return "Year C"
+        return "Year C"
 
     def __get_liturgical_season(self) -> str:
         if self.date < date(self.date.year, 1, 6):
             return "Christmas"
-        elif self.date < self.moveable_dates["ash_wednesday"]:
+        if self.date < self.moveable_dates["ash_wednesday"]:
             return "Epiphany"
-        elif self.date < self.moveable_dates["easter_day"]:
+        if self.date < self.moveable_dates["easter_day"]:
             return "Lent"
-        elif self.date < self.moveable_dates["pentecost"]:
+        if self.date < self.moveable_dates["pentecost"]:
             return "Easter"
-        elif self.date < self.moveable_dates["advent_sunday"]:
+        if self.date < self.moveable_dates["advent_sunday"]:
             return "Pentecost"
-        elif self.date < date(self.date.year, 12, 25):
+        if self.date < date(self.date.year, 12, 25):
             return "Advent"
-        else:
-            return "Christmas"
+        return "Christmas"
 
     def __get_holy_days(self) -> list[HolyDay]:
         holy_days: list[HolyDay] = []

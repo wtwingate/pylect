@@ -7,6 +7,7 @@ name = "pylect"
 version = "0.3.0"
 dependencies = [
     "black",
+    "isort",
     "pylint",
     "pyperclip",
     "pytest",

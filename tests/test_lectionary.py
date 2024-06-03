@@ -1,4 +1,7 @@
+# pylint: skip-file
+
 from datetime import date
+
 from pylect.lectionary import Lectionary
 
 

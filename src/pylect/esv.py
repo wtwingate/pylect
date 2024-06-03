@@ -1,8 +1,9 @@
-"""This module provides a simple function for calling the ESV Bible API to get
-the text of any Scripture lessons that are specified in the lectionary.
+"""Provides a function for calling the ESV Bible API to get the text of any
+Scripture lessons provided by the lectionary.
 """
 
 import os
+
 import requests
 from dotenv import load_dotenv
 
@@ -37,5 +38,4 @@ def get_esv_text(query):
         text = "\n".join([passage.strip() for passage in passages])
         text = text.replace("[", "").replace("]", "")
         return text
-    else:
-        raise ValueError("Error: passage not found")
+    raise ValueError("Error: passage not found")
