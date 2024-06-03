@@ -2,6 +2,7 @@
 
 import json
 import re
+from importlib.resources import files
 
 
 class Psalter:
@@ -79,7 +80,6 @@ class Psalter:
     def __load_psalms_from_json(self) -> dict:
         """Load saved psalm into dictionary"""
 
-        with open(
-            "src/pylect/psalter.json", "r", encoding="utf-8"
-        ) as json_file:
-            return json.load(json_file)
+        psalter_json = files("pylect.data").joinpath("psalter.json")
+        with open(psalter_json, "r", encoding="utf-8") as f:
+            return json.load(f)

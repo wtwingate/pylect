@@ -2,6 +2,7 @@
 
 import json
 from enum import Enum
+from importlib.resources import files
 
 
 class Rank(Enum):
@@ -15,5 +16,6 @@ class Rank(Enum):
 
 
 LECTIONARY: dict
-with open("src/pylect/lectionary.json", "r", encoding="utf-8") as f:
+lectionary_json = files("pylect.data").joinpath("lectionary.json")
+with open(lectionary_json, "r", encoding="utf-8") as f:
     LECTIONARY = json.load(f)
