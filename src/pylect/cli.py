@@ -1,4 +1,4 @@
-"""This is the primary user facing module of the program. The CLI class
+"""This is the primary user-facing module of the program. The CLI class
 is initiated when the program is started and begin running a script
 that gather the appropriate readings for the lectionary for the given
 date range. It then prompts the user to select one or more of the
@@ -16,7 +16,57 @@ from pylect.lectionary import Lectionary
 from pylect.psalter import Psalter
 
 
-def get_holy_days() -> list[HolyDay]:
+def start() -> None:
+    holy_days = check_lectionary()
+
+    print()
+    print("*** Welcome to the Pylect CLI ***\n")
+    print("Here are the upcoming days in the lectionary:\n")
+    for i, day in enumerate(holy_days):
+        print(f"{i + 1})\t{day.name}:")
+        for v in day.lessons.values():
+            print(f"\t- {" or ".join(v)}")
+        print()
+
+    print(
+        "Enter a number to copy the text of the lessons into your clipboard"
+        " or press and enter 'q' to exit the program.\n"
+    )
+
+    loop(holy_days)
+
+
+def loop(holy_days: list[HolyDay]) -> None:
+    while True:
+        choice = input("Please enter your choice: ")
+
+        if choice.lower().startswith("q"):
+            break
+
+        try:
+            day = holy_days[int(choice) - 1]
+        except IndexError:
+            print("Error: invalid selection")
+            continue
+
+        psalter = Psalter()
+
+        try:
+            texts = [day.name]
+            for k, v in day.lessons.items():
+                if k == "Psalm":
+                    texts.append(psalter.get_psalm(v[0]))
+                else:
+                    texts.append(get_esv_text(v[0]))
+        except ValueError:
+            print("Error: could not fetch requested texts")
+            continue
+
+        pyperclip.copy("\n\n".join(texts))
+        print(f"Lessons for {day.name} copied to clipboard!")
+
+
+def check_lectionary() -> list[HolyDay]:
     """Iterate through and range of dates and search for the corresponding
     holy days in the lectionary.
     """
@@ -54,55 +104,5 @@ def get_holy_days() -> list[HolyDay]:
     return holy_days
 
 
-def cli_start() -> None:
-    holy_days = get_holy_days()
-
-    print()
-    print("*** Welcome to the Pylect CLI ***\n")
-    print("Here are the upcoming days in the lectionary:\n")
-    for i, day in enumerate(holy_days):
-        print(f"{i + 1})\t{day.name}:")
-        for v in day.lessons.values():
-            print(f"\t- {" or ".join(v)}")
-        print()
-
-    print(
-        "Enter a number to copy the text of the lessons into your clipboard"
-        " or press and enter 'q' to exit the program.\n"
-    )
-
-    cli_loop(holy_days)
-
-
-def cli_loop(holy_days: list[HolyDay]) -> None:
-    while True:
-        choice = input("Please enter your choice: ")
-
-        if choice.lower().startswith("q"):
-            break
-
-        try:
-            day = holy_days[int(choice) - 1]
-        except IndexError:
-            print("Error: invalid selection")
-            continue
-
-        psalter = Psalter()
-
-        try:
-            texts = [day.name]
-            for k, v in day.lessons.items():
-                if k == "Psalm":
-                    texts.append(psalter.get_psalm(v[0]))
-                else:
-                    texts.append(get_esv_text(v[0]))
-        except ValueError:
-            print("Error: could not fetch requested texts")
-            continue
-
-        pyperclip.copy("\n\n".join(texts))
-        print(f"Lessons for {day.name} copied to clipboard!")
-
-
 if __name__ == "__main__":
-    cli_start()
+    start()

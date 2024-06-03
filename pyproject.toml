@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pylect"
-version = "1.3.0"
+version = "0.3.0"
 dependencies = [
     "black",
     "pylint",
@@ -23,7 +23,7 @@ license = { file = "LICENSE.txt" }
 Repository = "https://github.com/wtwingate/pylect"
 
 [project.scripts]
-pylect = "pylect.main:cli_start"
+pylect = "pylect.cli:start"
 
 [tool.black]
 line-length = 79

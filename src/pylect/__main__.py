@@ -1,4 +1,4 @@
 if __name__ == "__main__":
-    import pylect.main
+    import pylect.cli
 
-    pylect.main.cli_start()
+    pylect.cli.start()
