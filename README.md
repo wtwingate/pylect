@@ -12,7 +12,15 @@ Pylect is a program written in Python 3. If you don't already have Python instal
 
 Pylect is published on the [Python Package Index](https://pypi.org/project/pylect/), so the easiest way to install it is by simply running `pip install pylect` from the command line.
 
-Next, you will need to get your own ESV API key from [here](https://api.esv.org/) if you want to be able to automatically fetch and copy the Scripture texts into your clipboard. Once you have the key, create a `.env` file in the root Pylect directory and add your key like so:
+Next, you will need to get your own ESV API key from [here](https://api.esv.org/) if you want to be able to automatically fetch and copy the Scripture texts into your clipboard.
+
+Once you have a key, you can export it as an environment variable by adding the following line to your `.bashrc` or `.zshrc`:
+
+```
+export ESV_API_KEY=<your key goes here>
+```
+
+Alternatively, if you installed Pylect using a virutal environment, you should create a `.env` file in the root directory of your project and add your key there:
 
 ```
 ESV_API_KEY=<your key goes here>
@@ -50,4 +58,4 @@ pylect 2024-06-08 2024-11-1
 
 ## Contributing
 
-I would like to develop this into a tool that can be used by multiple denominations with multiple lectionaries, so feedback and pull requests are more than welcome!
+I would like to develop this into a tool that can be used by multiple denominations with multiple lectionaries, so feedback and contributions are more than welcome!
