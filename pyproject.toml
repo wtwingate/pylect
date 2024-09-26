@@ -4,12 +4,9 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pylect"
-version = "0.3.3"
+version = "0.4.0"
 dependencies = [
-	"pyperclip",
 	"python-dateutil",
-	"python-dotenv",
-	"requests",
 ]
 requires-python = ">= 3.12"
 authors = [{ name = "William Wingate", email = "wtwingate@gmail.com" }]
@@ -26,17 +23,9 @@ classifiers = [
 
 [project.optional-dependencies]
 dev = [
-	"black",
-	"isort",
-	"pylint",
 	"pytest",
+	"ruff",
 ]
 
 [project.urls]
 Repository = "https://github.com/wtwingate/pylect"
-
-[project.scripts]
-pylect = "pylect.cli:start"
-
-[tool.black]
-line-length = 79
