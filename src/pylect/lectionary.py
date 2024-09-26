@@ -31,7 +31,9 @@ class Lectionary:
 
         # Sundays after Epiphany
         epiphany = dt.date(self.date.year, 1, 6)
-        first_sunday_after_epiphany = epiphany + relativedelta(days=(+1), weekday=SU(+1))
+        first_sunday_after_epiphany = epiphany + relativedelta(
+            days=(+1), weekday=SU(+1)
+        )
         last_sunday_after_epiphany = ash_wednesday + relativedelta(weekday=SU(-1))
         epiphany_delta = last_sunday_after_epiphany - first_sunday_after_epiphany
         sundays_after_epiphany = (epiphany_delta.days // 7) + 1
@@ -57,11 +59,11 @@ class Lectionary:
             year_start = self.date.year - 1
 
         if year_start % 3 == 0:
-            return "Year A"
+            return "A"
         if year_start % 3 == 1:
-            return "Year B"
+            return "B"
         if year_start % 3 == 2:
-            return "Year C"
+            return "C"
 
     def calc_lit_season(self):
         if self.date < dt.date(self.date.year, 1, 6):

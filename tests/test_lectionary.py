@@ -4,6 +4,44 @@ from pylect.lectionary import Lectionary
 
 
 class TestLectionary:
+    def test_liturgical_year(self):
+        """Tests that liturgical years are correctly calculated."""
+
+        expected = [
+            {"date": dt.date(2019, 1, 1), "year": "C"},
+            {"date": dt.date(2020, 1, 1), "year": "A"},
+            {"date": dt.date(2021, 1, 1), "year": "B"},
+            {"date": dt.date(2019, 12, 31), "year": "A"},
+            {"date": dt.date(2020, 12, 31), "year": "B"},
+            {"date": dt.date(2021, 12, 31), "year": "C"},
+        ]
+
+        for e in expected:
+            lectionary = Lectionary(e["date"])
+            assert lectionary.lit_year == e["year"]
+
+    def test_lit_season(self):
+        """Tests that liturgical seasons are correctly calculated."""
+
+        expected = [
+            {"date": dt.date(2019, 1, 5), "season": "Christmas"},
+            {"date": dt.date(2019, 1, 6), "season": "Epiphany"},
+            {"date": dt.date(2019, 3, 5), "season": "Epiphany"},
+            {"date": dt.date(2019, 3, 6), "season": "Lent"},
+            {"date": dt.date(2019, 4, 20), "season": "Lent"},
+            {"date": dt.date(2019, 4, 21), "season": "Easter"},
+            {"date": dt.date(2019, 6, 8), "season": "Easter"},
+            {"date": dt.date(2019, 6, 9), "season": "Pentecost"},
+            {"date": dt.date(2019, 11, 30), "season": "Pentecost"},
+            {"date": dt.date(2019, 12, 1), "season": "Advent"},
+            {"date": dt.date(2019, 12, 24), "season": "Advent"},
+            {"date": dt.date(2019, 12, 25), "season": "Christmas"},
+        ]
+
+        for e in expected:
+            lectionary = Lectionary(e["date"])
+            assert lectionary.lit_season == e["season"]
+
     def test_anchors(self):
         """Tests that anchor dates and deltas are correctly calculated
         for the years 2000 - 3999.
