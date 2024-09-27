@@ -31,7 +31,7 @@ dev = [
 Repository = "https://github.com/wtwingate/pylect"
 
 [tool.pytest.ini_options]
-# addopts = [
-#     "--import-mode=importlib",
-# ]
+addopts = [
+    "--import-mode=importlib",
+]
 pythonpath = "src"
